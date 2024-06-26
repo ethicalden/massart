@@ -7,11 +7,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        'roboto': ['Roboto', 'sans-serif'],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
