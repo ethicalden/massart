@@ -1,76 +1,75 @@
 const Gallery = () => {
   return (
-    <div className=" md:px-[120px] md:pt-[150px]  text-black bg-white">
-      <div className="flex flex-col md:pb-[52px] gap-[171px] md:flex-row justify-between items-center ">
-        <div className="w-[569px] h-[168px]  space-y-[50px]">
-          <h1 className="text-5xl font-semibold font-helvetica text-buttonCustomColor">
-            Gallery
-          </h1>
-          <div className="flex  md:pb-[37px]  gap-3 mb-6">
-            <button className="bg-buttonCustomColor px-[31px] py-[16px] text-white">
-              still
-            </button>
-            <button className=" px-[31px] py-[16px] border border-buttonCustomColor">
-              video
-            </button>
-            <button className=" px-[31px] py-[16px] border border-buttonCustomColor">
-              film
-            </button>
-            <button className=" px-[31px] py-[16px] border border-buttonCustomColor">
-              all
-            </button>
-          </div>
-        </div>
+    <div className=" pl-[32px]  pt-[60px]  text-black bg-white">
+      <div className=" ">
+        <h1 className="w-[342px] h-[36px]  text-5xl font-semibold font-helvetica text-buttonCustomColor">
+          Gallery
+        </h1>
 
-        <div className="w-[569px] h-[168px] leading-[24px] ">
-          <p className="text-[16px] font-normal font-helvetica">
-            Find Togetherness and Friendship in Every Corner of Our Events"
-            depicts moments of closeness and a sense of brotherhood that exist
-            during our events. These photos show how shared experiences can
-            create lasting relationships Find Togetherness and Friendship in
-            Every Corner of Our Events" depicts moments of closeness and a sense
-            of brotherhood that exist during our events. These photos show how
-            shared experiences can create lasting relationships These photos
-            show how shared experiences can create lasting relationships
-          </p>
+        <div className="grid grid-cols-4 md:grid-cols-4 font-poppins justify-between  pr-[170px] pt-[33px] pb-[25px]  gap-[6px]">
+          <button className="bg-buttonCustomColor font-bold text-[12px] w-[52px] h-[34px] leading-[18px]  px-[14px] py-[8px] text-white ">
+            still
+          </button>
+
+          <button className="w-[52px] h-[34px] text-[12px] font-bold leading-[18px] border border-buttonCustomColor px-[14px] py-[8px] text-white ">
+            video
+          </button>
+          <button className="w-[52px] h-[34px] text-[12px] font-bold leading-[18px] border border-buttonCustomColor px-[14px] py-[8px] text-white">
+            film
+          </button>
+          <button className="w-[52px] h-[34px] text-[12px] font-bold leading-[18px] border border-buttonCustomColor px-[14px] py-[8px] text-white">
+            all
+          </button>
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row  gap-[30px]">
-        <div>
-          <div className="max-w-full md:max-w-[605px] h-auto pb-[30px]">
+      <div className="grid grid-cols-1 md:grid-rows-1 pr-[32px]">
+        <div className=" pb-[8px] ">
+          <img
+            src="https://i.ibb.co/CtpKL8W/Frame-706122.png"
+            alt=""
+            className="w-[366px] h-[239px]"
+          />
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-2  gap-[8px] pb-[8px] ">
+          <div className=" ">
             <img
-              src="https://i.ibb.co/CtpKL8W/Frame-706122.png"
+              src="https://i.ibb.co/PZ1dtSq/Frame-706122-1.png"
               alt=""
-              className="w-full h-auto"
+              className="w-[179px] h-[239px]"
             />
           </div>
 
-          <div className="flex flex-col md:flex-row gap-[30px]">
-            <div className=" md:max-w-[288px] h-auto">
-              <img
-                src="https://i.ibb.co/PZ1dtSq/Frame-706122-1.png"
-                alt=""
-                className="w-full h-auto"
-              />
-            </div>
-            <div className=" md:max-w-[288px] h-auto">
-              <img
-                src="https://i.ibb.co/HhXLvfW/Frame-706122-2.png"
-                alt=""
-                className="w-full h-auto"
-              />
-            </div>
+          <div className=" ">
+            <img
+              src="https://i.ibb.co/HhXLvfW/Frame-706122-2.png"
+              alt=""
+              className="w-[179px] h-[239px]"
+            />
           </div>
         </div>
 
-        <div className="max-w-full md:max-w-[565px] h-auto">
-          <img
-            src="https://i.ibb.co/Y0YYYrb/Frame-706122-3.png"
-            alt=""
-            className="w-full h-auto"
-          />
+        <div className="grid grid-cols-2 md:grid-cols-2 pb-[8px] gap-[8px]">
+          <div className=" ">
+            <img
+              src="https://i.ibb.co/PZ1dtSq/Frame-706122-1.png"
+              alt=""
+              className="w-[179px] h-[239px]"
+            />
+          </div>
+
+          <div className="">
+            <img
+              src="https://i.ibb.co/HhXLvfW/Frame-706122-2.png"
+              alt=""
+              className="w-[179px] h-[239px]"
+            />
+          </div>
         </div>
+        <button className="mb-[69px] border border-buttonCustomColor rounded-[100px] font-helvetica text-bold w-[146px] h-[32px] pr-[] text-[12px]">
+          Browse more
+        </button>
       </div>
     </div>
   );
