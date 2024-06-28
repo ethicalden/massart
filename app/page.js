@@ -1,4 +1,4 @@
-// import AboutUs from "@/src/components/AboutUs";
+import AboutUs from "@/src/components/AboutUs";
 import Concept from "@/src/components/Concept";
 import Gallery from "@/src/components/Gallery";
 import Visual from "@/src/components/Visuals";
@@ -10,12 +10,12 @@ export default function Home() {
     <div>
       <Header />
       <main>
-        {/* <AboutUs /> */}
+        <AboutUs />
         {/* Add sections as needed */}
         <Visual />
 
         <Gallery />
-        {/* <Button />*/}
+
         <Concept />
       </main>
       <Footer />
