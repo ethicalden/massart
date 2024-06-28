@@ -4,6 +4,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable prettier/prettier */
+import ContemporaryBggreenGrid from '@/src/components/Contemporay/PhoneGrid/ContemporaryBigscreenGrid';
 import ContemporaryPhoneGrid from '@/src/components/Contemporay/PhoneGrid/ContemporayPhoneGrid';
 import Footer from '@/src/components/common/Footer';
 import Header from '@/src/components/common/Header';
@@ -19,6 +20,11 @@ const Contemporary = () => {
                     <ContemporaryPhoneGrid />
                     <ContemporaryPhoneGrid />
                     <ContemporaryPhoneGrid />
+                </div>
+                <div className="ml-[120px] mr-[120px] text-base font-bold grid grid-cols-3 gap-5 mt-[152px] mb-[152px]">
+                    <ContemporaryBggreenGrid />
+                    <ContemporaryBggreenGrid />
+                    <ContemporaryBggreenGrid />
                 </div>
             </main>
             <Footer />
