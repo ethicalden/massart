@@ -12,7 +12,7 @@ import Header from "@/src/components/common/Header";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#FFFFFF]">
       <Header />
       <main>
         <AboutUs />
@@ -22,7 +22,7 @@ export default function Home() {
         <Gallery />
 
         <Concept />
-        {/* <SocialContributor /> */}
+        <SocialContributor />
       </main>
       <Footer />
     </div>
