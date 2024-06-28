@@ -36,40 +36,63 @@ const Gallery = () => {
       </div>
 
       <div className="grid grid-cols-1   pt-[25px] ">
-        <div className="pb-[8px]  pr-[32px]">
+        <div className="relative pb-[8px] pr-[32px]">
           <img
-            src="https://i.ibb.co/CtpKL8W/Frame-706122.png"
+            src="https://i.ibb.co/B2NSKPj/picture-02.png"
             alt=""
             className="w-full h-[239px] object-cover"
           />
+          <p className="absolute bottom-0 left-0 leading-[15px] w-[148px]  px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px]">
+            Multi Genre Music Festival 2024
+          </p>
         </div>
 
         <div className="grid grid-cols-2 pr-[32px] gap-[8px]  pb-[8px] ">
-          <img
-            src="https://i.ibb.co/PZ1dtSq/Frame-706122-1.png"
-            alt=""
-            className=" w-full h-[239px]"
-          />
+          <div className="relative">
+            <img
+              src="https://i.ibb.co/B2NSKPj/picture-02.png"
+              alt=""
+              className="w-full h-[239px] "
+            />
+            <p className="absolute bottom-0 left-0 leading-[15px] w-[148px]  px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px]">
+              Multi Genre Music Festival 2024
+            </p>
+          </div>
 
-          <img
-            src="https://i.ibb.co/HhXLvfW/Frame-706122-2.png"
-            alt=""
-            className=" w-full h-[239px]"
-          />
+          <div className="relative">
+            <img
+              src="https://i.ibb.co/cxKsbBF/picture-3.png"
+              alt=""
+              className="w-full h-[239px] "
+            />
+            <p className="absolute bottom-0 left-0 leading-[15px] w-[148px]  px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px]">
+              Multi Genre Music Festival 2024
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-2 pr-[32px] gap-[8px]  pb-[8px] ">
-          <img
-            src="https://i.ibb.co/PZ1dtSq/Frame-706122-1.png"
-            alt=""
-            className=" w-full h-[239px]"
-          />
+          <div className="relative">
+            <img
+              src="https://i.ibb.co/B2NSKPj/picture-02.png"
+              alt=""
+              className="w-full h-[239px] "
+            />
+            <p className="absolute bottom-0 left-0 leading-[15px] w-[148px]  px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px]">
+              Multi Genre Music Festival 2024
+            </p>
+          </div>
 
-          <img
-            src="https://i.ibb.co/HhXLvfW/Frame-706122-2.png"
-            alt=""
-            className=" w-full h-[239px]"
-          />
+          <div className="relative">
+            <img
+              src="https://i.ibb.co/cxKsbBF/picture-3.png"
+              alt=""
+              className="w-full h-[239px] "
+            />
+            <p className="absolute bottom-0 left-0 leading-[15px] w-[148px]  px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px]">
+              Multi Genre Music Festival 2024
+            </p>
+          </div>
         </div>
       </div>
 

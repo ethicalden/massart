@@ -6,7 +6,7 @@ const AboutUs = () => {
       <div className="md:flex md:items-center lg:gap-[60px]">
         <div className="md:w-1/2">
           <h1 className="pr-[32px] text-[24px] font-bold md:pr-[0] md:text-[32px] lg:text-[40px]">
-            <span className="text-buttonCustomColor">about</span> us
+            <span className="text-buttonCustomColor">About</span> us
           </h1>
           <p className="text-[12px] font-normal pr-[32px] pt-[15px] leading-[18px] md:text-[16px] md:leading-[24px] md:pr-[0] md:pt-[20px] lg:text-[18px] lg:leading-[28px] lg:pt-[30px]">
             Durga puja is Bengal’s biggest festival that takes place over a week
@@ -18,9 +18,9 @@ const AboutUs = () => {
         </div>
         <div className="pt-[25px] md:pt-[0] md:w-1/2 md:pl-[32px] lg:pl-[60px]">
           <img
-            src="https://i.ibb.co/CtpKL8W/Frame-706122.png"
+            src="https://i.ibb.co/B2NSKPj/picture-02.png"
             alt="Durga Puja"
-            className="h-[347px] md:h-auto md:max-w-full lg:max-w-full lg:h-auto"
+            className="h-[347px] w-full md:h-auto md:max-w-full lg:max-w-full lg:h-auto"
           />
         </div>
       </div>

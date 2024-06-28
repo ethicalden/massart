@@ -24,7 +24,7 @@ const Concept = () => {
             className="w-full h-[285px] object-cover rounded-[10px]"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#2F2E2E] to-[#2F2E2E00] p-4 rounded-[10px]">
-            <p className="text-[18px] font-medium font-helvetica text-white60 pb-2">
+            <p className="text-[18px] font-medium font-helvetica text-white pb-2">
               Our preview show 2024 to be staged at a prominent Kolkata venue...{" "}
               <span>
                 <a href="/" className="underline">
@@ -43,7 +43,7 @@ const Concept = () => {
             className="w-full h-[285px] object-cover rounded-[10px]"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#2F2E2E] to-[#2F2E2E00] p-4 rounded-[10px]">
-            <p className="text-[18px] font-medium font-helvetica text-white60 pb-2">
+            <p className="text-[18px] font-medium font-helvetica text-white pb-2">
               Our preview show 2024 to be staged at a prominent Kolkata venue...{" "}
               <span>
                 <a href="/" className="underline">
