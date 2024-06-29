@@ -98,3 +98,32 @@ body {
     text-wrap: balance;
   }
 }
+
+.black-placeholder::-webkit-input-placeholder {
+  color: black;
+}
+
+.black-placeholder::-moz-placeholder {
+  color: black;
+}
+
+.black-placeholder:-ms-input-placeholder {
+  color: black;
+}
+
+.black-placeholder::-ms-input-placeholder {
+  color: black;
+}
+
+.black-placeholder::placeholder {
+  color: black;
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.open {
+  max-height: 100px; /* Adjust this value based on your content's height */
+}
