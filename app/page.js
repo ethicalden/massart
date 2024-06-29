@@ -28,7 +28,7 @@ export default function Home() {
         </div>
         <div className="mb-[60px] mr-8 ml-8  md:mr-[120px] md:ml-[120px]">
           <SocialContributor />
-          <div className="bg-[#000000] h-[0.5px] mt-[10px] mb-[10px]"></div>
+          <div className="bg-[#000000] h-[0.5px] mt-[10px] mb-[10px] md:mt-10 md:mb-10"></div>
           <SocialContributor />
         </div>
       </main>
