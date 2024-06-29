@@ -1,4 +1,5 @@
-const AboutUs = () => {
+
+const HomeAboutUs = () => {
   return (
     <div className="pl-[32px] pr-[32px] pt-[60px] pb-[60px] bg-white font-helvetica md:pl-[60px] md:pr-[60px] md:pt-[80px] md:pb-[80px] lg:pl-[120px] lg:pr-[120px] lg:pt-[100px] lg:pb-[100px]">
       <div className="md:flex md:items-center lg:gap-[60px]">
@@ -13,27 +14,17 @@ const AboutUs = () => {
             figure of goddess Durga, crafted traditionally in clay, who is
             worshipped in the act of vanquishing the demon Mahishasura.
           </p>
-          <button
-            className="bg-buttonCustomColor text-white  md:h-[48px]
-           lg:h-[48px]
-          xl:w-[170px] xl:h-[48px]
-          2xl:w-[170px] 2xl:h-[48px]
-        px-[36px] py-[12px] text-[18px] rounded-[100px]"
-          >
-            Know more
-          </button>
         </div>
-        <div className="pt-[25px] h-[358px] md:pt-[0] md:w-1/2 md:pl-[32px] lg:pl-[60px]">
+        <div className="pt-[25px] md:pt-[0] md:w-1/2 md:pl-[32px] lg:pl-[60px]">
           <img
             src="https://i.ibb.co/B2NSKPj/picture-02.png"
             alt="Durga Puja"
-            className=" w-full h-full"
+            className="h-[347px] w-full md:h-auto md:max-w-full lg:max-w-full lg:h-auto"
           />
         </div>
       </div>
     </div>
   );
-  return <div>AboutUs</div>;
 };
 
-export default AboutUs;
+export default HomeAboutUs;
