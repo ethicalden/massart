@@ -1,57 +1,190 @@
 const Concept = () => {
   return (
-    <div className="px-[32px] text-black bg-white font-helvetica">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {/* Item 1 */}
-        <div className="relative mb-[15px] w-full rounded-md">
-          <img
-            src="https://i.ibb.co/B2NSKPj/picture-02.png"
-            alt=""
-            className="w-full h-[285px] object-cover rounded-[10px]"
-          />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#2F2E2E] to-[#2F2E2E00] p-4 rounded-[10px]">
-            <p className="text-[18px] font-medium font-helvetica text-white pb-2">
-              Concept of Durga Puja
-            </p>
+    <div className="  mx-auto lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] text-black bg-white">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:gap[24px] md:gap-[12px] sm:gap[6px]">
+        <div className="h-[622px] ">
+          <div className="relative">
+            <img
+              src="https://i.ibb.co/BGy4fgX/picture.png"
+              alt=""
+              className=""
+            />
+
+            <div className="  absolute bottom-0 left-0  p-4 bg-gradient-to-t from-[#2F2E2E] to-[#2F2E2E00] ">
+              <button className="bg-gradColor mb-2">Interview</button>
+
+              <p
+                className="lg:text-[24px]  md:text-[24px] sm:text-[12px] 
+             
+              font-inter font-normal text-white"
+              >
+                Concept of Durga puja
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* Item 2 */}
-        <div className="relative mb-[15px] w-full rounded-md">
-          <img
-            src="https://i.ibb.co/B2NSKPj/picture-02.png"
-            alt=""
-            className="w-full h-[285px] object-cover rounded-[10px]"
-          />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#2F2E2E] to-[#2F2E2E00] p-4 rounded-[10px]">
-            <p className="text-[18px] font-medium font-helvetica text-white pb-2">
-              Our preview show 2024 to be staged at a prominent Kolkata venue...{" "}
-              <span>
-                <a href="/" className="underline">
-                  View More
-                </a>
-              </span>
-            </p>
+        <div>
+          <div className=" grid sm:grid-cols-2 md:grid-cols-2 lg:gap[24px] md:gap-[12px] sm:gap[6px]  ">
+            <div className="h-[311px]">
+              <img
+                src="https://i.ibb.co/72tvRVs/picture-1.png"
+                alt=""
+                className=""
+              />
+              <p
+                className="  lg:text-[18px] md:text-[18px] sm:text-[12px]
+                lg:py-[24px] md:py-[24px] sm:py-[24px]
+               
+              font-medium font-inter "
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+
+            <div className=" ">
+              <img
+                src="https://i.ibb.co/8zQQ3B7/picture-2.png"
+                alt=""
+                className=""
+              />
+              <p
+                className="  font-medium font-inter lg:text-[18px] md:text-[18px] sm:text-[12px]
+                lg:py-[24px] md:py-[24px] sm:py-[24px]
+              
+              "
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:gap[24px] md:gap-[12px] sm:gap[6px] ">
+            <div className="">
+              <img
+                src="https://i.ibb.co/PCmvX3P/picture-3.png"
+                alt=""
+                className=""
+              />
+              <p
+                className=" lg:text-[18px] md:text-[18px] sm:text-[12px]
+                lg:py-[24px] md:py-[24px] sm:py-[24px] font-medium font-inter
+             "
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+            <div className="">
+              <img
+                src="https://i.ibb.co/30vXpjp/picture-4.png"
+                alt=""
+                className=""
+              />
+              <p
+                className="lg:text-[18px] md:text-[18px] sm:text-[12px]
+                lg:py-[24px] md:py-[24px] sm:py-[24px] font-medium font-inter
+              "
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Item 3 */}
-        <div className="relative mb-[15px] w-full rounded-md">
+      <div
+        className="grid lg:grid-cols-4  md:grid-cols-4 sm:grid-cols-1 mt-[35px]
+       lg:gap-[44px]
+       md:gap-[22px]
+       sm:gap-[11px]
+       "
+      >
+        <div className="relative h-[311px]">
           <img
-            src="https://i.ibb.co/B2NSKPj/picture-02.png"
+            src="https://i.ibb.co/QcTHFVd/picture-6.png"
             alt=""
-            className="w-full h-[285px] object-cover rounded-[10px]"
+            className=""
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#2F2E2E] to-[#2F2E2E00] p-4 rounded-[10px]">
-            <p className="text-[18px] font-medium font-helvetica text-white pb-2">
-              Our preview show 2024 to be staged at a prominent Kolkata venue...{" "}
-              <span>
-                <a href="/" className="underline">
-                  View More
-                </a>
-              </span>
-            </p>
+          <div className="absolute top-0 left-0 p-4 text-white ">
+            <button className="bg-gradColor bg-opacity-50 text-[12px] py-[8px] px-[8px] rounded-lg">
+              Interview
+            </button>
           </div>
+          <p
+            className="lg:text-[18px] md:text-[18px] sm:text-[12px]
+                lg:py-[24px] md:py-[24px] sm:py-[24px] font-medium font-inter
+              "
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+
+        <div className="relative h-[311px]">
+          <img
+            src="https://i.ibb.co/XXjYh7v/picture-7.png"
+            alt=""
+            className="w-full h-auto"
+          />
+          <div className="absolute top-0 left-0 p-4 text-white ">
+            <button className="bg-gradColor bg-opacity-50  text-[12px] py-[8px] px-[8px] rounded-lg">
+              Interview
+            </button>
+          </div>
+          <p
+            className="lg:text-[18px] md:text-[18px] sm:text-[12px]
+                lg:py-[24px] md:py-[24px] sm:py-[24px] font-medium font-inter
+              "
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+
+        <div className="relative h-[311px]">
+          <img
+            src="https://i.ibb.co/QrLvbLk/picture-8.png"
+            alt=""
+            className="w-full h-auto"
+          />
+          <div className="absolute top-0 left-0 p-4 text-white ">
+            <button className="bg-gradColor bg-opacity-50  text-[12px] py-[8px] px-[8px] rounded-lg">
+              Interview
+            </button>
+          </div>
+          <p
+            className="lg:text-[18px] md:text-[18px] sm:text-[12px]
+                lg:py-[24px] md:py-[24px] sm:py-[24px] font-medium font-inter
+              "
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+
+        <div className="relative h-[311px]">
+          <img
+            src="https://i.ibb.co/52cr68L/picture-9.png"
+            alt=""
+            className="w-full h-auto"
+          />
+          <div className="absolute top-0 left-0 p-4 text-white ">
+            <button className="bg-gradColor bg-opacity-50  text-[12px] py-[8px] px-[8px] rounded-lg">
+              Interview
+            </button>
+          </div>
+          <p
+            className="lg:text-[18px] md:text-[18px] sm:text-[12px]
+                lg:py-[24px] md:py-[24px] sm:py-[24px] font-medium font-inter
+              "
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
         </div>
       </div>
     </div>

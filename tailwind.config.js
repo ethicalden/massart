@@ -18,9 +18,11 @@ module.exports = {
         bodyColor: "#212525",
         white60: "rgba(255, 255, 255, 0.6)",
         NavColor: "#B9B9B9",
+        EventPartner: "#EFEDED",
       },
       fontFamily: {
         roboto: ["Roboto"],
+        poppins: ["Poppins"],
         helvetica: ["Helvetica"],
       },
     },
