@@ -2,11 +2,10 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable import/order */
 /* eslint-disable prettier/prettier */
-import AboutUs from "@/src/components/AboutUs";
 import Concept from "@/src/components/Concept";
 import AskQuestion from "@/src/components/FreequentlyAskQuestion/AskQuestion";
 import Gallery from "@/src/components/Gallery";
-import SocialContributor from "@/src/components/SocialContributor/SocialContributer";
+import HomeAboutUs from "@/src/components/HomeAboutUs";
 import Visual from "@/src/components/Visuals";
 import Footer from "@/src/components/common/Footer";
 import Header from "@/src/components/common/Header";
@@ -16,13 +15,14 @@ export default function Home() {
     <div className="bg-[#FFFFFF]">
       <Header />
       <main>
-        <AboutUs />
-        {/* Add sections as needed */}
+        <HomeAboutUs />
+ 
         <Visual />
 
         <Gallery />
 
         <Concept />
+
         <div className="ml-8 mr-8">
           <AskQuestion />
         </div>

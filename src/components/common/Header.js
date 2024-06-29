@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 
+import Link from "next/link";
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -79,11 +81,13 @@ const Header = () => {
               </ul>
             )}
           </div>
-          <img
-            src="https://i.ibb.co/LDFmLLK/Group-1171274734.png"
-            alt="Logo"
-            className=" ml-4"
-          />
+          <Link href="/">
+            <img
+              src="https://i.ibb.co/LDFmLLK/Group-1171274734.png"
+              alt="Logo"
+              className="ml-4"
+            />
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

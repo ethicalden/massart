@@ -5,9 +5,12 @@
 
 import Image from "next/image"
 
+import SocialContributor from "../SocialContributor/SocialContributer"
+
 const Footer = () => {
   return (
     <>
+       <SocialContributor />
       <div className="bg-[#000000] relative overflow-hidden font-helvetica">
         {/*        <div className="absolute top-0 left-1/2 transform translate-x--1/2 translate-y--1/2">
           <div className="relative">
