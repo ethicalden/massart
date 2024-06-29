@@ -4,6 +4,7 @@
 /* eslint-disable prettier/prettier */
 import AboutUs from "@/src/components/AboutUs";
 import Concept from "@/src/components/Concept";
+import AskQuestion from "@/src/components/FreequentlyAskQuestion/AskQuestion";
 import Gallery from "@/src/components/Gallery";
 import SocialContributor from "@/src/components/SocialContributor/SocialContributer";
 import Visual from "@/src/components/Visuals";
@@ -22,7 +23,14 @@ export default function Home() {
         <Gallery />
 
         <Concept />
-        <SocialContributor />
+        <div className="ml-8 mr-8">
+          <AskQuestion />
+        </div>
+        <div className="mb-[60px] mr-8 ml-8  md:mr-[120px] md:ml-[120px]">
+          <SocialContributor />
+          <div className="bg-[#000000] h-[0.5px] mt-[10px] mb-[10px]"></div>
+          <SocialContributor />
+        </div>
       </main>
       <Footer />
     </div>
