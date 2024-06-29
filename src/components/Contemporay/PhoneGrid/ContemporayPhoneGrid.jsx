@@ -8,7 +8,7 @@ const ContemporaryPhoneGrid = () => {
         <>
             <div className="relative">
                 <Image className="h-full w-full rounded-[10px]" src="/photos/phone screen/Gallery Phone/photo 01.png" alt="contemporary" width="179" height="239" />
-                <p className="absolute text-xs max-w-[80%] font-bold bottom-[10px] left-[10px]">contemporary durga puja Art</p>
+                <p className="absolute text-xs max-w-[80%] font-bold bottom-[10px] left-[10px] text-white">contemporary durga puja Art</p>
             </div>
             <div className="relative">
                 <Image className="h-full w-full" src="/photos/phone screen/Gallery Phone/photo 02.png" alt="contemporary" width="179" height="239" />
