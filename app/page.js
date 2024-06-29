@@ -5,7 +5,6 @@
 import Concept from "@/src/components/Concept";
 import AskQuestion from "@/src/components/FreequentlyAskQuestion/AskQuestion";
 
-import EventPartener from "@/src/components/EventPartner";
 import Explore from "@/src/components/Explore";
 import Gallery from "@/src/components/Gallery";
 import MasterClass from "@/src/components/MasterClass";
@@ -22,7 +21,7 @@ export default function Home() {
     <div className="bg-[#FFFFFF]">
       <Header />
       <main>
-        <AboutUs />
+        <HomeAboutUs />
 
         <Visual />
 
