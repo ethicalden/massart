@@ -130,4 +130,72 @@ body {
   max-height: none; 
 }
 
+.scroll-container {
+  position: relative;
+  overflow-x: auto;
+}
+
+.blur-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensure the blur effect doesn't interfere with scrolling */
+}
+
+.blur-effect:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(293deg, white, transparent, transparent);
+  top: 0;
+  left: 0;
+}
+/* components/Carousel.module.css */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselInner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselItem {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.carouselItem img {
+  max-width: 100px;
+  margin-top: 10px;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.arrow:nth-of-type(1) {
+  left: 10px;
+}
+
+.arrow:nth-of-type(2) {
+  right: 10px;
+}
 
