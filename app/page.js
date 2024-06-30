@@ -25,11 +25,13 @@ export default function Home() {
         <Explore />
         <MasterClass />
         <Review />
-        {/* <EventPartener /> */}
+        <EventPartener />
+        <GuidanceHeading />
+        <GuidenceStep />
 
-        <div className="ml-8 mr-8">
+        {/* <div className="ml-8 mr-8">
           <AskQuestion />
-        </div>
+        </div> */}
       </main>
       <Footer />
     </div>
