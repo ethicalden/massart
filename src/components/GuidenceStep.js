@@ -85,7 +85,7 @@ const GuidenceStep = () => {
 
   return (
     <div className="lg:pt-[52px] md:pt-[52px] sm:pt-[52px] md:px-[120px] rounded-lg">
-      <div className="flex md:flex-wrap  lg:flex-wrap sm:flex-col  -mx-2">
+      <div className="flex flex-wrap  -mx-2">
         <div className="w-full md:w-1/2  px-2">
           {items.slice(0, 3).map((item, index) => (
             <AccordionItem
