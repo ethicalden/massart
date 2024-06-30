@@ -24,32 +24,32 @@ const Individual = () => {
         </div>
 
         <div className="md:ms-[65px]">
-          <div className="lg:text-[50px] md:text-left text-center text-[24px] font-bold lg:mb-[60px] mb-[40px] md:mt-0 mt-[28px]">
-            arjunpur amra sabai <br></br>
-            <span className="text-red-600">club</span>
+          <div className="lg:text-[50px] lg:leading-[56px] md:text-left text-[24px] leading-[36px] font-bold lg:mb-[60px] mb-[40px] md:mt-0 mt-[28px]">
+            arjunpur amra sabai 
+            <span className="text-red-600"> club</span>
           </div>
           <div className="">
             {[
               {
-                title: "Title",
+                title: "title",
                 content:
                   "To implement this functionality in a Next.js application, you can create a component that manages the image gallery and modal functionality. Here's how you can set it up:",
               },
-              { title: "Concept", content: "Concept content" },
+              { title: "concept", content: "Concept content" },
               {
-                title: "Area of Installation",
+                title: "area of Installation",
                 content: "Area of Installation content",
               },
             ].map((section, index) => (
               <div className="mb-4" key={index}>
                 <div
-                  className="flex justify-between cursor-pointer"
+                  className="flex justify-between items-center cursor-pointer"
                   onClick={() => toggleAccordion(index)}
                 >
                   <div className="lg:text-[32px] text-[20px] font-bold">
                     {section.title}
                   </div>
-                  <div className="text-[32px]">
+                  <div className="lg:text-[32px] text-[20px]">
                     {openSections.includes(index) ? (
                       <GoDash />
                     ) : (
@@ -58,7 +58,7 @@ const Individual = () => {
                   </div>
                 </div>
                 <div
-                  className={`accordion-content lg:text-[24px] text-[16px] font-bold border-b-[1px] mt-[15px] border-black ${openSections.includes(index) ? "open" : ""}`}
+                  className={`accordion-content lg:text-[24px] text-[16px] font-bold md:border-b-[1px] border-0 mt-[15px] border-black ${openSections.includes(index) ? "open" : ""}`}
                 >
                   <p className="text-gray-500 pb-[10px]">{section.content}</p>
                 </div>
@@ -68,7 +68,7 @@ const Individual = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 my-[51px]">
+      <div className="container mx-auto px-4 my-[51px] md:block hidden">
         <div className="grid gap-6 md:grid-cols-2 grid-cols-1 w-full">
           <div>
             <img
