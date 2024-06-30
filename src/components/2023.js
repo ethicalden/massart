@@ -60,7 +60,7 @@ const TwoZeroTwoThree = () => {
         <div>
           <div className="font-[Helvetica] md:text-[50px] text-[24px] font-bold mb-[20px]">Preview Show <span className="text-red-600">2023</span></div>
 
-          <div className="md:text-[18px] text-[12px] font-[Helvetica]">
+          <div className="md:text-[18px] leading-[24px] text-[12px]">
             <p className="md:mb-9 mb-5">
               Every year, we are confronted with new categories of Durga Puja Art and artists, displaying ever newer templates of contemporary Art and design—diverse and creative enough to rival any international Art biennale, though perhaps not yet positioned as such. Commercial promotion and sponsorship have kept pace with the explosion of Art, making far-reaching changes to the very nature of the festival.
             </p>
@@ -82,7 +82,7 @@ const TwoZeroTwoThree = () => {
         </div>
         <div>
 
-          <div className="text-[18px] font-[Helvetica] font-normal">
+          <div className="text-[18px]  font-normal">
             <p>
               Out of a pool of over 3000 Durga Puja organizing associations who are keen to be in the list, only 26 Durga Puja Art venues were selected for PSDP2023. Among them, 22 were contemporary, 2 traditional, and 2 aristocrat household (bonedibari) Puja Art venues. An exhibition titled ‘Making of Durga Puja Art’ held in Kolkata Town Hall was an important venue for Durga Puja Art lovers
             </p>

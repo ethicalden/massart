@@ -1,6 +1,6 @@
 import Footer from "@/src/components/common/Footer";
 import Header from "@/src/components/common/Header";
-import PreviewShow_one from "@/src/components/previewShow_2024";
+import PreviewShow_one from "@/src/components/PreviewShow_one";
 
 const page = () => {
   return (
