@@ -24,9 +24,9 @@ const Individual = () => {
         </div>
 
         <div className="md:ms-[65px]">
-          <div className="md:text-[50px] md:text-left text-center text-[24px] font-bold md:mb-[60px] mb-[40px] md:mt-0 mt-[28px]">
-            arjunpur amra sabai
-            <span className="text-red-600 ms-2">club</span>
+          <div className="lg:text-[50px] md:text-left text-center text-[24px] font-bold lg:mb-[60px] mb-[40px] md:mt-0 mt-[28px]">
+            arjunpur amra sabai <br></br>
+            <span className="text-red-600">club</span>
           </div>
           <div className="">
             {[
@@ -46,7 +46,7 @@ const Individual = () => {
                   className="flex justify-between cursor-pointer"
                   onClick={() => toggleAccordion(index)}
                 >
-                  <div className="md:text-[32px] text-[20px] font-bold">
+                  <div className="lg:text-[32px] text-[20px] font-bold">
                     {section.title}
                   </div>
                   <div className="text-[32px]">
@@ -58,7 +58,7 @@ const Individual = () => {
                   </div>
                 </div>
                 <div
-                  className={`accordion-content md:text-[24px] text-[16px] font-bold border-b-[1px] mt-[15px] border-black ${openSections.includes(index) ? "open" : ""}`}
+                  className={`accordion-content lg:text-[24px] text-[16px] font-bold border-b-[1px] mt-[15px] border-black ${openSections.includes(index) ? "open" : ""}`}
                 >
                   <p className="text-gray-500 pb-[10px]">{section.content}</p>
                 </div>
