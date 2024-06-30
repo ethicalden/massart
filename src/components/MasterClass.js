@@ -54,7 +54,7 @@ const MasterClass = () => {
   };
 
   return (
-    <div className="bg-white md:pb-[150px] sm:pl-[30px] sm:pr-[30px] md:pl-[60px] md:pr-[60px] lg:pl-[120px] lg:pr-[120px]">
+    <div className="bg-white sm:pt-[11px] lg:pt-[43px] md:pt-[21px] md:pb-[150px] sm:pl-[30px] sm:pr-[30px] md:pl-[60px] md:pr-[60px] lg:pl-[120px] lg:pr-[120px]">
       <div className="relative">
         <div className="flex sm:flex-col overflow-hidden">
           <div
