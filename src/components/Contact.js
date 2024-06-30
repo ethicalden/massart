@@ -17,7 +17,7 @@ const Contact = () => {
         <input type="text" placeholder="Address" className="md:text-[24px] text-[12px] md:pb-8 pb-4 pt-0 black-placeholder border-b-[1px] bg-transparent outline-none border-black  p-4 ps-0 md:mb-8 mb-4" />
         <input type="text" placeholder="Area Code" className="md:text-[24px] text-[12px] md:pb-8 pb-4 pt-0 black-placeholder border-b-[1px] bg-transparent outline-none border-black  p-4 ps-0 mb-4 " />
         <textarea placeholder="Message" className="md:text-[24px] text-[12px] black-placeholder md:pb-8 pb-4 h-[200px] border-[1px] bg-transparent outline-none border-black  p-4 rounded-[10px] mt-4"></textarea>
-        <button className=" text-white font-bold lg:h-[48px] lg:leading-[48px] h-[32px] leading-[32px] md:text-[18px] text-[12px] bg-buttonCustomColor md:mt-[60px] mt-[30px] rounded-[50px]">Send Now</button>
+        <button className=" text-white font-bold md:h-[48px] lg:leading-[48px] h-[32px] leading-[32px] md:text-[18px] text-[12px] bg-buttonCustomColor md:mt-[60px] mt-[30px] rounded-[50px]">Send Now</button>
       </div>
 
 
