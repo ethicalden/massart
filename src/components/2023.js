@@ -49,7 +49,7 @@ const TwoZeroTwoThree = () => {
   return (
     <div className=" xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] md:mt-[150px] mt-[60px]">
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 mb:gap-[106px] gap-7 md:mb-[157px] mb-7">
+      <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-[106px] gap-7 md:mb-[157px] mb-7">
         <div>
           <img
             className="w-full h-full rounded-lg"
@@ -76,7 +76,7 @@ const TwoZeroTwoThree = () => {
         </div>
       </div>
 
-      <div className="md:grid lg:grid-cols-2 grid-cols-1 mb:gap-[106px] gap-7 md:mb-[157px] mb-7 hidden">
+      <div className="md:grid lg:grid-cols-2 grid-cols-1 md:gap-[106px] gap-7 md:mb-[157px] mb-7 hidden">
         <div className="font-[Helvetica] md:text-[50px] text-[24px] font-bold">
           selected Art <span className="text-red-600">venue</span>
         </div>
