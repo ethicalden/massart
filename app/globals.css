@@ -202,7 +202,15 @@ body {
   right: 10px;
 }
 
-/* Example Tailwind CSS classes */
+.prev-arrow svg,
+.next-arrow svg{
+  height: 30px;
+  color: black !important;
+}
+.custom-slick-style svg{
+  width: 44px;
+  height: 44px;
+}
 .prev-arrow,
 .next-arrow {
   position: absolute;
@@ -225,7 +233,7 @@ body {
 .prev-arrow svg,
 .next-arrow svg{
   height: 30px;
-  color: black !important;
+  color: #fff;
 }
 .prev-arrow:hover,
 .next-arrow:hover {
@@ -253,8 +261,12 @@ body {
   border-radius: 10px;
 }
 
-
-.custom-slick-style svg{
-  width: 44px;
-  height: 44px;
+.custom-slick-style .slick-list:hover {
+  background-color: #ef4444; /* Tailwind hover:bg-red-500 */
+}
+.custom-slick-style .slick-list:hover .icon-hover{
+  background-color: white; /* Tailwind hover:bg-red-500 */
+}
+.custom-slick-style .slick-list:hover .icon-hover svg{
+  color: #ef4444 !important; /* Tailwind hover:bg-red-500 */
 }
