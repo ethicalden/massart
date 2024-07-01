@@ -10,6 +10,8 @@ const Concept = () => {
               src="https://i.ibb.co/BGy4fgX/picture.png"
               alt=""
               className=""
+              width={100}
+              height={100}
             />
 
             
@@ -35,6 +37,8 @@ const Concept = () => {
                 src="https://i.ibb.co/72tvRVs/picture-1.png"
                 alt=""
                 className=""
+                width={100}
+                height={100}
               />
               <p
                 className="  lg:text-[18px] md:text-[18px] sm:text-[12px]
@@ -52,6 +56,8 @@ const Concept = () => {
                 src="https://i.ibb.co/8zQQ3B7/picture-2.png"
                 alt=""
                 className=""
+                width={100}
+                height={100}
               />
               <p
                 className="  font-medium font-inter lg:text-[18px] md:text-[18px] sm:text-[12px]
@@ -71,6 +77,8 @@ const Concept = () => {
                 src="https://i.ibb.co/PCmvX3P/picture-3.png"
                 alt=""
                 className=""
+                width={100}
+                height={100}
               />
               <p
                 className=" lg:text-[18px] md:text-[18px] sm:text-[12px]
@@ -86,6 +94,8 @@ const Concept = () => {
                 src="https://i.ibb.co/30vXpjp/picture-4.png"
                 alt=""
                 className=""
+                width={100}
+                height={100}
               />
               <p
                 className="lg:text-[18px] md:text-[18px] sm:text-[12px]
@@ -111,6 +121,8 @@ const Concept = () => {
           <Image
             src="https://i.ibb.co/QcTHFVd/picture-6.png"
             alt=""
+            width={100}
+            height={100}
             className=""
           />
           <div className="absolute top-0 left-0 p-4 text-white ">
@@ -132,6 +144,8 @@ const Concept = () => {
           <Image
             src="https://i.ibb.co/XXjYh7v/picture-7.png"
             alt=""
+            width={100}
+            height={100}
             className="w-full h-auto"
           />
           <div className="absolute top-0 left-0 p-4 text-white ">
@@ -153,6 +167,8 @@ const Concept = () => {
           <Image
             src="https://i.ibb.co/QrLvbLk/picture-8.png"
             alt=""
+            width={100}
+            height={100}
             className="w-full h-auto"
           />
           <div className="absolute top-0 left-0 p-4 text-white ">
@@ -174,6 +190,8 @@ const Concept = () => {
           <Image
             src="https://i.ibb.co/52cr68L/picture-9.png"
             alt=""
+            width={100}
+            height={100}
             className="w-full h-auto"
           />
           <div className="absolute top-0 left-0 p-4 text-white ">

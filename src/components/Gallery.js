@@ -77,6 +77,8 @@ const Gallery = () => {
               <Image
                 src="/images/picture 01.png"
                 alt=""
+                width={100}
+                height={100}
                 className="lg:w-full lg-h-full
                 md:w-full md-h-full
                 xl:w-full xl-h-full
@@ -109,6 +111,8 @@ const Gallery = () => {
                 <Image
                   src="/images/picture 02.png"
                   alt=""
+                  width={100}
+                  height={100}
                   className="lg:w-full lg-h-full
                   md:w-full md-h-full
                   xl:w-full xl-h-full
@@ -131,6 +135,8 @@ const Gallery = () => {
                 <Image
                   src="/images/picture 05.png"
                   alt=""
+                  width={100}
+                  height={100}
                   className="lg:w-full lg-h-full
                   xl:w-full xl-h-full
                   md:w-full md-h-full
@@ -154,6 +160,8 @@ const Gallery = () => {
           >
             <Image
               src="/images/picture 01.png"
+              width={100}
+              height={100}
               alt=""
               className="lg:w-full lg-h-full
               xl:w-full xl-h-full

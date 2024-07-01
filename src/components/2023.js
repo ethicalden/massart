@@ -49,6 +49,8 @@ const TwoZeroTwoThree = () => {
         <div>
           <Image
             className="w-full h-full rounded-lg"
+            width={100}
+            height={100}
             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
             alt=""
           />
@@ -113,6 +115,8 @@ const TwoZeroTwoThree = () => {
         <div className="relative group rounded-lg overflow-hidden">
           <Image
             className="w-full h-auto"
+            width={100}
+            height={100}
             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
             alt=""
           />
@@ -140,6 +144,8 @@ const TwoZeroTwoThree = () => {
         <div className="relative group rounded-lg overflow-hidden">
           <Image
             className="w-full h-auto"
+            width={100}
+            height={100}
             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
             alt=""
           />
@@ -167,6 +173,8 @@ const TwoZeroTwoThree = () => {
         <div className="relative group rounded-lg overflow-hidden">
           <Image
             className="w-full h-auto"
+            width={100}
+            height={100}
             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
             alt=""
           />
@@ -194,6 +202,8 @@ const TwoZeroTwoThree = () => {
         <div className="relative group rounded-lg overflow-hidden">
           <Image
             className="w-full h-auto"
+            width={100}
+            height={100}
             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
             alt=""
           />
@@ -234,6 +244,8 @@ const TwoZeroTwoThree = () => {
               <Image
                 src={slide.imageUrl}
                 alt=""
+                width={100}
+                height={100}
                 className="w-full object-cover"
               />
               <div

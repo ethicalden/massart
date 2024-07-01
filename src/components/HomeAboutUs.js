@@ -57,6 +57,8 @@ const HomeAboutUs = () => {
           <Image
             src="https://i.ibb.co/B2NSKPj/picture-02.png"
             alt="Durga Puja"
+            width={100}
+            height={100}
             className="sm:w-[366px] sm:h-[347px] xs:h-[167px] md:h-[190px] 
              
             lg:w-full lg:h-full  xl:w-full xl:h-full"

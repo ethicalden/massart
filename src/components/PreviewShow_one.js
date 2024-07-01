@@ -53,6 +53,8 @@ const PreviewShow_one = () => {
               className="w-full h-full rounded-lg"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""
+              width={100}
+              height={100}
             />
           </div>
           <div>
@@ -130,6 +132,10 @@ const PreviewShow_one = () => {
       <div className="text-center font-[Helvetica] md:text-[50px] text-[24px] md:leading-[56px] leading-[30px] font-bold md:mb-[50px] mb-[30px]">
         How to reach <br /> <span className="text-buttonCustomColor">Kolkata?</span>
       </div>
+
+      <div className='mb-[60px]'>
+      <Carousel/>
+      </div>
       <div className="md:grid hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] mb-[150px]">
         <div className="flex justify-center items-center">
           <div
@@ -184,11 +190,7 @@ const PreviewShow_one = () => {
         </div>
       </div>
 
-
-
       <div>
-
-
 
       </div>
 
@@ -196,10 +198,12 @@ const PreviewShow_one = () => {
 
       {/* getting arround kolkata section */}
 
-      <div className="bg-[#EFEDED] py-20 md:mb-[160px] mb-[60px]">
-        <div className="text-center font-[Helvetica] md:text-[50px] text-[24px] md:leading-[56px] leading-[30px]  font-bold mb-[20px]">
+      <div className="bg-[#EFEDED] md:py-20 py-[33px] md:mb-[160px] mb-[60px]">
+        <div className="text-center font-[Helvetica] md:text-[50px] text-[24px] md:leading-[56px] leading-[30px]  font-bold mb-[25px]">
           Getting arround<br></br> <span className="text-buttonCustomColor">Kolkata</span>
         </div>
+
+        <Carousel/>
 
         <div className="md:grid hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px]">
           <div className="flex justify-center items-center">
@@ -287,6 +291,8 @@ const PreviewShow_one = () => {
         where to <span className="text-buttonCustomColor">stay?</span>
       </div>
 
+      <Carousel/>
+
       <div className="md:grid hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] mb-[150px]">
         <div className="flex justify-center items-center">
           <div style={{
@@ -336,9 +342,9 @@ const PreviewShow_one = () => {
       </div>
       {/* carousel */}
 
-      <div className="relative w-full mb-[60px]">
+    
 
-<Carousel/>
+     
         {/* <div className="relative flex overflow-hidden rounded-lg">
           <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             {slides.map((slide, index) => (
@@ -392,7 +398,7 @@ const PreviewShow_one = () => {
           ))}
         </div> */}
 
-      </div>
+      
 
 
 

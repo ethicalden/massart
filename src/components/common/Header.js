@@ -84,6 +84,8 @@ const Header = () => {
           <Image
             src="https://i.ibb.co/LDFmLLK/Group-1171274734.png"
             alt="Logo"
+            width={100}
+            height={100}
             className=" md:h-[65px] -ms-32 md:w-[75px] lg:h-[65px] lg:w-[75px] xl:h-[65px] xl:w-[75px]
             2xl:h-[65px] 2xl:w-[75px]"
           />
@@ -152,6 +154,8 @@ const Header = () => {
         </div>
         <Image
           src="/images/logo 01.png"
+          width={100}
+          height={100}
           alt=""
           className="absolute bottom-0 right-0
       md:w-[167px] md:h-[130px] lg:w-[167px] lg:h-[130px] xl:w-[167px] xl:h-[130px]

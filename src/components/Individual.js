@@ -21,7 +21,8 @@ const Individual = () => {
     <div className=" xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] md:mt-[150px] mt-[60px]">
       <div className="grid md:grid-cols-2 grid-cols-1">
         <div>
-          <Image className="w-full" src="/images/picture 01.png" alt="Image 1" />
+          <Image        width={100}
+            height={100} className="w-full" src="/images/picture 01.png" alt="Image 1" />
         </div>
 
         <div className="md:ms-[65px]">
