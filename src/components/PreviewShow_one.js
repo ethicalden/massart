@@ -6,27 +6,31 @@ import { FaRoad } from "react-icons/fa";
 import { FaPeopleGroup, FaTrainSubway } from "react-icons/fa6";
 import { GiAirplaneDeparture } from "react-icons/gi";
 import { IoMdBus } from 'react-icons/io';
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowLeft } from "react-icons/md";
+import Carousel from './Carousel';
+
 
 
 
 const PreviewShow_one = () => {
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [
-    {
-      icon: GiAirplaneDeparture,
-      text: 'Netaji Subhas Chandra Bose International Airport, Kolkata, and its neighboring district airport, Kazi Nazrul Islam Airport in Andal, Burdwan, have airways access to almost all major cities of India and abroad.',
-    },
-    {
-      icon: FaTrainSubway,
-      text: 'The state has an extensive road network, with multiple bus services connecting various parts of the state and neighboring regions.',
-    },
-    {
-      icon: FaPeopleGroup,
-      text: 'Kolkata is also a major port city, with both domestic and international shipping routes.',
-    },
-  ];
+  // const [currentSlide, setCurrentSlide] = useState(0);
+  // const slides = [
+  //   {
+  //     icon: GiAirplaneDeparture,
+  //     text: 'Netaji Subhas Chandra Bose International Airport, Kolkata, and its neighboring district airport, Kazi Nazrul Islam Airport in Andal, Burdwan, have airways access to almost all major cities of India and abroad.',
+  //   },
+  //   {
+  //     icon: FaTrainSubway,
+  //     text: 'The state has an extensive road network, with multiple bus services connecting various parts of the state and neighboring regions.',
+  //   },
+  //   {
+  //     icon: FaPeopleGroup,
+  //     text: 'Kolkata is also a major port city, with both domestic and international shipping routes.',
+  //   },
+  // ];
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -132,7 +136,7 @@ const PreviewShow_one = () => {
             style={{
               boxShadow: '3px 4px 8.2px 4px rgba(0, 0, 0, 0.25)',
             }}
-            className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300"
+            className="group custom-width bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300"
           >
             <div className="flex justify-center mb-4">
               <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
@@ -333,35 +337,40 @@ const PreviewShow_one = () => {
       {/* carousel */}
 
       <div className="relative w-full mb-[60px]">
-        <div className="relative min-h-60 overflow-hidden rounded-lg">
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className={`absolute w-full h-full transition-transform duration-300 ease-in-out flex items-center justify-center ${index === currentSlide ? 'translate-x-0' : 'translate-x-full'}`}
-              style={{ visibility: index === currentSlide ? 'visible' : 'hidden' }}
-            >
+
+<Carousel/>
+        {/* <div className="relative flex overflow-hidden rounded-lg">
+          <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+            {slides.map((slide, index) => (
               <div
-                style={{ boxShadow: '3px 4px 8.2px 4px rgba(0, 0, 0, 0.25)' }}
-                className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300"
+                key={index}
+                className="flex-shrink-0 w-full h-full"
               >
-                <div className="flex justify-center mb-4">
-                  <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                    <slide.icon className="group-hover:text-red-500 text-white" />
-                  </div>
-                </div>
-                <p
-                  className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300"
-                  style={{ fontFamily: 'sans-serif' }}
+                <div
+
+                  className="group bg-red-50 md:p-10 p-5 h-full rounded-lg text-center hover:bg-red-500 transition duration-300 flex flex-col items-center justify-center"
                 >
-                  {slide.text}
-                </p>
+                  <div className="flex justify-center mb-4">
+                    <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
+                      <slide.icon className="group-hover:text-red-500 text-white" />
+                    </div>
+                  </div>
+                  <p
+                    className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300"
+                    style={{ fontFamily: 'sans-serif' }}
+                  >
+                    {slide.text}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </div> */}
+
+
 
         {/* Navigation buttons */}
-        <button
+        {/* <button
           onClick={() => setCurrentSlide((currentSlide - 1 + slides.length) % slides.length)}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
         >
@@ -372,7 +381,16 @@ const PreviewShow_one = () => {
           className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
         >
           <MdKeyboardArrowRight />
-        </button>
+        </button> */}
+        {/* <div className="flex justify-center space-x-2 mt-4">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-black' : 'bg-gray-300'}`}
+            />
+          ))}
+        </div> */}
 
       </div>
 

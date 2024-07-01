@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -199,3 +202,60 @@ body {
   right: 10px;
 }
 
+/* Example Tailwind CSS classes */
+.prev-arrow,
+.next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prev-arrow svg,
+.next-arrow svg{
+  height: 30px;
+}
+.prev-arrow:hover,
+.next-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev-arrow {
+  left: 55px;
+}
+
+.next-arrow {
+  right: 55px;
+}
+.slick-list {
+  width: 50%;
+  height: 100%;
+}
+.slick-slider.slick-initialized {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.custom-slick-style .slick-list {
+  background-color: #fef2f2; /* Tailwind bg-red-50 */
+  padding: 2.5rem; /* Tailwind p-10 */
+  height: 100%; /* Tailwind h-full */
+  border-radius: 0.5rem; /* Tailwind rounded-lg */
+  text-align: center; /* Tailwind text-center */
+  transition: background-color 300ms; /* Tailwind transition duration-300 */
+}
+
+.custom-slick-style .slick-list:hover {
+  background-color: #ef4444; /* Tailwind hover:bg-red-500 */
+}
