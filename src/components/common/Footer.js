@@ -1,7 +1,4 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable prettier/prettier */
+
 
 import Image from "next/image"
 

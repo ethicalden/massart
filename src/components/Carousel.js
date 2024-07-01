@@ -7,6 +7,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { IoMdBus } from "react-icons/io";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 
+
 const carouselData = [
   {
     text: "Kolkata is directly connected by national and state highways.",
@@ -21,6 +22,7 @@ const carouselData = [
     icon: <IoMdBus className="group-hover:text-red-500 text-white" />,
   },
 ];
+
 
 const PrevArrow = ({ onClick }) => (
   <button className="prev-arrow" onClick={onClick}>
@@ -50,6 +52,7 @@ const Carousel = () => {
   };
 
   return (
+
     <div className="relative">
       <Slider {...sliderSettings}>
         {carouselData.map((item, index) => (
@@ -68,6 +71,7 @@ const Carousel = () => {
                 {item.text}
               </p>
         
+
           </div>
         ))}
       </Slider>

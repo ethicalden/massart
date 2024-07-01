@@ -1,14 +1,16 @@
 "use client";
-import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { useState } from 'react';
 
-import { GiAirplaneDeparture } from "react-icons/gi";
-import { FaTrainSubway } from "react-icons/fa6";
 import { FaRoad } from "react-icons/fa";
-import { FaPeopleGroup } from "react-icons/fa6";
+import { FaPeopleGroup, FaTrainSubway } from "react-icons/fa6";
+import { GiAirplaneDeparture } from "react-icons/gi";
 import { IoMdBus } from 'react-icons/io';
+
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import Carousel from './Carousel';
+
 
 
 
@@ -47,7 +49,7 @@ const PreviewShow_one = () => {
             Preview Show <span className="text-red-600">2024</span>
           </div>
           <div>
-            <img
+            <Image
               className="w-full h-full rounded-lg"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""

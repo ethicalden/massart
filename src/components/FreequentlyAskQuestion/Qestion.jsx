@@ -1,20 +1,10 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable prettier/prettier */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable prettier/prettier */
+
 "use client"
 import { useState } from "react";
 
-import { MdOutlineRemove } from "react-icons/md"
-import { VscAdd } from "react-icons/vsc"
+import { MdOutlineRemove } from "react-icons/md";
+import { VscAdd } from "react-icons/vsc";
 
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/prop-types */
-
-
-/* eslint-disable prettier/prettier */
 const Question = ({ question, ans, index }) => {
     const [showAnswer, setShowAnswer] = useState(false);
     return (
