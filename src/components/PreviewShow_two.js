@@ -54,6 +54,8 @@ const PreviewShow_two = () => {
               className="w-full h-full rounded-lg"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""
+              width={100}
+              height={100}
             />
           </div>
           <div>
@@ -114,6 +116,8 @@ const PreviewShow_two = () => {
             className="w-full h-auto rounded-lg"
             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
             alt=""
+             width={100}
+              height={100}
           />
         </div>
         <div>
@@ -144,6 +148,8 @@ const PreviewShow_two = () => {
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""
+               width={100}
+              height={100}
             />
             <div
               className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-3 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
@@ -161,6 +167,8 @@ const PreviewShow_two = () => {
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
               alt=""
+               width={100}
+              height={100}
             />
             <div
               className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-3 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
@@ -179,6 +187,8 @@ const PreviewShow_two = () => {
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
               alt=""
+               width={100}
+              height={100}
             />
             <div
               className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-3 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
@@ -206,7 +216,8 @@ const PreviewShow_two = () => {
                 className="absolute w-full h-full transition-opacity duration-300 ease-in-out"
                 style={{ opacity: index === currentSlide ? 1 : 0 }}
               >
-                 <Image src={slide.imageUrl} alt="" className="w-full object-cover" />
+                 <Image src={slide.imageUrl} alt="" className="w-full object-cover"  width={100}
+              height={100}/>
                 <div
                   className="absolute inset-0 bg-[rgba(0, 0, 0, 0)] flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out"
                   style={{
@@ -249,6 +260,8 @@ const PreviewShow_two = () => {
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""
+               width={100}
+              height={100}
             />
             <div
               className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-3 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
@@ -266,6 +279,8 @@ const PreviewShow_two = () => {
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
               alt=""
+               width={100}
+              height={100}
             />
             <div
               className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-3 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
@@ -284,6 +299,8 @@ const PreviewShow_two = () => {
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
               alt=""
+               width={100}
+              height={100}
             />
             <div
               className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-3 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
@@ -311,7 +328,8 @@ const PreviewShow_two = () => {
                 className="absolute w-full h-full transition-opacity duration-300 ease-in-out"
                 style={{ opacity: index === currentSlide ? 1 : 0 }}
               >
-                <Image src={slide.imageUrl} alt="" className="w-full object-cover" />
+                <Image src={slide.imageUrl} alt="" className="w-full object-cover"  width={100}
+              height={100}/>
                 <div
                   className="absolute inset-0 bg-[rgba(0, 0, 0, 0)] flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out"
                   style={{
