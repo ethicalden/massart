@@ -25,6 +25,7 @@ module.exports = {
         roboto: ["Roboto"],
         poppins: ["Poppins"],
         helvetica: ["Helvetica"],
+        inter: ["Inter"],
       },
       screens: {
         xs: "320px",
