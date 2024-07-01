@@ -1,14 +1,39 @@
+"use client";
+import { useState, useEffect } from 'react';
 
 import { GiAirplaneDeparture } from "react-icons/gi";
 import { FaTrainSubway } from "react-icons/fa6";
 import { FaRoad } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { IoMdBus } from 'react-icons/io';
-
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 
 
 
 const PreviewShow_one = () => {
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
+    {
+      icon: GiAirplaneDeparture,
+      text: 'Netaji Subhas Chandra Bose International Airport, Kolkata, and its neighboring district airport, Kazi Nazrul Islam Airport in Andal, Burdwan, have airways access to almost all major cities of India and abroad.',
+    },
+    {
+      icon: FaTrainSubway,
+      text: 'The state has an extensive road network, with multiple bus services connecting various parts of the state and neighboring regions.',
+    },
+    {
+      icon: FaPeopleGroup,
+      text: 'Kolkata is also a major port city, with both domestic and international shipping routes.',
+    },
+  ];
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsOpen(!isOpen);
+  };
 
 
 
@@ -22,7 +47,7 @@ const PreviewShow_one = () => {
           </div>
           <div>
             <img
-              className="w-full h-auto rounded-lg"
+              className="w-full h-full rounded-lg"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""
             />
@@ -55,8 +80,8 @@ const PreviewShow_one = () => {
       </div>
 
       <div className="scroll-container">
-        <div className="w-full overflow-x-auto">
-          <div className="grid grid-flow-col md:gap-5 gap-3 md:mb-[50px] mb-[30px] xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[0]">
+        <div className="w-full overflow-x-auto flex justify-center">
+          <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  ms-[38px]  me-[0]">
             <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
               Plan your visit
             </button>
@@ -66,7 +91,7 @@ const PreviewShow_one = () => {
             <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black">
               Events
             </button>
-            <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black">
+            <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black ms:[100px]">
               Beyond Art
             </button>
           </div>
@@ -90,10 +115,10 @@ const PreviewShow_one = () => {
             </div>
           </div>
           <div className="col-span-1 md:text-center text-left">
-            <button className="md:w-[173px] md:h-[48px] w-[92px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
+            <button onClick={toggleModal} className="md:w-[173px] md:h-[48px] w-[92px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
               Get Ticket
             </button>
-            
+
           </div>
         </div>
       </div>
@@ -156,7 +181,15 @@ const PreviewShow_one = () => {
         </div>
       </div>
 
-   
+
+
+      <div>
+
+
+
+      </div>
+
+
 
       {/* getting arround kolkata section */}
 
@@ -298,8 +331,86 @@ const PreviewShow_one = () => {
         </div>
 
       </div>
+      {/* carousel */}
 
-     
+      <div className="relative w-full mb-[60px]">
+        <div className="relative min-h-60 overflow-hidden rounded-lg">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`absolute w-full h-full transition-transform duration-300 ease-in-out flex items-center justify-center ${index === currentSlide ? 'translate-x-0' : 'translate-x-full'}`}
+              style={{ visibility: index === currentSlide ? 'visible' : 'hidden' }}
+            >
+              <div
+                style={{ boxShadow: '3px 4px 8.2px 4px rgba(0, 0, 0, 0.25)' }}
+                className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300"
+              >
+                <div className="flex justify-center mb-4">
+                  <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
+                    <slide.icon className="group-hover:text-red-500 text-white" />
+                  </div>
+                </div>
+                <p
+                  className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300"
+                  style={{ fontFamily: 'sans-serif' }}
+                >
+                  {slide.text}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Navigation buttons */}
+        <button
+          onClick={() => setCurrentSlide((currentSlide - 1 + slides.length) % slides.length)}
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        >
+          <MdKeyboardArrowLeft />
+        </button>
+        <button
+          onClick={() => setCurrentSlide((currentSlide + 1) % slides.length)}
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        >
+          <MdKeyboardArrowRight />
+        </button>
+
+      </div>
+
+
+
+      {/* modal */}
+
+      {isOpen && (
+        <div
+          id="default-modal"
+          tabIndex="-1"
+          aria-hidden="true"
+          className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-50"
+        >
+          <div className="relative p-4 w-full max-w-2xl max-h-full">
+            <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+
+              <div className="p-4 md:py-[58px] px-[40px]">
+
+                <div className="font-[Helvetica] text-[50px] leading-[59px] font-bold mb-[34px]">
+                  <span className="text-red-600">ticket </span> options will be available soon.
+                </div>
+                <p className='text-[18px] leading-[30px] mb-[34px]' style={{ fontFamily: 'sans-serif' }}>more ticket options including student concession are available. please call +91 8420460550</p>
+                <button
+                  type="button"
+                  className="w-[97px] h-[48px] border rounded-full text-[18px] leading-[24px] border-red-600 hover:bg-red-600 hover:text-white delay-150"
+                  onClick={toggleModal}
+                >
+                  ok
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      )}
+
     </div>
 
   );

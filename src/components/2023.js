@@ -93,9 +93,9 @@ const TwoZeroTwoThree = () => {
 
       <div className="md:grid lg:grid-cols-3 grid-cols-1 gap-5 mb-[157px] hidden">
 
-        <div className="relative group">
+        <div className="relative group rounded-lg overflow-hidden">
           <img
-            className="w-full h-auto rounded-lg"
+            className="w-full h-auto"
             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
             alt=""
           />
@@ -103,20 +103,20 @@ const TwoZeroTwoThree = () => {
             className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
             style={{ background: 'linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))' }}
           >
-            <p className="text-[23px] font-bold font-[Helvetica] mb-[10px]">
+            <p className="text-[23px] leading-[30px] font-bold font-[Helvetica] mb-[10px]">
               contemporary durga puja Art
             </p>
             <div>
-            <a className="text-[18px] text-white text-opacity-50 border-b border-white border-opacity-50 hover:border-opacity-100 hover:text-white w-auto" href="#">
+              <a className="text-[18px] text-white text-opacity-50 border-b border-white border-opacity-50 hover:border-opacity-100 hover:text-white w-auto" href="#">
                 read more
               </a>
             </div>
           </div>
         </div>
 
-        <div className="relative group">
+        <div className="relative group rounded-lg overflow-hidden">
           <img
-            className="w-full h-auto rounded-lg"
+            className="w-full h-auto"
             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
             alt=""
           />
@@ -124,7 +124,7 @@ const TwoZeroTwoThree = () => {
             className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
             style={{ background: 'linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))' }}
           >
-            <p className="text-[23px] font-bold font-[Helvetica] mb-[10px]">
+            <p className="text-[23px] leading-[30px] font-bold font-[Helvetica] mb-[10px]">
               contemporary durga puja Art 1
             </p>
             <div>
@@ -135,9 +135,9 @@ const TwoZeroTwoThree = () => {
           </div>
         </div>
 
-        <div className="relative group">
+        <div className="relative group rounded-lg overflow-hidden">
           <img
-            className="w-full h-auto rounded-lg"
+            className="w-full h-auto"
             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
             alt=""
           />
@@ -145,20 +145,20 @@ const TwoZeroTwoThree = () => {
             className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
             style={{ background: 'linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))' }}
           >
-            <p className="text-[23px] font-bold font-[Helvetica] mb-[10px]">
+            <p className="text-[23px] leading-[30px] font-bold font-[Helvetica] mb-[10px]">
               contemporary durga puja Art
             </p>
             <div>
-            <a className="text-[18px] text-white text-opacity-50 border-b border-white border-opacity-50 hover:border-opacity-100 hover:text-white w-auto" href="#">
+              <a className="text-[18px] text-white text-opacity-50 border-b border-white border-opacity-50 hover:border-opacity-100 hover:text-white w-auto" href="#">
                 read more
               </a>
             </div>
           </div>
         </div>
 
-        <div className="relative group">
+        <div className="relative group rounded-lg overflow-hidden">
           <img
-            className="w-full h-auto rounded-lg"
+            className="w-full h-auto"
             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
             alt=""
           />
@@ -166,11 +166,11 @@ const TwoZeroTwoThree = () => {
             className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
             style={{ background: 'linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))' }}
           >
-            <p className="text-[23px] font-bold font-[Helvetica] mb-[10px]">
+            <p className="text-[23px] leading-[30px] font-bold font-[Helvetica] mb-[10px]">
               contemporary durga puja Art
             </p>
             <div>
-            <a className="text-[18px] text-white text-opacity-50 border-b border-white border-opacity-50 hover:border-opacity-100 hover:text-white w-auto" href="#">
+              <a className="text-[18px] text-white text-opacity-50 border-b border-white border-opacity-50 hover:border-opacity-100 hover:text-white w-auto" href="#">
                 read more
               </a>
             </div>
@@ -180,7 +180,8 @@ const TwoZeroTwoThree = () => {
 
 
       {/* show on mobile */}
-      <div className="md:hidden block font-[Helvetica] md:text-[50px] text-[24px] font-bold mb-[20px]">Preview Show <span className="text-red-600">2023</span></div>
+      <div className="md:hidden block font-[Helvetica] md:text-[50px] text-[24px] font-bold mb-[20px]">Preview Show <span className="text-red-600">2023</span>
+      </div>
       <div className="relative w-full mb-[60px] md:hidden block">
         <div className="relative h-64 overflow-hidden rounded-lg">
           {slides.map((slide, index) => (
@@ -195,11 +196,11 @@ const TwoZeroTwoThree = () => {
                 alt=""
                 className="w-full object-cover"
               />
-              <div className="absolute inset-0 bg-[rgbe 0 0 0 0] flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out" style={{
+              <div className="absolute inset-0 bg-[rgbe 0 0 0 0] flex flex-col justify-end p-3 text-white opacity-0 transition-opacity duration-300 ease-in-out" style={{
                 opacity: index === currentSlide ? 1 : 0,
                 background: 'linear-gradient(360deg, black, rgba(249, 0, 0, 0), rgba(249, 0, 0, 0), rgba(249, 0, 0, 0))'
               }}>
-                <p className="text-lg font-bold mb-2">{slide.title}</p>
+                <p className="text-[20px] leading-[23px] font-bold mb-2">{slide.title}</p>
               </div>
 
             </div>
