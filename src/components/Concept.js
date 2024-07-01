@@ -12,6 +12,8 @@ const Concept = () => {
               className=""
             />
 
+            
+
             <div className="  absolute bottom-0 left-0  p-4 bg-gradient-to-t from-[#2F2E2E] to-[#2F2E2E00] ">
               <button className="bg-gradColor mb-2">Interview</button>
 
