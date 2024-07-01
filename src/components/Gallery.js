@@ -52,53 +52,117 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div className="flex sm:flex-col md:flex-row  gap-4 lg:mt-[50px] ">
+        <div
+          className="grid sm:grid-cols-1 
+          
+          md:grid-cols-2
+        lg:grid-cols-2
+        xl:grid-cols-2
+          xl:gap-x-[30px]
+          lg:gap-x-[30px]
+          md:gap-x-[30px] lg:mt-[50px] "
+        >
           <div>
-            <div className=" relative max-w-full md:max-w-[605px] h-auto pb-4">
+            <div
+              className="bg-green-300 relative  
+             xl:h-[341px]
+             lg:h-[341px]
+             md:h-[341px]
+             sm:h-[341px]
+             xs:h-[341px]
+             
+             "
+            >
               <img
-                src="https://i.ibb.co/CtpKL8W/Frame-706122.png"
+                src="/images/picture 01.png"
                 alt=""
-                className="w-full h-auto"
+                className="lg:w-full lg-h-full
+                md:w-full md-h-full
+                xl:w-full xl-h-full
+                sm:w-full sm-h-full
+                xs:w-full xs-h-full"
               />
-              {/* <p className="absolute bottom-0 left-0 leading-[15px] w-[148px]  px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px]">
-              Multi Genre Music Festival 2024
-            </p> */}
+              <p
+                className="absolute bottom-0 left-0 
+              leading-[15px] w-[148px] px-[10px] py-[10px]
+               text-white font-helvetica font-bold text-[12px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                Multi Genre Music Festival 2024
+              </p>
             </div>
 
-            <div className="flex sm:flex-col md:flex-row gap-4">
-              <div className="relative md:max-w-[288px] h-auto">
+            <div
+              className="grid sm:grid-cols-1 md:grid-cols-2 
+            lg:grid-cols-2
+            xl:grid-cols-2
+            xs:grid-cols-2"
+            >
+              <div
+                className=" relative   
+              xl:h-[341px]
+              lg:h-[341px]
+             md:h-[341px]
+             sm:h-[341px]
+             xs:h-[341px]"
+              >
                 <img
-                  src="https://i.ibb.co/PZ1dtSq/Frame-706122-1.png"
+                  src="/images/picture 02.png"
                   alt=""
-                  className="w-full h-auto"
+                  className="lg:w-full lg-h-full
+                  md:w-full md-h-full
+                  xl:w-full xl-h-full
+                  sm:w-full sm-h-full
+                  xs:w-full xs-h-full"
                 />
-                {/* <p className="absolute bottom-0 left-0 leading-[15px] w-[148px]  px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px]">
-                Multi Genre Music Festival 2024
-              </p> */}
+                <p className="absolute bottom-0 left-0 leading-[15px] w-[148px] px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Multi Genre Music Festival 2024
+                </p>
               </div>
 
-              <div className=" relative md:max-w-[288px] h-auto">
+              <div
+                className="bg-purple-400 relative   
+                xl:h-[341px]
+                lg:h-[341px]
+               md:h-[341px]
+               sm:h-[341px]
+               xs:h-[341px]  "
+              >
                 <img
-                  src="https://i.ibb.co/HhXLvfW/Frame-706122-2.png"
+                  src="/images/picture 05.png"
                   alt=""
-                  className="w-full h-auto"
+                  className="lg:w-full lg-h-full
+                  xl:w-full xl-h-full
+                  md:w-full md-h-full
+                  sm:w-full sm-h-full
+                  xs:w-full xs-h-full"
                 />
-                {/* <p className="absolute bottom-0 left-0 leading-[15px] w-[148px]  px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px]">
-                Multi Genre Music Festival 2024
-              </p> */}
+                <p className="absolute bottom-0 left-0 leading-[15px] w-[148px] px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Multi Genre Music Festival 2024
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="relative max-w-full md:max-w-[565px] h-auto ">
+          <div
+            className="bg-red-400 relative 
+             xl:h-[712px]
+             lg:h-[712px]
+             md:h-[712px]
+             sm:h-[712px]
+             xs:h-[712px] "
+          >
             <img
-              src="https://i.ibb.co/Y0YYYrb/Frame-706122-3.png"
+              src="/images/picture 01.png"
               alt=""
-              className="w-full h-auto"
+              className="lg:w-full lg-h-full
+              xl:w-full xl-h-full
+              md:w-full md-h-full
+              sm:w-full sm-h-full
+              xs:w-full xs-h-full"
             />
-            {/* <p className="absolute bottom-0 left-0 leading-[15px] w-[148px]  px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px]">
-            Multi Genre Music Festival 2024
-          </p> */}
+            <p className="absolute bottom-0 left-0 leading-[15px] w-[148px] px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Multi Genre Music Festival 2024
+            </p>
           </div>
         </div>
 
