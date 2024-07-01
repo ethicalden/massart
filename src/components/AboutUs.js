@@ -31,6 +31,8 @@ const AboutUs = () => {
             src="https://i.ibb.co/B2NSKPj/picture-02.png"
             alt="Durga Puja"
             className="sm:w-[366px] xs:h-[167px]"
+            width={100}
+            height={100}
           />
         </div>
       </div>

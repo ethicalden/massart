@@ -111,6 +111,8 @@ const Visual = () => {
           <Image
             src="https://i.ibb.co/B2NSKPj/picture-02.png"
             alt=""
+            width={100}
+            height={100}
             className={`
             md:w-full md:h-full 
             xs:w-full xs:h-full
@@ -137,6 +139,8 @@ const Visual = () => {
           <Image
             src="https://i.ibb.co/Y0YYYrb/Frame-706122-3.png"
             alt=""
+            width={100}
+            height={100}
             className={`
             md:w-full md:h-full 
             xs:w-full xs:h-full
@@ -165,6 +169,8 @@ const Visual = () => {
           <Image
             src="https://i.ibb.co/k1dNKT4/picture-05.png"
             alt=""
+            width={100}
+            height={100}
             className={`
              md:w-full md:h-full 
             xs:w-full xs:h-full

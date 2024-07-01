@@ -202,14 +202,22 @@ body {
   right: 10px;
 }
 
-/* Example Tailwind CSS classes */
+.prev-arrow svg,
+.next-arrow svg{
+  height: 30px;
+  color: black !important;
+}
+.custom-slick-style svg{
+  width: 44px;
+  height: 44px;
+}
 .prev-arrow,
 .next-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: #D9D9D9;
+  color: black;
   border: none;
   outline: none;
   cursor: pointer;
@@ -225,6 +233,7 @@ body {
 .prev-arrow svg,
 .next-arrow svg{
   height: 30px;
+  color: #fff;
 }
 .prev-arrow:hover,
 .next-arrow:hover {
@@ -249,13 +258,15 @@ body {
 }
 .custom-slick-style .slick-list {
   background-color: #fef2f2; /* Tailwind bg-red-50 */
-  padding: 2.5rem; /* Tailwind p-10 */
-  height: 100%; /* Tailwind h-full */
-  border-radius: 0.5rem; /* Tailwind rounded-lg */
-  text-align: center; /* Tailwind text-center */
-  transition: background-color 300ms; /* Tailwind transition duration-300 */
+  border-radius: 10px;
 }
 
 .custom-slick-style .slick-list:hover {
   background-color: #ef4444; /* Tailwind hover:bg-red-500 */
+}
+.custom-slick-style .slick-list:hover .icon-hover{
+  background-color: white; /* Tailwind hover:bg-red-500 */
+}
+.custom-slick-style .slick-list:hover .icon-hover svg{
+  color: #ef4444 !important; /* Tailwind hover:bg-red-500 */
 }

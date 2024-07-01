@@ -53,6 +53,8 @@ const PreviewShow_one = () => {
               className="w-full h-full rounded-lg"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""
+              width={100}
+              height={100}
             />
           </div>
           <div>
@@ -130,6 +132,10 @@ const PreviewShow_one = () => {
       <div className="text-center font-[Helvetica] md:text-[50px] text-[24px] md:leading-[56px] leading-[30px] font-bold md:mb-[50px] mb-[30px]">
         How to reach <br /> <span className="text-buttonCustomColor">Kolkata?</span>
       </div>
+
+      <div className='mb-[60px] md:hidden block'>
+      <Carousel/>
+      </div>
       <div className="md:grid hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] mb-[150px]">
         <div className="flex justify-center items-center">
           <div
@@ -139,8 +145,8 @@ const PreviewShow_one = () => {
             className="group custom-width bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300"
           >
             <div className="flex justify-center mb-4">
-              <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                <GiAirplaneDeparture className="group-hover:text-red-500 text-white" />
+              <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
             <p className="text-black text-[18px] leading-[30px] text-base group-hover:text-white transition duration-300" style={{ fontFamily: 'sans-serif' }}>
@@ -156,8 +162,8 @@ const PreviewShow_one = () => {
             className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300"
           >
             <div className="flex justify-center mb-4">
-              <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                <FaTrainSubway className="group-hover:text-red-500 text-white" />
+              <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                <FaTrainSubway className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
             <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
@@ -173,8 +179,8 @@ const PreviewShow_one = () => {
             className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300"
           >
             <div className="flex justify-center mb-4">
-              <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                <IoMdBus className="group-hover:text-red-500 text-white" />
+              <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                <IoMdBus className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
             <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
@@ -184,11 +190,7 @@ const PreviewShow_one = () => {
         </div>
       </div>
 
-
-
       <div>
-
-
 
       </div>
 
@@ -196,10 +198,12 @@ const PreviewShow_one = () => {
 
       {/* getting arround kolkata section */}
 
-      <div className="bg-[#EFEDED] py-20 md:mb-[160px] mb-[60px]">
-        <div className="text-center font-[Helvetica] md:text-[50px] text-[24px] md:leading-[56px] leading-[30px]  font-bold mb-[20px]">
+      <div className="bg-[#EFEDED] md:py-20 py-[33px] md:mb-[160px] mb-[60px]">
+        <div className="text-center font-[Helvetica] md:text-[50px] text-[24px] md:leading-[56px] leading-[30px]  font-bold mb-[25px]">
           Getting arround<br></br> <span className="text-buttonCustomColor">Kolkata</span>
         </div>
+
+        <Carousel/>
 
         <div className="md:grid hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px]">
           <div className="flex justify-center items-center">
@@ -207,8 +211,8 @@ const PreviewShow_one = () => {
               boxShadow: '3px 4px 8.2px 4px rgba(0, 0, 0, 0.25)',
             }} className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300">
               <div className="flex justify-center mb-4">
-                <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                  <FaPeopleGroup className="group-hover:text-red-500 text-white" />
+                <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                  <FaPeopleGroup className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
                 </div>
               </div>
               <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
@@ -222,8 +226,8 @@ const PreviewShow_one = () => {
               boxShadow: '3px 4px 8.2px 4px rgba(0, 0, 0, 0.25)',
             }} className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300">
               <div className="flex justify-center mb-4">
-                <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                  <GiAirplaneDeparture className="group-hover:text-red-500 text-white" />
+                <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                  <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
                 </div>
               </div>
               <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
@@ -237,8 +241,8 @@ const PreviewShow_one = () => {
               boxShadow: '3px 4px 8.2px 4px rgba(0, 0, 0, 0.25)',
             }} className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300">
               <div className="flex justify-center mb-4">
-                <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                  <GiAirplaneDeparture className="group-hover:text-red-500 text-white" />
+                <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                  <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
                 </div>
               </div>
               <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
@@ -252,8 +256,8 @@ const PreviewShow_one = () => {
               boxShadow: '3px 4px 8.2px 4px rgba(0, 0, 0, 0.25)',
             }} className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300">
               <div className="flex justify-center mb-4">
-                <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                  <GiAirplaneDeparture className="group-hover:text-red-500 text-white" />
+                <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                  <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
                 </div>
               </div>
               <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
@@ -267,8 +271,8 @@ const PreviewShow_one = () => {
               boxShadow: '3px 4px 8.2px 4px rgba(0, 0, 0, 0.25)',
             }} className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300">
               <div className="flex justify-center mb-4">
-                <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                  <GiAirplaneDeparture className="group-hover:text-red-500 text-white" />
+                <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                  <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
                 </div>
               </div>
               <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
@@ -283,8 +287,12 @@ const PreviewShow_one = () => {
 
       {/* where to stay section */}
 
-      <div className="text-center font-[Helvetica] md:text-[50px] text-[24px] md:leading-[56px] leading-[30px] font-bold md:mb-[50px] mb-[30px]">
+      <div className="text-center font-[Helvetica] md:text-[50px] text-[24px] md:leading-[56px] leading-[30px] font-bold md:mb-[50px] mb-[28px]">
         where to <span className="text-buttonCustomColor">stay?</span>
+      </div>
+
+      <div className='mb-[60px] md:hidden block'>
+      <Carousel/>
       </div>
 
       <div className="md:grid hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] mb-[150px]">
@@ -293,8 +301,8 @@ const PreviewShow_one = () => {
             boxShadow: '3px 4px 8.2px 4px rgba(0, 0, 0, 0.25)',
           }} className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300">
             <div className="flex justify-center mb-4">
-              <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                <GiAirplaneDeparture className="group-hover:text-red-500 text-white" />
+              <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
             <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
@@ -308,8 +316,8 @@ const PreviewShow_one = () => {
             boxShadow: '3px 4px 8.2px 4px rgba(0, 0, 0, 0.25)',
           }} className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300">
             <div className="flex justify-center mb-4">
-              <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                <FaTrainSubway className="group-hover:text-red-500 text-white" />
+              <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                <FaTrainSubway className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
             <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
@@ -323,8 +331,8 @@ const PreviewShow_one = () => {
             boxShadow: '3px 4px 8.2px 4px rgba(0, 0, 0, 0.25)',
           }} className="group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300">
             <div className="flex justify-center mb-4">
-              <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                <FaRoad className="group-hover:text-red-500 text-white" />
+              <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                <FaRoad className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
             <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
@@ -336,9 +344,9 @@ const PreviewShow_one = () => {
       </div>
       {/* carousel */}
 
-      <div className="relative w-full mb-[60px]">
+    
 
-<Carousel/>
+     
         {/* <div className="relative flex overflow-hidden rounded-lg">
           <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             {slides.map((slide, index) => (
@@ -351,8 +359,8 @@ const PreviewShow_one = () => {
                   className="group bg-red-50 md:p-10 p-5 h-full rounded-lg text-center hover:bg-red-500 transition duration-300 flex flex-col items-center justify-center"
                 >
                   <div className="flex justify-center mb-4">
-                    <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
-                      <slide.icon className="group-hover:text-red-500 text-white" />
+                    <div className="bg-red-500 w-[100px] h-[100px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+                      <slide.icon className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
                     </div>
                   </div>
                   <p
@@ -392,7 +400,7 @@ const PreviewShow_one = () => {
           ))}
         </div> */}
 
-      </div>
+      
 
 
 

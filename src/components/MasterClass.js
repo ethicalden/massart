@@ -74,6 +74,8 @@ const MasterClass = () => {
                     <Image
                       src={event.image}
                       alt={event.title}
+                      width={100}
+                      height={100}
                       className="w-full h-[300px] object-cover"
                     />
                     <div className="absolute top-2 left-2 bg-buttonCustomColor text-white text-sm px-2 py-1 rounded z-10">

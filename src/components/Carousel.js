@@ -53,19 +53,19 @@ const Carousel = () => {
 
   return (
 
-    <div className="relative">
+    <div className="relative custom-slick-style md:hidden block">
       <Slider {...sliderSettings}>
         {carouselData.map((item, index) => (
-          <div key={index} className="slide-item border group bg-red-50 p-10 h-full rounded-lg text-center hover:bg-red-500 transition duration-300">
+          <div key={index} className="slide-item group p-4  h-full rounded-lg text-center transition duration-300">
         
             
               <div className="flex justify-center mb-4">
-                <div className="bg-red-500 p-4 rounded-full group-hover:bg-white transition duration-300">
+                <div className=" w-[84px] h-[84px] bg-red-600 icon-hover flex justify-center items-center rounded-full transition duration-300">
                   {item.icon}
                 </div>
               </div>
               <p
-                className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300"
+                className="text-black group-hover:text-white text-base  text-[11px] leading-[21px] transition duration-300"
                 style={{ fontFamily: "sans-serif" }}
               >
                 {item.text}
