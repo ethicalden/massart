@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 const Header = () => {
@@ -80,7 +81,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <img
+          <Image
             src="https://i.ibb.co/LDFmLLK/Group-1171274734.png"
             alt="Logo"
             className=" md:h-[65px] md:w-[75px] lg:h-[65px] lg:w-[75px] xl:h-[65px] xl:w-[75px]
@@ -149,7 +150,7 @@ const Header = () => {
             ))}
           </div>
         </div>
-        <img
+        <Image
           src="/images/logo 01.png"
           alt=""
           className="absolute bottom-0 right-0

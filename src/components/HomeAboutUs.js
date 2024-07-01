@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const HomeAboutUs = () => {
   return (
     <div
@@ -52,7 +54,7 @@ const HomeAboutUs = () => {
         xl:w-[447px] xl:h-[358px]
         pt-[25px] md:pt-[0] "
         >
-          <img
+          <Image
             src="https://i.ibb.co/B2NSKPj/picture-02.png"
             alt="Durga Puja"
             className="sm:w-[366px] sm:h-[347px] xs:h-[167px] md:h-[190px] 

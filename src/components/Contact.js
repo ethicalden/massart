@@ -114,6 +114,7 @@ const Contact = () => {
     formData.address,
     formData.email,
     formData.mobileNumber,
+    validateForm
   ]);
 
   useEffect(() => {
@@ -128,6 +129,7 @@ const Contact = () => {
     formData.address,
     formData.email,
     formData.mobileNumber,
+    clickSubmit
   ]);
 
   const handleSubmit = (e) => {

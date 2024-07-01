@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import Image from "next/image";
+import { useState } from "react";
 
 const events = [
   {
@@ -70,7 +71,7 @@ const MasterClass = () => {
               >
                 <div className="bg-gray-900 rounded-lg overflow-hidden">
                   <div className="relative">
-                    <img
+                    <Image
                       src={event.image}
                       alt={event.title}
                       className="w-full h-[300px] object-cover"

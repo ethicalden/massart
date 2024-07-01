@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 import { GoDash } from "react-icons/go";
@@ -20,7 +21,7 @@ const Individual = () => {
     <div className=" xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] md:mt-[150px] mt-[60px]">
       <div className="grid md:grid-cols-2 grid-cols-1">
         <div>
-          <img className="w-full" src="/images/picture 01.png" alt="Image 1" />
+          <Image className="w-full" src="/images/picture 01.png" alt="Image 1" />
         </div>
 
         <div className="md:ms-[65px]">
@@ -71,21 +72,21 @@ const Individual = () => {
       <div className="container mx-auto px-4 my-[51px] md:block hidden">
         <div className="grid gap-6 md:grid-cols-2 grid-cols-1 w-full">
           <div>
-            <img
+            <Image
               className="w-full h-auto rounded-lg"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""
             />
             <div className="grid gap-6 md:grid-cols-2 grid-cols-1  mt-6">
               <div>
-                <img
+                <Image
                   className="w-full h-auto rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
                   alt=""
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="w-full h-auto rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
                   alt=""
@@ -94,7 +95,7 @@ const Individual = () => {
             </div>
           </div>
           <div>
-            <img
+            <Image
               className="w-full h-full rounded-lg"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""

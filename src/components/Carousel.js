@@ -1,5 +1,6 @@
 // components/Carousel.js
 
+import Image from 'next/image';
 import { useState } from 'react';
 import styles from './Carousel.module.css';
 
@@ -24,7 +25,7 @@ const Carousel = ({ items }) => {
           <div className={styles.carouselItem} key={index}>
             <h3>{item.title}</h3>
             <p>{item.text}</p>
-            <img src={item.icon} alt={item.title} />
+            <Image src={item.icon} alt={item.title} />
           </div>
         ))}
       </div>

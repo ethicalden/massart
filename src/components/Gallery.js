@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+import Image from "next/image";
 import Concept from "./Concept";
 import Video from "./Video";
 
@@ -73,7 +74,7 @@ const Gallery = () => {
              
              "
             >
-              <img
+              <Image
                 src="/images/picture 01.png"
                 alt=""
                 className="lg:w-full lg-h-full
@@ -105,7 +106,7 @@ const Gallery = () => {
              sm:h-[341px]
              xs:h-[341px]"
               >
-                <img
+                <Image
                   src="/images/picture 02.png"
                   alt=""
                   className="lg:w-full lg-h-full
@@ -127,7 +128,7 @@ const Gallery = () => {
                sm:h-[341px]
                xs:h-[341px]  "
               >
-                <img
+                <Image
                   src="/images/picture 05.png"
                   alt=""
                   className="lg:w-full lg-h-full
@@ -151,7 +152,7 @@ const Gallery = () => {
              sm:h-[712px]
              xs:h-[712px] "
           >
-            <img
+            <Image
               src="/images/picture 01.png"
               alt=""
               className="lg:w-full lg-h-full

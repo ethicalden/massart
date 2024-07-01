@@ -1,8 +1,4 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable prettier/prettier */
-/* eslint-disable import/order */
-/* eslint-disable import/no-unresolved */
-/* eslint-disable prettier/prettier */
+
 
 import { questions } from "@/src/helperData/helperData";
 import Question from "./Qestion";

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const AboutUs = () => {
   return (
     <div className="pl-[32px] pr-[32px] pt-[60px] pb-[60px] bg-white font-helvetica md:pl-[60px] md:pr-[60px] md:pt-[80px] md:pb-[80px] lg:pl-[120px] lg:pr-[120px] lg:pt-[100px] lg:pb-[100px]">
@@ -25,7 +27,7 @@ const AboutUs = () => {
           </button>
         </div>
         <div className="pt-[25px]  md:pt-[0] md:w-1/2 md:pl-[32px] lg:pl-[60px]">
-          <img
+          <Image
             src="https://i.ibb.co/B2NSKPj/picture-02.png"
             alt="Durga Puja"
             className="sm:w-[366px] xs:h-[167px]"

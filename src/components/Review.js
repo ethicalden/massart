@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 const testimonials = [
   {
@@ -92,7 +92,7 @@ const Review = () => {
                 {testimonial.text}
               </p>
               <div className="flex items-center mt-4">
-                <img
+                <Image
                   src={testimonial.image}
                   alt={testimonial.name}
                   className="w-10 h-10 rounded-full"

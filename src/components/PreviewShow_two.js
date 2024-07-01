@@ -1,7 +1,8 @@
 
 "use client";
 
-import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 
 
@@ -49,7 +50,7 @@ const PreviewShow_two = () => {
             Preview Show <span className="text-red-600">2025</span>
           </div>
           <div>
-            <img
+            <Image
               className="w-full h-full rounded-lg"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""
@@ -109,7 +110,7 @@ const PreviewShow_two = () => {
           Preview Show <span className="text-red-600">2024</span>
         </div>
         <div>
-          <img
+          <Image
             className="w-full h-auto rounded-lg"
             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
             alt=""
@@ -139,7 +140,7 @@ const PreviewShow_two = () => {
         <div className="md:grid lg:grid-cols-3 grid-cols-1 gap-5 mb-[157px] hidden">
 
           <div className="relative overflow-hidden rounded-lg group h-56">
-            <img
+            <Image
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""
@@ -156,7 +157,7 @@ const PreviewShow_two = () => {
             </div>
           </div>
           <div className="relative overflow-hidden rounded-lg group h-56">
-            <img
+            <Image
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
               alt=""
@@ -174,7 +175,7 @@ const PreviewShow_two = () => {
           </div>
 
           <div className="relative overflow-hidden rounded-lg group h-56">
-            <img
+            <Image
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
               alt=""
@@ -204,7 +205,7 @@ const PreviewShow_two = () => {
             className="absolute w-full h-full transition-opacity duration-300 ease-in-out"
             style={{ opacity: index === currentSlide ? 1 : 0 }}
           >
-            <img src={slide.imageUrl} alt="" className="w-full object-cover" />
+            <Image src={slide.imageUrl} alt="" className="w-full object-cover" />
             <div
               className="absolute inset-0 bg-[rgba(0, 0, 0, 0)] flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out"
               style={{
@@ -242,7 +243,7 @@ const PreviewShow_two = () => {
         <div className="md:grid lg:grid-cols-3 grid-cols-1 gap-5 mb-[157px] hidden">
 
           <div className="relative overflow-hidden rounded-lg group h-56">
-            <img
+            <Image
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
               alt=""
@@ -259,7 +260,7 @@ const PreviewShow_two = () => {
             </div>
           </div>
           <div className="relative overflow-hidden rounded-lg group h-56">
-            <img
+            <Image
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
               alt=""
@@ -277,7 +278,7 @@ const PreviewShow_two = () => {
           </div>
 
           <div className="relative overflow-hidden rounded-lg group h-56">
-            <img
+            <Image
               className="w-full h-56"
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
               alt=""
@@ -307,7 +308,7 @@ const PreviewShow_two = () => {
             className="absolute w-full h-full transition-opacity duration-300 ease-in-out"
             style={{ opacity: index === currentSlide ? 1 : 0 }}
           >
-            <img src={slide.imageUrl} alt="" className="w-full object-cover" />
+            <Image src={slide.imageUrl} alt="" className="w-full object-cover" />
             <div
               className="absolute inset-0 bg-[rgba(0, 0, 0, 0)] flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out"
               style={{

@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier */
+
 import { Roboto } from "next/font/google";
 import "./globals.css";
 

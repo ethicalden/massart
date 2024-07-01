@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier */
+
 export const questions = [
     {
         question: "What is Durga Puja Art?",

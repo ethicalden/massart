@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 import { IoMdFastforward } from "react-icons/io";
 
@@ -107,7 +108,7 @@ const Visual = () => {
        
         "
         >
-          <img
+          <Image
             src="https://i.ibb.co/B2NSKPj/picture-02.png"
             alt=""
             className={`
@@ -133,7 +134,7 @@ const Visual = () => {
           lg:h-[300px]
           "
         >
-          <img
+          <Image
             src="https://i.ibb.co/Y0YYYrb/Frame-706122-3.png"
             alt=""
             className={`
@@ -161,7 +162,7 @@ const Visual = () => {
           
           "
         >
-          <img
+          <Image
             src="https://i.ibb.co/k1dNKT4/picture-05.png"
             alt=""
             className={`

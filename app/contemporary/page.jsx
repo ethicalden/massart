@@ -1,9 +1,4 @@
-/* eslint-disable prettier/prettier */
-// eslint-disable-next-line prettier/prettier
-/* eslint-disable import/order */
-/* eslint-disable prettier/prettier */
-/* eslint-disable import/no-unresolved */
-/* eslint-disable prettier/prettier */
+
 import ContemporaryBggreenGrid from '@/src/components/Contemporay/PhoneGrid/ContemporaryBigscreenGrid';
 import ContemporaryPhoneGrid from '@/src/components/Contemporay/PhoneGrid/ContemporayPhoneGrid';
 import Footer from '@/src/components/common/Footer';

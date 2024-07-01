@@ -1,7 +1,7 @@
-/* eslint-disable prettier/prettier */
+
 import Image from "next/image";
 
-/* eslint-disable prettier/prettier */
+
 const SocialContributor = () => {
     return (
         <div className="grid grid-cols-3 ">
