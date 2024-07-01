@@ -194,40 +194,40 @@ const PreviewShow_two = () => {
 
         </div>
 
-    {/* show on mobile */}
+        {/* show on mobile */}
 
-     <div className="relative w-full mb-[60px]">
-      <div className="relative h-64 overflow-hidden rounded-lg">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className="absolute w-full h-full transition-opacity duration-300 ease-in-out"
-            style={{ opacity: index === currentSlide ? 1 : 0 }}
-          >
-            <img src={slide.imageUrl} alt="" className="w-full object-cover" />
-            <div
-              className="absolute inset-0 bg-[rgba(0, 0, 0, 0)] flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out"
-              style={{
-                opacity: index === currentSlide ? 1 : 0,
-                background: 'linear-gradient(360deg, black, rgba(249, 0, 0, 0), rgba(249, 0, 0, 0), rgba(249, 0, 0, 0))',
-              }}
-            >
-              <p className="text-lg font-bold mb-2">{slide.title}</p>
-            </div>
+        <div className="relative w-full mb-[60px] md:hidden block">
+          <div className="relative h-64 overflow-hidden rounded-lg">
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className="absolute w-full h-full transition-opacity duration-300 ease-in-out"
+                style={{ opacity: index === currentSlide ? 1 : 0 }}
+              >
+                <img src={slide.imageUrl} alt="" className="w-full object-cover" />
+                <div
+                  className="absolute inset-0 bg-[rgba(0, 0, 0, 0)] flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out"
+                  style={{
+                    opacity: index === currentSlide ? 1 : 0,
+                    background: 'linear-gradient(360deg, black, rgba(249, 0, 0, 0), rgba(249, 0, 0, 0), rgba(249, 0, 0, 0))',
+                  }}
+                >
+                  <p className="text-lg font-bold mb-2">{slide.title}</p>
+                </div>
+              </div>
+            ))}
+
           </div>
-        ))}
-       
-      </div>
-      <div className="flex justify-center space-x-2 mt-4">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-black' : 'bg-gray-300'}`}
-          />
-        ))}
-      </div>
-    </div>
+          <div className="flex justify-center space-x-2 mt-4">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-black' : 'bg-gray-300'}`}
+              />
+            ))}
+          </div>
+        </div>
 
 
 
@@ -297,43 +297,43 @@ const PreviewShow_two = () => {
 
         </div>
 
-          {/* show on mobile */}
+        {/* show on mobile */}
 
-     <div className="relative w-full mb-[60px]">
-      <div className="relative h-64 overflow-hidden rounded-lg">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className="absolute w-full h-full transition-opacity duration-300 ease-in-out"
-            style={{ opacity: index === currentSlide ? 1 : 0 }}
-          >
-            <img src={slide.imageUrl} alt="" className="w-full object-cover" />
-            <div
-              className="absolute inset-0 bg-[rgba(0, 0, 0, 0)] flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out"
-              style={{
-                opacity: index === currentSlide ? 1 : 0,
-                background: 'linear-gradient(360deg, black, rgba(249, 0, 0, 0), rgba(249, 0, 0, 0), rgba(249, 0, 0, 0))',
-              }}
-            >
-              <p className="text-lg font-bold mb-2">{slide.title}</p>
-            </div>
+        <div className="relative w-full mb-[60px] md:hidden block">
+          <div className="relative h-64 overflow-hidden rounded-lg">
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className="absolute w-full h-full transition-opacity duration-300 ease-in-out"
+                style={{ opacity: index === currentSlide ? 1 : 0 }}
+              >
+                <img src={slide.imageUrl} alt="" className="w-full object-cover" />
+                <div
+                  className="absolute inset-0 bg-[rgba(0, 0, 0, 0)] flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out"
+                  style={{
+                    opacity: index === currentSlide ? 1 : 0,
+                    background: 'linear-gradient(360deg, black, rgba(249, 0, 0, 0), rgba(249, 0, 0, 0), rgba(249, 0, 0, 0))',
+                  }}
+                >
+                  <p className="text-lg font-bold mb-2">{slide.title}</p>
+                </div>
+              </div>
+            ))}
+
           </div>
-        ))}
-       
-      </div>
-      <div className="flex justify-center space-x-2 mt-4">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-black' : 'bg-gray-300'}`}
-          />
-        ))}
-      </div>
-    </div>
+          <div className="flex justify-center space-x-2 mt-4">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-3 h-3 rounded-full ${index === currentSlide ? 'bg-black' : 'bg-gray-300'}`}
+              />
+            ))}
+          </div>
+        </div>
       </div>
 
-   
+
 
 
     </div>
