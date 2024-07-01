@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const Header = () => {
@@ -81,14 +82,19 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <Image
-            src="https://i.ibb.co/LDFmLLK/Group-1171274734.png"
-            alt="Logo"
-            width={100}
-            height={100}
-            className=" md:h-[65px] -ms-32 md:w-[75px] lg:h-[65px] lg:w-[75px] xl:h-[65px] xl:w-[75px]
-            2xl:h-[65px] 2xl:w-[75px]"
-          />
+
+          <Link href="/">
+  
+        <Image
+          src="https://i.ibb.co/LDFmLLK/Group-1171274734.png"
+          alt="Logo"
+          width={100}
+          height={100}
+          className=" md:h-[65px] -ms-32 md:w-[75px] lg:h-[65px] lg:w-[75px] xl:h-[65px] xl:w-[75px] 2xl:h-[65px] 2xl:w-[75px]"
+        />
+   
+    </Link>
+
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
