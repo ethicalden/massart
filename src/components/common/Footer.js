@@ -37,8 +37,7 @@ const Footer = () => {
               </ul>
             </div>
             <p className="#FFFFFF w-[36vw] text-[8px] md:hidden">
-              Copyright @{new Date().getFullYear()}massArt, Designed & Developed
-              Ethically by
+             Copyright &copy; {new Date().getFullYear()}&nbsp;massArt, Designed & Developed Ethically
               <span>
                 <a
                   href="https://www.ethicalden.com/"
@@ -108,8 +107,7 @@ const Footer = () => {
         font-helvetica
         text-white "
         >
-          Copyright @{new Date().getFullYear()}massArt, Designed & Developed
-          Ethically by
+            Copyright &copy; {new Date().getFullYear()}&nbsp;massArt, Designed & Developed Ethically
           <span>
             <a
               href="https://www.ethicalden.com/"
