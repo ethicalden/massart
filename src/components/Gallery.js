@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-import Image from "next/image";
 import Concept from "./Concept";
 import Video from "./Video";
 
@@ -69,42 +68,43 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div className="flex sm:flex-col md:flex-row  gap-4 lg:mt-[50px] ">
+        <div
+          className="grid sm:grid-cols-1 xl:grid-cols-2 xl:gap-x-[25px] lg:gap-x-[20px]  md:gap-x-[15px] sm:gap-y-[10px] xs:gap-y-[10px]
+          lg:mt-[50px] "
+        >
           <div>
-            <div className="relative max-w-full md:max-w-[605px] h-auto pb-4 group">
-              <Image
+            <div className="relative    group sm:py-[10px] xs:py-[10px]">
+              <img
                 src="https://i.ibb.co/CtpKL8W/Frame-706122.png"
                 alt="Multi Genre Music Festival 2024"
-                className="w-full h-auto"
-                width={100}
-                height={100}
+                className="w-full h-[341px] object-cover"
               />
               <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[20px] xl:pt-[289px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Multi Genre Music Festival 2024
               </p>
             </div>
 
-            <div className="flex sm:flex-col md:flex-row gap-4">
-              <div className="relative md:max-w-[288px] h-auto group">
-                <Image
+            <div
+              className="grid sm:grid-cols-1 xl:grid-cols-2 xl:gap-y-[25px] lg:gap-y-[20px] md:gap-y-[15px] xl:gap-x-[25px] lg:gap-x-[20px] md:gap--[15px]
+                 sm:gap-y-[10px] xs:gap-y-[10px]
+           "
+            >
+              <div className="relative  group">
+                <img
                   src="https://i.ibb.co/PZ1dtSq/Frame-706122-1.png"
                   alt=""
-                  className="w-full h-auto"
-                   width={100}
-                   height={100}
+                  className="w-full h-[341px] object-cover"
                 />
                 <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[53px] xl:pt-[257px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Latest Technology Convention
                 </p>
               </div>
 
-              <div className=" relative md:max-w-[288px] h-auto group">
-                <Image
+              <div className=" relative  group">
+                <img
                   src="https://i.ibb.co/HhXLvfW/Frame-706122-2.png"
                   alt=""
-                  className="w-full h-auto"
-                  width={100}
-                 height={100}
+                  className="w-full h-[341px] object-cover"
                 />
                 <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[20px] xl:pt-[289px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Prestigious Fine Arts Exhibition
@@ -113,13 +113,11 @@ const Gallery = () => {
             </div>
           </div>
 
-          <div className="relative max-w-full md:max-w-[565px] h-auto group">
-            <Image
+          <div className="relative   group">
+            <img
               src="https://i.ibb.co/Y0YYYrb/Frame-706122-3.png"
               alt=""
-              className="w-full h-auto"
-               width={100}
-               height={100}
+              className="w-full h-[712px] object-cover"
             />
             <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[164px] xl:pt-[660px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               Latest Indie Musician Concerts
