@@ -3,11 +3,14 @@ import React from "react";
 const Explore = () => {
   return (
     <div
-      className=" lg:pt-[60px] lg:pb-[43px]
-    md:pl-[60px] md:pr-[60px] md:pt-[40px] 
-    sm:pl-[30px] sm:pr-[30px] sm:pt-[20px]
-    md:pb-[43px] lg:pl-[120px] lg:pr-[120px] 
-     bg-white font-helvetica "
+      className=" xl:mt-[150px] lg:mt-[100px]  md:mt-[100px]  sm:mt-[100px]  xs:mt-[100px]
+       lg:mb-[30px] xl:mb-[43px] md:mb-[25px] sm:mb-[20px] xs:mb-[20px]
+      xl:mx-[120px]   
+    md:mx-[70px]   
+    sm:mx-[60px] 
+    xs:mx-[30px]  
+     lg:mx-[100px]  
+     e font-helvetica "
     >
       <div
         className="  
@@ -16,15 +19,18 @@ const Explore = () => {
         sm:gap-[15px]
 
 
-        grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2   "
+        grid sm:grid-cols-1 xl:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xs:grid-cols-1  "
       >
-        <h1 className="   lg:text-[50px] font-helvetica md:text-[25px]  sm:text-[24px] font-bold">
-          <span className="text-buttonCustomColor">Explore</span> and Join{" "}
-          <br /> Our Exciting{" "}
-          <span className="text-buttonCustomColor">Lineup</span>
+        <h1
+          className="  xl:text-[50px] lg:text-[40px] font-helvetica md:text-[30px]  sm:text-[24px] 
+        xs:text-[18px] font-bold"
+        >
+          <span className="text-buttonCustomColor">Explore</span> and Join Our{" "}
+          <br />
+          Exciting <span className="text-buttonCustomColor">Lineup</span>
         </h1>
 
-        <p className="sm-pt[15px]  font-normal sm:text-[12px]  font-helvetica  md:text-[12px] lg:text-[12px] ">
+        <p className="  font-normal xl:text-[18px] sm:text-[10px] xs:text-[10px]  font-helvetica  md:text-[12px] lg:text-[12px] ">
           durga puja Art is the world’s biggest public Art festival as the
           entire city turns into an public Art gallery. it is thus many times
           bigger than any other famous Art biennales in the world.every year
