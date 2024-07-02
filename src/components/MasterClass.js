@@ -86,6 +86,9 @@ const MasterClass = () => {
   return (
     <div className="bg-white sm:pt-[11px] lg:pt-[43px] md:pt-[21px] md:pb-[150px] sm:pl-[30px] sm:pr-[30px] md:pl-[60px] md:pr-[60px] lg:pl-[120px] lg:pr-[120px]">
       <Slider {...settings}>
+     xl:mx-[120px] "
+    >
+      <Slider {...settings} className="">
         {events.map((event, index) => (
           <div key={index} className="p-2">
             <div className="bg-gray-900 rounded-lg overflow-hidden">
@@ -94,6 +97,9 @@ const MasterClass = () => {
                   src={event.image}
                   alt={event.title}
                   className="w-full h-[300px] object-cover"
+                  xl:h-[300px] md:h-[300px] sm:h-[300px] xs:h-[300px]
+                  
+                  object-cover"
                 />
                 <div
                   className="absolute top-0 left-2 bg-buttonCustomColor
@@ -102,10 +108,21 @@ const MasterClass = () => {
                  lg:ml-[15px] md:ml-[12px] 
                  sm:ml-[10px] xs:ml-[8px]  rounded "
                 >
-                  <h1 className="xl:text-[32px] font-inter font-semibold xl:px-[8px] xl:pt-[10px]">
+                  <h1
+                    className="xl:text-[32px] font-inter font-semibold xl:px-[8px] xl:pt-[10px]
+                  lg:px-[8px] lg:pt-[10px] md:px-[8px] md:pt-[10px] sm:px-[8px] sm:pt-[10px]
+                  xs:px-[8px] xs:pt-[10px]"
+                  >
                     {event.date}
                   </h1>
-                  <p className="xl:text-[24px] font-inter font-semibold  xl:px-[7px] xl:pb-[10px]">
+                  <p
+                    className="xl:text-[24px] font-inter font-semibold  xl:px-[7px] xl:pb-[10px]
+                  
+                  md:px-[7px] md:pb-[10px]
+                  lg:px-[7px] lg:pb-[10px]
+                  sm:px-[7px] sm:pb-[10px]
+                  xs:px-[7px] xs:pb-[10px]"
+                  >
                     {event.month}
                   </p>
                 </div>
