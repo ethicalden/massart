@@ -157,7 +157,7 @@ const Header = () => {
           </div>
         </div>
         <Image
-          src="/images/pngwing.com (1) 1.png"
+          src="/images/unesco.png"
           width={100}
           height={100}
           alt=""
