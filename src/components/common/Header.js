@@ -18,7 +18,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="relative h-[970px] ">
+    <div className="relative xl:h-[778px] lg:h-[778px] md:h-[778px] sm:h-[778px] xs:h-[778px]">
       <video
         autoPlay
         loop
@@ -31,9 +31,10 @@ const Header = () => {
 
       <div
         className="navbar relative  md:pl-[120px] md:pr-[120px] md:pt-[30px] 
+        xl:px-[120px] xl:pr-[120px] 
       lg:pl-[120px] lg:pr-[120px] lg:pt-[30px]
-      xl:pl-[120px] xl:pr-[120px] xl:pt-[30px]
-      2xl:pl-[120px] 2xl:pr-[120px] 2xl:pt-[30px]
+       xl:pt-[30px]
+      2xl:pl-[120px] 2xl:pr-[120px] 2xl:pt-[30px] 
       "
       >
         <div className="navbar-start  grid grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1 space-x-[294px] md:space-x-[0px] lg:space-x-[0px] xl:space-x-[0px] 2xl:space-x-[0px]  ">
@@ -84,17 +85,14 @@ const Header = () => {
           </div>
 
           <Link href="/">
-  
-        <Image
-          src="https://i.ibb.co/LDFmLLK/Group-1171274734.png"
-          alt="Logo"
-          width={100}
-          height={100}
-          className=" md:h-[65px] -ms-32 md:w-[75px] lg:h-[65px] lg:w-[75px] xl:h-[65px] xl:w-[75px] 2xl:h-[65px] 2xl:w-[75px]"
-        />
-   
-    </Link>
-
+            <Image
+              src="https://i.ibb.co/LDFmLLK/Group-1171274734.png"
+              alt="Logo"
+              width={100}
+              height={100}
+              className=" md:h-[65px]  md:w-[75px] lg:h-[65px] lg:w-[75px] xl:h-[65px] xl:w-[75px] 2xl:h-[65px] 2xl:w-[75px]"
+            />
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -159,13 +157,13 @@ const Header = () => {
           </div>
         </div>
         <Image
-          src="/images/logo 01.png"
+          src="/images/pngwing.com (1) 1.png"
           width={100}
           height={100}
           alt=""
           className="absolute bottom-0 right-0
       md:w-[167px] md:h-[130px] lg:w-[167px] lg:h-[130px] xl:w-[167px] xl:h-[130px]
-      2xl:w-[167px] 2xl:h-[130px]"
+      2xl:w-[167px] 2xl:h-[130px] mr-[87px]"
         />
       </div>
     </div>

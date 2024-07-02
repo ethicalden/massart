@@ -62,7 +62,7 @@ const Review = () => {
   };
 
   return (
-    <div className="py-12 bg-white">
+    <div className="py-12 bg-white custom-widhth-silck">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl font-extrabold text-gray-900">
           What our <span className="text-red-500">popular</span> customers are

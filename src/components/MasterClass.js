@@ -85,61 +85,48 @@ const MasterClass = () => {
 
   return (
     <div
-      className="bg-green-300 sm:mt-[11px] xl:mt-[43px] lg:mt-[30px] 
-     md:mt-[25px]  xs:pt-[11px]
-     md:mb-[150px] lg:mb-[100px] sm:mb-[70px] xs:mb-[50px]
-     xs:mx-[30px]
-     sm:mx-[30px]  
-     md:mx-[60px]  lg:mx-[100px] 
-     xl:mx-[120px] "
+      className="custom-widhth-silck sm:mt-[11px] xl:mt-[43px] lg:mt-[30px] 
+     md:mt-[25px] xs:pt-[11px] md:mb-[150px] lg:mb-[100px] sm:mb-[70px] xs:mb-[50px]
+     xs:mx-[30px] sm:mx-[30px] md:mx-[60px] lg:mx-[100px] xl:mx-[120px]"
     >
       <Slider {...settings} className="">
         {events.map((event, index) => (
           <div key={index} className="p-2">
-            <div className="bg-gray-900 rounded-lg overflow-hidden">
-              <div className="relative">
-                <img
-                  src={event.image}
-                  alt={event.title}
-                  className="xl:w-full md:w-full lg:w-full sm:w-full xs:w-full lg:h-[300px] 
-                  xl:h-[300px] md:h-[300px] sm:h-[300px] xs:h-[300px]
-                  
-                  object-cover"
-                />
-                <div
-                  className="absolute top-0 left-2 bg-buttonCustomColor
-                 text-white 
-                 xl:ml-[20px] xl:mr-[290px]
-                 lg:ml-[15px] md:ml-[12px] 
-                 sm:ml-[10px] xs:ml-[8px]  rounded "
-                >
-                  <h1
-                    className="xl:text-[32px] font-inter font-semibold xl:px-[8px] xl:pt-[10px]
+            <div className="bg-gray-900 rounded-lg overflow-hidden relative">
+              <img
+                src={event.image}
+                alt={event.title}
+                className="xl:w-full md:w-full lg:w-full sm:w-full xs:w-full lg:h-[300px] 
+                  xl:h-[300px] md:h-[300px] sm:h-[300px] xs:h-[300px] object-cover"
+              />
+              <div
+                className="absolute top-0 left-2 bg-buttonCustomColor
+                 text-white xl:ml-[20px] xl:mr-[290px] lg:ml-[15px] md:ml-[12px] 
+                 sm:ml-[10px] xs:ml-[8px] rounded"
+              >
+                <h1
+                  className="xl:text-[32px] font-inter font-semibold xl:px-[8px] xl:pt-[10px]
                   lg:px-[8px] lg:pt-[10px] md:px-[8px] md:pt-[10px] sm:px-[8px] sm:pt-[10px]
                   xs:px-[8px] xs:pt-[10px]"
-                  >
-                    {event.date}
-                  </h1>
-                  <p
-                    className="xl:text-[24px] font-inter font-semibold  xl:px-[7px] xl:pb-[10px]
-                  
-                  md:px-[7px] md:pb-[10px]
-                  lg:px-[7px] lg:pb-[10px]
-                  sm:px-[7px] sm:pb-[10px]
+                >
+                  {event.date}
+                </h1>
+                <p
+                  className="xl:text-[24px] font-inter font-semibold xl:px-[7px] xl:pb-[10px]
+                  md:px-[7px] md:pb-[10px] lg:px-[7px] lg:pb-[10px] sm:px-[7px] sm:pb-[10px]
                   xs:px-[7px] xs:pb-[10px]"
-                  >
-                    {event.month}
-                  </p>
-                </div>
+                >
+                  {event.month}
+                </p>
               </div>
-              <div className="p-4">
-                <h3 className="font-bold text-white xs:text-[6px] lg:text-[18px] md:text-[18px] sm:text-[12px]">
+              <div className="absolute bottom-0 left-0 p-4 bg-black bg-opacity-75 text-white june">
+                <h3 className="font-bold xs:text-[6px] lg:text-[18px] md:text-[18px] sm:text-[12px]">
                   {event.title}
                 </h3>
-                <p className="text-white xs:text-[6px] lg:text-[18px] md:text-[18px] sm:text-[12px] font-normal font-inter">
+                <p className="xs:text-[6px] lg:text-[18px] md:text-[18px] sm:text-[12px] font-normal font-inter">
                   {event.author}
                 </p>
-                <p className="flex text-white lg:text-[18px] md:text-[18px] sm:text-[12px] font-normal font-inter">
+                <p className="flex lg:text-[18px] md:text-[18px] sm:text-[12px] font-normal font-inter">
                   <svg
                     className="h-4 w-4 mr-1"
                     fill="none"

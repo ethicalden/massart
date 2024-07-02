@@ -28,3 +28,6 @@
 .slick-dots li:nth-child(3) button:before {
   background-color: #00000033; /* Red color for the middle dot */
 }
+.custom-widhth-silck .slick-list {
+  width: 100%;
+}

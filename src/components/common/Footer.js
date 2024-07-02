@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 
 import SocialContributor from "../SocialContributor/SocialContributer";
@@ -42,7 +40,11 @@ const Footer = () => {
               Copyright @{new Date().getFullYear()}massArt, Designed & Developed
               Ethically by
               <span>
-                <a href="https://www.ethicalden.com/" target="-blank">
+                <a
+                  href="https://www.ethicalden.com/"
+                  target="-blank"
+                  className="underline"
+                >
                   {" "}
                   Ethical Den
                 </a>
@@ -99,6 +101,26 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <hr />
+        <p
+          className="#FFFFFF  text-[16px] hidden md:block w-full text-center
+        md:py-[25px]
+        font-helvetica
+        text-white "
+        >
+          Copyright @{new Date().getFullYear()}massArt, Designed & Developed
+          Ethically by
+          <span>
+            <a
+              href="https://www.ethicalden.com/"
+              target="-blank"
+              className="underline"
+            >
+              {" "}
+              Ethical Den
+            </a>
+          </span>
+        </p>
       </div>
     </>
   );
