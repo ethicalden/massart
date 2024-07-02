@@ -172,76 +172,99 @@ const Contact = () => {
   return (
     <div className="xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] grid grid-cols xl:mt-[187px] lg:mt-[100px] mt-[50px]">
       <div className="flex flex-col bg-gray-100 p-8 rounded-[10px]">
-        <div className="xl:text-[50px] text-[24px] font-bold mb-6 text-buttonCustomColor">
+        <div className="xl:text-[50px] leading-[56px] text-[24px] font-bold mb-[45px] text-buttonCustomColor">
           Get in Touch
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:mb-8 mb-4 md:text-[24px] text-[12px]">
-          <input
-            type="text"
-            name="fName"
-            placeholder="First Name"
-            value={formData.fName}
-            onChange={handleChange}
-            className="black-placeholder pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
-          />
-          {errors.fName && <p className="text-red-500">{errors.fName}</p>}
-          <input
-            type="text"
-            name="lName"
-            placeholder="Last Name"
-            value={formData.lName}
-            onChange={handleChange}
-            className="black-placeholder pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
-          />
-          {errors.lName && <p className="text-red-500">{errors.lName}</p>}
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:mb-8 mb-4 md:text-[24px] md:leading-[30px] text-[12px] leading-[30px]">
+          <div className="flex flex-col">
+            <input
+              type="text"
+              name="fName"
+              placeholder="First Name"
+              value={formData.fName}
+              onChange={handleChange}
+              className="black-placeholder font-24px font-normal font-sans w-full pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+            />
+            {errors.fName && <p className="text-red-500 text-base mt-1">{errors.fName}</p>}
+          </div>
+
+          <div className="flex flex-col w-full">
+            <input
+              type="text"
+              name="lName"
+              placeholder="Last Name"
+              value={formData.lName}
+              onChange={handleChange}
+              className="black-placeholder font-24px font-normal font-sans w-full pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+            />
+            {errors.lName && <p className=" text-red-500 text-base mt-1">{errors.lName}</p>}
+          </div>
+
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:mb-8 mb-4 md:text-[24px] text-[12px]">
-          <input
-            type="tel"
-            name="mobileNumber"
-            placeholder="Phone"
-            value={formData.mobileNumber}
-            onChange={handleChange}
-            className="black-placeholder pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
-          />
-          {errors.mobile && <p className="text-red-500">{errors.mobile}</p>}
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            className="black-placeholder pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
-          />
-          {errors.email && <p className="text-red-500">{errors.email}</p>}
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:mb-8 mb-4 md:text-[24px] md:leading-[30px] text-[12px] leading-[30px]">
+          <div className="flex flex-col">
+            <input
+              type="tel"
+              name="mobileNumber"
+              placeholder="Phone"
+              value={formData.mobileNumber}
+              onChange={handleChange}
+              className="black-placeholder font-24px font-normal font-sans w-full pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+            />
+            {errors.mobile && <p className=" text-red-500 text-base mt-1">{errors.mobile}</p>}
+          </div>
+
+          <div className="flex flex-col">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              className="black-placeholder font-24px font-normal font-sans w-full pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+            />
+            {errors.email && <p className=" text-red-500 text-base mt-1">{errors.email}</p>}
+          </div>
         </div>
-        <input
-          type="text"
-          name="address"
-          placeholder="Address"
-          value={formData.address}
-          onChange={handleChange}
-          className="md:text-[24px] text-[12px] md:pb-8 pb-4 pt-0 black-placeholder border-b-[1px] bg-transparent outline-none border-black p-4 ps-0 md:mb-8 mb-4"
-        />
-        {errors.address && <p className="text-red-500">{errors.address}</p>}
-        <input
-          type="text"
-          name="areaCode"
-          placeholder="Area Code"
-          value={formData.areaCode}
-          onChange={handleChange}
-          className="md:text-[24px] text-[12px] md:pb-8 pb-4 pt-0 black-placeholder border-b-[1px] bg-transparent outline-none border-black p-4 ps-0 mb-4"
-        />
-        {errors.areaCode && <p className="text-red-500">{errors.areaCode}</p>}
+
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:mb-8 mb-4 md:text-[24px] md:leading-[30px] text-[12px] leading-[30px]">
+          <div className="flex flex-col">
+            <input
+              type="text"
+              name="address"
+              placeholder="Address"
+              value={formData.address}
+              onChange={handleChange}
+              className="md:text-[24px] w-full text-[12px] md:pb-8 pb-4 pt-0 black-placeholder font-24px font-normal font-sans border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+            />
+            {errors.address && <p className="text-red-500 text-base mt-1">{errors.address}</p>}
+          </div>
+
+          <div className="flex flex-col">
+            <input
+              type="text"
+              name="areaCode"
+              placeholder="Area Code"
+              value={formData.areaCode}
+              onChange={handleChange}
+              className="md:text-[24px] text-[12px] md:pb-8 pb-4 pt-0 black-placeholder font-24px font-normal font-sans border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+            />
+            {errors.areaCode && <p className="text-red-500 text-base mt-1">{errors.areaCode}</p>}
+          </div>
+        </div>
+
+
+
+
         <textarea
           name="message"
           placeholder="Message"
           value={formData.message}
           onChange={handleChange}
           maxLength={255}
-          className="md:text-[24px] text-[12px] black-placeholder md:pb-8 pb-4 h-[200px] border-[1px] bg-transparent outline-none border-black p-4 rounded-[10px] mt-4"
+          className="md:text-[24px] text-[12px] black-placeholder font-24px font-normal font-sans md:pb-8 pb-4 h-[200px] border-[1px] bg-transparent outline-none border-black p-4 rounded-[10px] mt-4"
         ></textarea>
-        {errors.message && <p className="text-red-500">{errors.message}</p>}
+        {errors.message && <p className="text-red-500 text-red-500 text-base mt-1">{errors.message}</p>}
 
         {isLoading ? (
           <a
