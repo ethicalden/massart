@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+import Image from "next/image";
 import Concept from "./Concept";
 import Video from "./Video";
 
@@ -71,7 +72,7 @@ const Gallery = () => {
         <div className="flex sm:flex-col md:flex-row  gap-4 lg:mt-[50px] ">
           <div>
             <div className="relative max-w-full md:max-w-[605px] h-auto pb-4 group">
-              <img
+              <Image
                 src="https://i.ibb.co/CtpKL8W/Frame-706122.png"
                 alt="Multi Genre Music Festival 2024"
                 className="w-full h-auto"
@@ -83,7 +84,7 @@ const Gallery = () => {
 
             <div className="flex sm:flex-col md:flex-row gap-4">
               <div className="relative md:max-w-[288px] h-auto group">
-                <img
+                <Image
                   src="https://i.ibb.co/PZ1dtSq/Frame-706122-1.png"
                   alt=""
                   className="w-full h-auto"
@@ -94,7 +95,7 @@ const Gallery = () => {
               </div>
 
               <div className=" relative md:max-w-[288px] h-auto group">
-                <img
+                <Image
                   src="https://i.ibb.co/HhXLvfW/Frame-706122-2.png"
                   alt=""
                   className="w-full h-auto"
@@ -107,7 +108,7 @@ const Gallery = () => {
           </div>
 
           <div className="relative max-w-full md:max-w-[565px] h-auto group">
-            <img
+            <Image
               src="https://i.ibb.co/Y0YYYrb/Frame-706122-3.png"
               alt=""
               className="w-full h-auto"

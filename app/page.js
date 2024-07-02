@@ -1,8 +1,3 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/order */
-/* eslint-disable prettier/prettier */
-
 import Explore from "@/src/components/Explore";
 import Gallery from "@/src/components/Gallery";
 import MasterClass from "@/src/components/MasterClass";

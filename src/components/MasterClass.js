@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import "/public/styles/MasterClass.css";
 
 const events = [
@@ -93,7 +93,7 @@ const MasterClass = () => {
         {events.map((event, index) => (
           <div key={index} className="p-2">
             <div className="bg-gray-900 rounded-lg overflow-hidden relative">
-              <img
+              <Image
                 src={event.image}
                 alt={event.title}
                 className="xl:w-full md:w-full lg:w-full sm:w-full xs:w-full lg:h-[300px] 
