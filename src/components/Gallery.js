@@ -17,8 +17,24 @@ const Gallery = () => {
   ];
   return (
     <>
-      <div className="sm:pl-[30px] sm:pr-[30px] md:pl-[60px] md:pr-[60px] lg:pl-[120px] lg:pr-[120px] sm:pt-[15px] lg:pt-[60px] md:pt-[30px]  text-black bg-white">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 lg:gap-[130px] sm:mt-[25px] sm:mb-[25px]">
+      <div
+        className="xs:pl-[30px] 
+        sm:px-[20px]  
+      md:px-[60px]
+      xl:px-[120px] 
+      lg:pr-[120px] sm:pt-[15px] lg:pt-[60px] md:pt-[30px] 
+       text-black bg-white"
+      >
+        <div
+          className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 
+        xl:grid-cols-2
+        xl:gap-x-[171px]
+        lg:gap-x-[165px]
+        md:gap-x-[130px]
+        sm:gap-x-[100px]
+        xs:gap-x-[90px]
+         sm:mt-[25px] sm:mb-[25px]"
+        >
           <div className=" ">
             <h1 className=" lg:pt-[8px] text-[50px] font-bold font-helvetica text-buttonCustomColor">
               Gallery
@@ -41,7 +57,7 @@ const Gallery = () => {
             </div>
           </div>
 
-          <p className="font-normal hidden sm-block sm:text-[16px] lg:text-[16px] font-helvetica ">
+          <p className=" hidden md:block font-normal xs:text-[8px] sm:text-[10px]  md:text-[12px] lg:text-[12px] xl:text-[16px]  font-helvetica ">
             Find Togetherness and Friendship in Every Corner of Our Events"
             depicts moments of closeness and a sense of brotherhood that exist
             during our events. These photos show how shared experiences can
@@ -53,16 +69,7 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div
-          className="grid sm:grid-cols-1 
-          
-          md:grid-cols-2
-        lg:grid-cols-2
-        xl:grid-cols-2
-          xl:gap-x-[30px]
-          lg:gap-x-[30px]
-          md:gap-x-[30px] lg:mt-[50px] "
-        >
+        <div className="flex sm:flex-col md:flex-row  gap-4 lg:mt-[50px] ">
           <div>
             <div
               className="bg-green-300 relative  
@@ -85,11 +92,7 @@ const Gallery = () => {
                 sm:w-full sm-h-full
                 xs:w-full xs-h-full"
               />
-              <p
-                className="absolute bottom-0 left-0 
-              leading-[15px] w-[148px] px-[10px] py-[10px]
-               text-white font-helvetica font-bold text-[12px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              >
+              <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[20px] xl:pt-[289px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Multi Genre Music Festival 2024
               </p>
             </div>
@@ -119,8 +122,8 @@ const Gallery = () => {
                   sm:w-full sm-h-full
                   xs:w-full xs-h-full"
                 />
-                <p className="absolute bottom-0 left-0 leading-[15px] w-[148px] px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Multi Genre Music Festival 2024
+                <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[53px] xl:pt-[257px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Latest Technology Convention
                 </p>
               </div>
 
@@ -143,8 +146,8 @@ const Gallery = () => {
                   sm:w-full sm-h-full
                   xs:w-full xs-h-full"
                 />
-                <p className="absolute bottom-0 left-0 leading-[15px] w-[148px] px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Multi Genre Music Festival 2024
+                <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[20px] xl:pt-[289px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Prestigious Fine Arts Exhibition
                 </p>
               </div>
             </div>
@@ -163,23 +166,49 @@ const Gallery = () => {
               width={100}
               height={100}
               alt=""
-              className="lg:w-full lg-h-full
-              xl:w-full xl-h-full
-              md:w-full md-h-full
-              sm:w-full sm-h-full
-              xs:w-full xs-h-full"
+              className="w-full h-auto"
             />
-            <p className="absolute bottom-0 left-0 leading-[15px] w-[148px] px-[10px] py-[10px] text-white font-helvetica font-bold text-[12px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              Multi Genre Music Festival 2024
+            <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[164px] xl:pt-[660px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Latest Indie Musician Concerts
             </p>
           </div>
         </div>
 
-        <div className="text-white md:mt-[50px] md:pb-[150px]">
-          <button className="bg-buttonCustomColor text-[18px] font-bold font-poppins w-full rounded-3xl h-[59px] border border-buttonCustomColor hidden sm:block">
+        <div className="text-white md:mt-[50px] ">
+          <button
+            className="xl:mb-[150px] xl:mt-[50px]
+            lg:mb-[100px] lg:mt-[30px]
+            md:mb-[70px] md:mt-[20px]
+            sm:mb-[50px] sm:mt-[10px]
+            xs:mb-[30px] xs:mt-[10px]
+             bg-buttonCustomColor 
+          xl:text-[18px] 
+          lg:text-[18px]
+          md:text-[12px]
+          xl:py-[16px] lg:py-[16px] md:py-[16px] 
+         
+           font-bold font-helvetica w-full rounded-[100px] 
+          xl:h-[53px] border border-buttonCustomColor hidden sm:block"
+          >
             Browse More Video
           </button>
-          <button className="mb-[69px] border sm:hidden border-buttonCustomColor text-buttonCustomColor rounded-[100px] font-helvetica font-bold lg:w-[146px] h-[32px] mt-[25px] text-[12px]">
+
+          <button
+            className=" xl:mb-[150px]  lg:mb-[100px]  md:mb-[70px] 
+            sm:mb-[50px]
+            xs:mb-[30px]
+            sm:text-[12px]
+            xs:text-[12px]
+            sm:py-[10px] xs:py-[10px]
+            sm:px-[36px] xs:px-[36px]
+             border sm:hidden border-buttonCustomColor
+           text-buttonCustomColor rounded-[100px] font-helvetica font-bold 
+           xl:w-[146px]  xl:h-[14px] xl:mt-[50px] xl:text-[12px]
+           
+           lg:w-[146px]  lg:h-[14px] lg:mt-[50px] lg:text-[12px]
+           md:w-[146px]  md:h-[14px] md:mt-[40px] md:text-[12px]
+           sm:w-[146px]  sm:h-[14px] sm:mt-[30px] "
+          >
             Browse more
           </button>
         </div>

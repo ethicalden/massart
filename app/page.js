@@ -1,3 +1,7 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/order */
+/* eslint-disable prettier/prettier */
 
 import Explore from "@/src/components/Explore";
 import Gallery from "@/src/components/Gallery";
@@ -20,6 +24,21 @@ export const metadata = {
 
 export default function Home() {
   return (
+    <div className="bg-[#FFFFFF]">
+      <Header />
+      <main>
+        <HomeAboutUs />
+        <Visual />
+        <Gallery />
+        <Explore />
+        <MasterClass />
+        <EventPartener />
+        <Review />
+        <GuidanceHeading />
+        <GuidenceStep />
+      </main>
+      <Footer />
+    </div>
      <><div className="bg-[#FFFFFF]">
         <Header />
         <main>

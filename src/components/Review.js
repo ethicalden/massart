@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
+import "/public/styles/MasterClass.css";
 import "slick-carousel/slick/slick.css";
 
 const testimonials = [
