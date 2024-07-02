@@ -36,5 +36,23 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    function ({ addComponents }) {
+      addComponents({
+        ".slick-dots": {
+          "li button:before": {
+            "@apply bg-gray-300 w-3 h-3 rounded-full": {},
+            content: '""',
+          },
+          "li.slick-active button:before": {
+            "@apply bg-buttonCustomColor": {},
+          },
+          "li:nth-child(2) button:before": {
+            "@apply bg-buttonCustomColor": {}, // Assuming the second dot is the middle one
+          },
+        },
+      });
+    },
+  ],
 };
