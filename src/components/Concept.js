@@ -1,290 +1,200 @@
 import Image from "next/image";
 
 const Concept = () => {
+
   return (
-    <div
-      className=" xl:mb-[50px] xl:px-[120px] lg:px-[100px] md:px-[60px] 
-    sm:px-[40px] xs:px-[30px]
-     text-black "
-    >
-      <div
-        className=" xl:h-[622px] lg:h-[600px]  md:h-[580px] sm:h-[550px] xs:h-[500px] 
-        grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 
-      xl:gap-x-[24px]  lg:gap-x-[18px]  md:gap-x-[14px]  
-      xl:mb-[35px]  lg:mb-[25px]  md:mb-[20px]  "
-      >
-        <div
-          className="relative group sm:h-[202px] xs:h-[202px] 
-           
-         "
-        >
-          <img
-            src="/images/picture (10).png"
-            alt="Concept of Durga Puja"
-            className="xl:w-full h-full xl:h-[622px] lg:h-[600px] md:h-[580px] sm:h-[285px] xs:h-[250px] object-cover"
-          />
+    <div>
 
-          <div className="  absolute bottom-0 left-0  ">
-            <p
-              className=" xl:ml-[24px] xl:mr-[435px] font-normal  font-inter
-              xl:px-[8px] xl:py-[8px]
-              xl:text-[18px]  lg:text-[16px] md:text-[16px] sm:text-[12px]
-              xs:text-[8px]
-               text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            >
-              Interview
-            </p>
+      <div className="xl:ms-[125px] ms-[35px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[35px] md:mt-[150px] mt-[60px]">
+        <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-[106px] gap-7 md:mb-[61px] mb-7">
+          <div>
+            <Image
+              src="/photos/big screen/concept/picture 01.png"
+              className="md:w-[527px] md:h-[777px] w-[366px] h-[347px]"
+              alt="logo"
+              width={527}
+              height={777}
+            />
+          </div>
+          <div>
+            <div className="font-[Helvetica] md:text-[49px] leading-[56px] text-[24px] font-bold mb-[20px]">
+              <span className="text-red-600">What</span> is durga puja Art
+            </div>
 
-            <p
-              className="xl:ml-[24px] xl:mr-[24px] xl:mb-[24px] xl:mt-[16px]
+            <div className="md:text-[15px] leading-[24px] text-[12px]">
+              <p className="md:mb-6 mb-5" style={{ fontFamily: 'sans-serif' }}>
+                durga puja is bengal’s biggest festival that takes place over a week  or so in september-october, on dates varying every year but announced  well in advance. at the centre of the celebration is the figure of  goddess durga, crafted traditionally in clay, who is worshipped in the  act of vanquishing the demon mahishasura. it is particularly in the  streets of kolkata (calcutta), the capital of the state, that durga puja  transcends religious bounds and serves as the cradle for the world’s  largest publicly funded Art show. while the worship of durga and her  four divine children remains the ritualistic core, the temporary  shelters of the idols – structures created from months in advance in  street corners – become exquisite works of artistic expression, unique  to each locality every year. thus there is a different artistic  interpretation offered in every locality through the choice of a  different theme to which the entire structure conforms.
 
-             xl:text-[24px] lg:text-[20px] md:text-[16px] sm:text-[14px] xs:text-[12px]
-              font-inter font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            >
-              Concept of Durga Puja
-            </p>
+
+              </p>
+
+              <p className="md:mb-6 mb-5" style={{ fontFamily: 'sans-serif' }}>
+                every autumn, the entire city wakes up to an explosion of creativity,  with every neighbourhood decked up in unique templates that are a  mélange of traditional Art and contemporary concepts, that are diverse  and creative enough to rival any international art biennale. commercial  promotion and sponsorship have kept pace with the explosion of Art,  providing an eco-system of community support.
+              </p>
+
+              <p className="md:mb-6 mb-5" style={{ fontFamily: 'sans-serif' }}>
+                as a result, every year, the durga puja experience is different and  diverse. the evolution of durga puja of kolkata into an inclusive,  community-driven celebration of Art has been hailed by unesco, which  describes it as "the best instance of the public performance of religion  and Art, and as thriving ground for collaborative artists and  designers...”. durga puja has been inscribed on its list of intangible  cultural heritage of humanity in 2021.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div
-          className="  xl:gap-x-[24px]  lg:gap-x-[18px]  md:gap-x-[14px]  sm:gap-y-[10px]  xs:gap-y-[8px]
-     grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2   "
-        >
-          {/* 1 */}
 
-          <div
-            className=" relative group 
-            xl:h-[202px] lg:h-[202px] md:h-[202px] sm:h-[202px] xs:h-[202px] 
-            "
-          >
-            <img
-              src="/images/picture (11).png"
-              alt="Concept of Durga Puja"
-              className="xl:w-full xl:h-full lg:h-full md:h-full sm:h-full xs:h-full"
+
+        <div className="md:grid md:grid-cols-3 grid-cols-2 gap-5 mb-[157px] hidden">
+          <div className="relative group rounded-lg overflow-hidden justify-center flex">
+            <Image
+              className="lg:w-[387px] lg:h-[491px] float-left"
+              width={387}
+              height={491}
+              src="/photos/big screen/concept/picture 02.png"
+              alt=""
             />
+            <div
+              className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              style={{
+                background:
+                  "linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))",
+              }}
+            >
+              <p className="text-[23px] leading-[30px] font-bold font-[Helvetica] mb-[10px]">
+                contemporary durga puja Art
+              </p>
+              <div>
+                <a
+                  className="text-[18px] text-white text-opacity-50 w-auto"
 
-            <p
-              className=" absolute top-0 left-0 xl:ml-[24px] xl:mr-[435px]   
-              xl:px-[8px] xl:py-[8px] font-normal
-              xl:text-[18px]  lg:text-[16px] md:text-[14px] sm:text-[12px]
-              xs:text-[8px]
-               text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            >
-              Interview
-            </p>
-            <p
-              className="xl:text-[18px] lg:text-[15px] md:text-[14px]
-            sm:text-[12px] xs:text-[10px] font-inter font-medium 
-             xl:pt-[25px] lg:pt-[20px] md:pt-[15px] sm:pt-[12px] xs:pt-[10px]
-             "
-            >
-              our preview show 2024 to be staged at a prominent kolkata venue...
-              <a href="/" className="underline font-inter font-medium ">
-                view more
-              </a>
-            </p>
+                >
+                  Brandon Levin
+                </a>
+              </div>
+            </div>
           </div>
 
-          {/* 2 */}
-
-          <div
-            className="relative group xl:h-[202px] lg:h-[202px] md:h-[202px] sm:h-[202px] xs:h-[202px] 
-            
-          "
-          >
-            <img
-              src="/images/picture (12).png"
-              alt="Concept of Durga Puja"
-              className="xl:w-full  xl:h-full lg:h-full md:h-full sm:h-full xs:h-full"
+          <div className="relative group rounded-lg overflow-hidden justify-center flex">
+            <Image
+              className="w-[387px] h-[491px] float-left"
+              width={387}
+              height={491}
+              src="/photos/big screen/concept/picture 03.png"
+              alt=""
             />
+            <div
+              className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              style={{
+                background:
+                  "linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))",
+              }}
+            >
+              <p className="text-[23px] leading-[30px] font-bold font-[Helvetica] mb-[10px]">
+                contemporary durga puja Art
+              </p>
+              <div>
+                <a
+                  className="text-[18px] text-white text-opacity-50 w-auto"
 
-            <p
-              className=" absolute top-0 left-0 font-normal xl:ml-[24px] xl:mr-[435px]   font-inter
-              xl:px-[8px] xl:py-[8px]
-              xl:text-[18px]  lg:text-[16px] md:text-[16px] sm:text-[12px]
-              xs:text-[8px]
-               text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            >
-              Interview
-            </p>
-            <p
-              className="xl:text-[18px] lg:text-[15px] md:text-[14px]
-            sm:text-[12px] xs:text-[10px] font-inter font-medium 
-             xl:pt-[25px] lg:pt-[20px] md:pt-[15px] sm:pt-[12px] xs:pt-[10px]"
-            >
-              our preview show 2024 to be staged at a prominent kolkata venue...
-              <a href="/" className="underline font-inter font-medium ">
-                view more
-              </a>
-            </p>
-          </div>
-          {/* 3 */}
-
-          <div
-            className="relative group xl:h-[202px] lg:h-[202px] md:h-[202px] sm:h-[202px] xs:h-[202px]  
-          "
-          >
-            <img
-              src="/images/picture (14).png"
-              alt="Concept of Durga Puja"
-              className="xl:w-full xl:h-full lg:h-full md:h-full sm:h-full xs:h-full"
-            />
-
-            <p
-              className=" absolute top-0 left-0 font-normal xl:ml-[24px] xl:mr-[435px]   font-inter
-              xl:px-[8px] xl:py-[8px]
-              xl:text-[18px]  lg:text-[16px] md:text-[16px] sm:text-[12px]
-              xs:text-[8px]
-               text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            >
-              Interview
-            </p>
-            <p
-              className="xl:text-[18px] lg:text-[15px] md:text-[14px]
-            sm:text-[12px] xs:text-[10px] font-inter font-medium 
-             xl:pt-[25px] lg:pt-[20px] md:pt-[15px] sm:pt-[12px] xs:pt-[10px]"
-            >
-              our preview show 2024 to be staged at a prominent kolkata venue...
-              <a href="/" className="underline font-inter font-medium ">
-                view more
-              </a>
-            </p>
+                >
+                  Brandon Levin
+                </a>
+              </div>
+            </div>
           </div>
 
-          {/* 4 */}
-
-          <div
-            className="relative group xl:h-[202px] lg:h-[202px] md:h-[202px] sm:h-[202px] xs:h-[202px] 
-          "
-          >
-            <img
-              src="/images/picture (15).png"
-              alt="Concept of Durga Puja"
-              className="xl:w-full xl:h-full lg:h-full md:h-full sm:h-full xs:h-full"
+          <div className="relative group rounded-lg overflow-hidden justify-center flex">
+            <Image
+              className="w-[387px] h-[491px] float-left"
+              width={387}
+              height={491}
+              src="/photos/big screen/concept/picture 04.png"
+              alt=""
             />
+            <div
+              className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              style={{
+                background:
+                  "linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))",
+              }}
+            >
+              <p className="text-[23px] leading-[30px] font-bold font-[Helvetica] mb-[10px]">
+                contemporary durga puja Art
+              </p>
+              <div>
+                <a className="text-[18px] text-white text-opacity-50 w-auto"
 
-            <p
-              className=" absolute top-0 left-0 font-normal xl:ml-[24px] xl:mr-[435px]   font-inter
-              xl:px-[8px] xl:py-[8px]
-              xl:text-[18px]  lg:text-[16px] md:text-[16px] sm:text-[12px]
-              xs:text-[8px]
-               text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            >
-              Interview
+                >
+                  Brandon Levin
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      {/* Show on mobile */}
+      <div className="md:hidden grid grid-flow-col auto-cols-max gap-5 mb-[17px]  ms-[35px]  overflow-x-auto">
+        <div className="relative rounded-lg overflow-hidden justify-center flex">
+          <Image
+            className="lg:w-[165px] lg:h-[249px]"
+            width={165}
+            height={249}
+            src="/photos/big screen/concept/picture 02.png"
+            alt=""
+          />
+          <div
+            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-2 text-white"           
+          >
+            <p className="text-[12px] leading-[15px] font-[Helvetica] mb-[10px]">
+              contemporary durga puja Art
             </p>
-            <p
-              className="xl:text-[18px] lg:text-[15px] md:text-[14px]
-            sm:text-[12px] xs:text-[10px] font-inter font-medium 
-             xl:pt-[25px] lg:pt-[20px] md:pt-[15px] sm:pt-[12px] xs:pt-[10px]"
-            >
-              our preview show 2024 to be staged at a prominent kolkata venue...
-              <a href="/" className="underline font-inter font-medium ">
-                view more
-              </a>
+
+          </div>
+        </div>
+
+        <div className="relative group rounded-lg overflow-hidden justify-center flex">
+          <Image
+            className="lg:w-[165px] lg:h-[249px]"
+            width={165}
+            height={249}
+            src="/photos/big screen/concept/picture 03.png"
+            alt=""
+          />
+          <div
+            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-2 text-white"
+          
+          >
+            <p className="text-[12px] leading-[15px] font-[Helvetica] mb-[10px]">
+            Multi Genre Music Festival 2024
             </p>
+        
+          </div>
+        </div>
+
+        <div className="relative group rounded-lg overflow-hidden justify-center flex">
+          <Image
+            className="lg:w-[165px] lg:h-[249px]"
+            width={165}
+            height={249}
+            src="/photos/big screen/concept/picture 04.png"
+            alt=""
+          />
+          <div
+            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-2 text-white"
+            style={{
+              background:
+                "linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))",
+            }}
+          >
+           <p className="text-[12px] leading-[15px] font-[Helvetica] mb-[10px]">
+            Multi Genre Music Festival 2024
+            </p>
+          
           </div>
         </div>
       </div>
-      <div
-        className="grid xl:grid-cols-4 lg:grid-cols-4  md:grid-cols-4 sm:grid-cols-1 mt-[35px] mb-[150px]
-      xl:gap-[44px]
-        lg:gap-[25px]
-       md:gap-[18px]
-       
-       "
-      >
-        <div
-          className="relative group
-        xl:h-[202px] lg:h-[202px] md:h-[202px] sm:h-[202px] xs:h-[202px]"
-        >
-          <img
-            src="https://i.ibb.co/QcTHFVd/picture-6.png"
-            alt=""
-            className="xl:w-full lg:w-full md:w-full sm:w-full xs:w-full
-             xl:h-full lg:h-full md:h-full sm:h-full xs:h-full"
-          />
-          <p className="absolute top-0 left-0 xl:ml-[16px] xl:mt-[16px] xl:mr-[171px] xl:mb-[152px] xl:px-[8px] xl:py-[8px] font-normal xl:text-[16px] lg:text-[12px] md:text-[10px] sm:text-[8px] xs:text-[8px] rounded-lg text-white bg-gradColor bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Interview
-          </p>
-          <p
-            className="xl:text-[18px] lg:text-[15px] md:text-[14px]
-            sm:text-[12px] xs:text-[10px] font-inter font-medium 
-             xl:pt-[25px] lg:pt-[20px] md:pt-[15px] sm:pt-[12px] xs:pt-[10px]"
-          >
-            our preview show 2024 to be staged at a prominent kolkata venue...
-            <a href="/" className="underline font-inter font-medium ">
-              view more
-            </a>
-          </p>
-        </div>
 
-        <div className="relative group xl:h-[202px] lg:h-[202px] md:h-[202px] sm:h-[202px] xs:h-[202px]">
-          <img
-            src="https://i.ibb.co/XXjYh7v/picture-7.png"
-            alt=""
-            className="xl:w-full lg:w-full md:w-full sm:w-full xs:w-full
-            xl:h-full lg:h-full md:h-full sm:h-full xs:h-full"
-          />
 
-          <p className="absolute top-0 left-0 xl:ml-[16px] xl:mt-[16px] xl:mr-[171px] xl:mb-[152px] xl:px-[8px] xl:py-[8px] font-normal xl:text-[16px] lg:text-[12px] md:text-[10px] sm:text-[8px] xs:text-[8px] rounded-lg text-white bg-gradColor bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Interview
-          </p>
-          <p
-            className="xl:text-[18px] lg:text-[15px] md:text-[14px]
-            sm:text-[12px] xs:text-[10px] font-inter font-medium 
-             xl:pt-[25px] lg:pt-[20px] md:pt-[15px] sm:pt-[12px] xs:pt-[10px]"
-          >
-            our preview show 2024 to be staged at a prominent kolkata venue...
-            <a href="/" className="underline font-inter font-medium ">
-              view more
-            </a>
-          </p>
-        </div>
-
-        <div className="relative group xl:h-[202px] lg:h-[202px] md:h-[202px] sm:h-[202px] xs:h-[202px]">
-          <img
-            src="https://i.ibb.co/QrLvbLk/picture-8.png"
-            alt=""
-            className="xl:w-full lg:w-full md:w-full sm:w-full xs:w-full
-            xl:h-full lg:h-full md:h-full sm:h-full xs:h-full"
-          />
-          <p className="absolute top-0 left-0 xl:ml-[16px] xl:mt-[16px] xl:mr-[171px] xl:mb-[152px] xl:px-[8px] xl:py-[8px] font-normal xl:text-[16px] lg:text-[12px] md:text-[10px] sm:text-[8px] xs:text-[8px] rounded-lg text-white bg-gradColor bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Interview
-          </p>
-          <p
-            className="xl:text-[18px] lg:text-[15px] md:text-[14px]
-            sm:text-[12px] xs:text-[10px] font-inter font-medium 
-             xl:pt-[25px] lg:pt-[20px] md:pt-[15px] sm:pt-[12px] xs:pt-[10px]"
-          >
-            our preview show 2024 to be staged at a prominent kolkata venue...
-            <a href="/" className="underline font-inter font-medium ">
-              view more
-            </a>
-          </p>
-        </div>
-
-        <div className="relative group xl:h-[202px] lg:h-[202px] md:h-[202px] sm:h-[202px] xs:h-[202px]">
-          <img
-            src="https://i.ibb.co/52cr68L/picture-9.png"
-            alt=""
-            className="xl:w-full lg:w-full md:w-full sm:w-full xs:w-full
-            xl:h-full lg:h-full md:h-full sm:h-full xs:h-full"
-          />
-          <p className="absolute top-0 left-0 xl:ml-[16px] xl:mt-[16px] xl:mr-[171px] xl:mb-[152px] xl:px-[8px] xl:py-[8px] font-normal xl:text-[16px] lg:text-[12px] md:text-[10px] sm:text-[8px] xs:text-[8px] rounded-lg text-white bg-gradColor bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Interview
-          </p>
-          <p
-            className="xl:text-[18px] lg:text-[15px] md:text-[14px]
-            sm:text-[12px] xs:text-[10px] font-inter font-medium 
-             xl:pt-[25px] lg:pt-[20px] md:pt-[15px] sm:pt-[12px] xs:pt-[10px]"
-          >
-            our preview show 2024 to be staged at a prominent kolkata venue...
-            <a href="/" className="underline font-inter font-medium ">
-              view more
-            </a>
-          </p>
-        </div>
-      </div>
     </div>
   );
 };
