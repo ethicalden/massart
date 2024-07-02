@@ -1,7 +1,9 @@
 const HomeAboutUs = () => {
   return (
     <div
-      className="  pt-[60px] bg-white font-helvetica grid xl:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 
+      className="  pt-[60px] bg-white font-helvetica grid sm:grid-cols-1
+      xs:grid-cols-1
+       xl:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 
       xl:gap-[106px]
      
       xl:mx-[120px] 
@@ -14,10 +16,17 @@ const HomeAboutUs = () => {
     >
       <div className="">
         <h1 className="">
-          <span className="text-buttonCustomColor text-[50px]">About</span> us
+          <span
+            className="text-buttonCustomColor xl:text-[50px] lg:text-[40px] md:text-[30px]
+          sm:text-[20px]"
+          >
+            About
+          </span>{" "}
+          us
         </h1>
         <p
-          className="text-[18px] font-normal font-helvetica xl:pt-[25px] lg:pt-[25px] md:pt-[20px] 
+          className="xl:text-[18px] lg:text-[14px] md:text-[14px] sm:text-[12px] xs:text-[12px]
+          font-normal font-helvetica xl:pt-[25px] lg:pt-[25px] md:pt-[20px] 
         sm:pt-[15px] xs:pt-[15px] xl:pb-[35px] lg:pb-[25px] md:pb-[20px] 
         sm:pb-[15px] xs:pb-[15px]
         "
@@ -30,7 +39,7 @@ const HomeAboutUs = () => {
         </p>
 
         <button
-          className="md:mb-[35px] 
+          className="sm:mb-[25px] xs:mb-[25px]
             bg-buttonCustomColor text-white  
           xs:px-[36px] xs:py-[12px] 
         lg:px-[36px] lg:py-[12px] 
