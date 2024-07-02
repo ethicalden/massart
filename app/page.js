@@ -12,26 +12,32 @@ import Visual from "@/src/components/Visuals";
 import Footer from "@/src/components/common/Footer";
 import Header from "@/src/components/common/Header";
 
+export const metadata = {
+  title: "Home - Massart",
+  description: "Welcome to the homepage of Massart.",
+};
+
+
 export default function Home() {
   return (
-    <div className="bg-[#FFFFFF]">
-      <Header />
-      <main>
-        <HomeAboutUs />
-        <Visual />
-        <Gallery />
-        <Explore />
-        <MasterClass />
-        <Review />
-        <EventPartener />
-        <GuidanceHeading />
-        <GuidenceStep />
+     <><div className="bg-[#FFFFFF]">
+        <Header />
+        <main>
+          <HomeAboutUs />
+          <Visual />
+          <Gallery />
+          <Explore />
+          <MasterClass />
+          <Review />
+          <EventPartener />
+          <GuidanceHeading />
+          <GuidenceStep />
 
-        {/* <div className="ml-8 mr-8">
-          <AskQuestion />
-        </div> */}
-      </main>
-      <Footer />
-    </div>
+          {/* <div className="ml-8 mr-8">
+      <AskQuestion />
+    </div> */}
+        </main>
+        <Footer />
+      </div></>
   );
 }

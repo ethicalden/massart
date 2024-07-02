@@ -4,6 +4,10 @@ import ContemporaryPhoneGrid from '@/src/components/Contemporay/PhoneGrid/Contem
 import Footer from '@/src/components/common/Footer';
 import Header from '@/src/components/common/Header';
 
+ export const metadata = {
+  title: "Contemporary - Massart",
+  description: "Welcome to the contemporary of Massart.",
+};
 const Contemporary = () => {
     return (
         <div className="">
