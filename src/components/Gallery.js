@@ -39,11 +39,16 @@ const Gallery = () => {
               Gallery
             </h1>
 
-            <div className="lg:mt-[50px] grid sm:grid-cols-4 lg:grid-cols-4 font-helvetica justify-between  lg:gap-[20px]">
+            <div
+              className="lg:mt-[50px] grid xs:grid-cols-4 sm:grid-cols-4 lg:grid-cols-4 md:grid-cols-4  font-helvetica 
+            justify-between  xl:gap-x-[20px]
+             lg:gap-x-[18px]  md:gap-x-[16px]  sm:gap-x-[14px]  xs:gap-[50px]"
+            >
               {buttons.map((button) => (
                 <button
                   key={button.id}
-                  className={`text-[12px] font-bold rounded  h-[54px]  lg:px-[31px] lg:py-[17px] ${
+                  className={`sm:text-[12px] md:text-[18px] font-bold rounded    xl:px-[31px] xl:py-[17px] lg:px-[31px] lg:py-[17px] 
+                  sm:px-[14px] sm:py-[8px]   xs:px-[18px] xs:py-[8px]   ${
                     activeButton === button.id
                       ? "bg-buttonCustomColor  text-white"
                       : "border border-buttonCustomColor text-black"
@@ -56,7 +61,7 @@ const Gallery = () => {
             </div>
           </div>
 
-          <p className=" hidden md:block font-normal xs:text-[8px] sm:text-[10px]  md:text-[12px] lg:text-[12px] xl:text-[16px]  font-helvetica ">
+          <p className=" hidden md:block font-normal   md:text-[12px] lg:text-[12px] xl:text-[16px]  font-helvetica ">
             Find Togetherness and Friendship in Every Corner of Our Events"
             depicts moments of closeness and a sense of brotherhood that exist
             during our events. These photos show how shared experiences can
