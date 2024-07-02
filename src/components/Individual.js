@@ -21,13 +21,17 @@ const Individual = () => {
     <div className=" xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] md:mt-[150px] mt-[60px]">
       <div className="grid md:grid-cols-2 grid-cols-1">
         <div>
-          <Image        width={100}
-            height={100} className="w-full" src="/images/picture 01.png" alt="Image 1" />
+          <Image
+            width={527}
+            height={777}
+            className="md:w-[527] md:h-[777] w-[367] h-[588]"
+            src="/images/picture 01.png"
+            alt="Image 1" />
         </div>
 
         <div className="md:ms-[65px]">
           <div className="lg:text-[50px] lg:leading-[56px] md:text-left text-[24px] leading-[36px] font-bold lg:mb-[60px] mb-[40px] md:mt-0 mt-[28px]">
-            arjunpur amra sabai 
+            arjunpur amra sabai <br className="md:block hidden" />
             <span className="text-red-600"> club</span>
           </div>
           <div className="">
@@ -74,33 +78,37 @@ const Individual = () => {
         <div className="grid gap-6 md:grid-cols-2 grid-cols-1 w-full">
           <div>
             <Image
-              className="w-full h-auto rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
-              alt=""
-            />
+              width={605}
+              height={341}
+              className="md:w-[605px] md:h-[341px] w-[367px] h-[588px]"
+              src="/images/picture 01.png"
+              alt="Image 1" />
             <div className="grid gap-6 md:grid-cols-2 grid-cols-1  mt-6">
               <div>
-                <Image
-                  className="w-full h-auto rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
-                  alt=""
-                />
+              <Image
+              width={288}
+              height={341}
+              className="md:w-[288px] md:h-[341px] w-[367px] h-[588px]"
+              src="/images/picture 02.png"
+              alt="Image 1" />
               </div>
               <div>
-                <Image
-                  className="w-full h-auto rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
-                  alt=""
-                />
+              <Image
+              width={288}
+              height={341}
+              className="md:w-[288px] md:h-[341px] w-[367px] h-[588px]"
+              src="/images/picture 01.png"
+              alt="Image 1" />
               </div>
             </div>
           </div>
           <div>
-            <Image
-              className="w-full h-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
-              alt=""
-            />
+          <Image
+              width={565}
+              height={712}
+              className="md:w-[565px] md:h-[712px] w-[367px] h-[588px]"
+              src="/images/picture 01.png"
+              alt="Image 1" />
           </div>
         </div>
       </div>
