@@ -7,6 +7,7 @@ import Head from "next/head";
   title: "About Us - Massart",
   description: "Welcome to the about us of Massart.",
 };
+
 const page = () => {
   return (
     <>

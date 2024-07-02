@@ -15,9 +15,11 @@ import HomeAboutUs from "@/src/components/HomeAboutUs";
 import Visual from "@/src/components/Visuals";
 import Footer from "@/src/components/common/Footer";
 import Header from "@/src/components/common/Header";
-import AboutUs from "@/src/components/AboutUs";
-import Concept from "@/src/components/Concept";
-import Video from "@/src/components/Video";
+
+ export const metadata = {
+  title: "Home - Massart",
+  description: "Welcome to the home of Massart.",
+};
 
 export default function Home() {
   return (
