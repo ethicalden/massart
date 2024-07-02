@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-import Image from "next/image";
 import Concept from "./Concept";
 import Video from "./Video";
 
@@ -71,80 +70,34 @@ const Gallery = () => {
 
         <div className="flex sm:flex-col md:flex-row  gap-4 lg:mt-[50px] ">
           <div>
-            <div
-              className="bg-green-300 relative  
-             xl:h-[341px]
-             lg:h-[341px]
-             md:h-[341px]
-             sm:h-[341px]
-             xs:h-[341px]
-             
-             "
-            >
-              <Image
-                src="/images/picture 01.png"
-                alt=""
-                width={100}
-                height={100}
-                className="lg:w-full lg-h-full
-                md:w-full md-h-full
-                xl:w-full xl-h-full
-                sm:w-full sm-h-full
-                xs:w-full xs-h-full"
+            <div className="relative max-w-full md:max-w-[605px] h-auto pb-4 group">
+              <img
+                src="https://i.ibb.co/CtpKL8W/Frame-706122.png"
+                alt="Multi Genre Music Festival 2024"
+                className="w-full h-auto"
               />
               <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[20px] xl:pt-[289px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Multi Genre Music Festival 2024
               </p>
             </div>
 
-            <div
-              className="grid sm:grid-cols-1 md:grid-cols-2 
-            lg:grid-cols-2
-            xl:grid-cols-2
-            xs:grid-cols-2"
-            >
-              <div
-                className=" relative   
-              xl:h-[341px]
-              lg:h-[341px]
-             md:h-[341px]
-             sm:h-[341px]
-             xs:h-[341px]"
-              >
-                <Image
-                  src="/images/picture 02.png"
+            <div className="flex sm:flex-col md:flex-row gap-4">
+              <div className="relative md:max-w-[288px] h-auto group">
+                <img
+                  src="https://i.ibb.co/PZ1dtSq/Frame-706122-1.png"
                   alt=""
-                  width={100}
-                  height={100}
-                  className="lg:w-full lg-h-full
-                  md:w-full md-h-full
-                  xl:w-full xl-h-full
-                  sm:w-full sm-h-full
-                  xs:w-full xs-h-full"
+                  className="w-full h-auto"
                 />
                 <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[53px] xl:pt-[257px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Latest Technology Convention
                 </p>
               </div>
 
-              <div
-                className="bg-purple-400 relative   
-                xl:h-[341px]
-                lg:h-[341px]
-               md:h-[341px]
-               sm:h-[341px]
-               xs:h-[341px]  "
-              >
-                <Image
-                  src="/images/picture 05.png"
+              <div className=" relative md:max-w-[288px] h-auto group">
+                <img
+                  src="https://i.ibb.co/HhXLvfW/Frame-706122-2.png"
                   alt=""
-                  width={100}
-                  height={100}
-                  className="lg:w-full lg-h-full
-                  xl:w-full xl-h-full
-                  md:w-full md-h-full
-                  sm:w-full sm-h-full
-                  xs:w-full xs-h-full"
+                  className="w-full h-auto"
                 />
                 <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[20px] xl:pt-[289px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Prestigious Fine Arts Exhibition
@@ -153,18 +106,9 @@ const Gallery = () => {
             </div>
           </div>
 
-          <div
-            className="bg-red-400 relative 
-             xl:h-[712px]
-             lg:h-[712px]
-             md:h-[712px]
-             sm:h-[712px]
-             xs:h-[712px] "
-          >
-            <Image
-              src="/images/picture 01.png"
-              width={100}
-              height={100}
+          <div className="relative max-w-full md:max-w-[565px] h-auto group">
+            <img
+              src="https://i.ibb.co/Y0YYYrb/Frame-706122-3.png"
               alt=""
               className="w-full h-auto"
             />
