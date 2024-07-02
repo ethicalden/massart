@@ -84,8 +84,13 @@ const MasterClass = () => {
   };
 
   return (
-    <div className="bg-white sm:pt-[11px] lg:pt-[43px] md:pt-[21px] md:pb-[150px] sm:pl-[30px] sm:pr-[30px] md:pl-[60px] md:pr-[60px] lg:pl-[120px] lg:pr-[120px]">
-      <Slider {...settings}>
+    <div
+      className="bg-green-300 sm:mt-[11px] xl:mt-[43px] lg:mt-[30px] 
+     md:mt-[25px]  xs:pt-[11px]
+     md:mb-[150px] lg:mb-[100px] sm:mb-[70px] xs:mb-[50px]
+     xs:mx-[30px]
+     sm:mx-[30px]  
+     md:mx-[60px]  lg:mx-[100px] 
      xl:mx-[120px] "
     >
       <Slider {...settings} className="">
@@ -96,7 +101,7 @@ const MasterClass = () => {
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-[300px] object-cover"
+                  className="xl:w-full md:w-full lg:w-full sm:w-full xs:w-full lg:h-[300px] 
                   xl:h-[300px] md:h-[300px] sm:h-[300px] xs:h-[300px]
                   
                   object-cover"
