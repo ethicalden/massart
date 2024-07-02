@@ -14,18 +14,24 @@ const SocialContributor = () => {
           className="xl:h-[98px] lg:h-[98px] md:h-[98px] sm:h-[98px] xs:h-[98px]  xl:w-full md:w-full sm:w-full xs:w-full"
           src="/images/BritishCouncil_Logo_Indigo_RGB 2 (1).png"
           alt="logo"
+           width={100}
+           height={100}
         />
 
         <Image
           className="xl:h-[98px] lg:h-[98px] md:h-[98px] sm:h-[98px] xs:h-[98px]  xl:w-full md:w-full sm:w-full xs:w-full  bg-[#EFEDED]"
           src="/images/pngwing.com (1) 1.png"
           alt="logo"
+           width={100}
+           height={100}
         />
 
         <Image
           className="xl:h-[98px] lg:h-[98px] md:h-[98px] sm:h-[98px] xs:h-[98px] xl:w-full md:w-full sm:w-full xs:w-full "
           src="/images/India UK Season of Culture - Third Party Badge_RGB 1.png"
           alt="logo"
+           width={100}
+           height={100}
         />
       </div>
       <hr className="xl:my-[39px] bg-black" />
@@ -34,16 +40,22 @@ const SocialContributor = () => {
           className="xl:h-[98px] lg:h-[98px] md:h-[98px] sm:h-[98px] xs:h-[98px] xl:w-full md:w-full sm:w-full xs:w-full "
           src="/images/BritishCouncil_Logo_Indigo_RGB 2 (1).png"
           alt="logo"
+           width={100}
+           height={100}
         />
         <Image
           className="xl:h-[98px] lg:h-[98px] md:h-[98px] sm:h-[98px] xs:h-[98px] w-full bg-[#EFEDED]"
           src="/images/pngwing.com (1) 1.png"
           alt="logo"
+           width={100}
+           height={100}
         />
         <Image
           className="xl:h-[98px] lg:h-[98px] md:h-[98px] sm:h-[98px] xs:h-[98px] w-full "
           src="/images/India UK Season of Culture - Third Party Badge_RGB 1.png"
           alt="logo"
+           width={100}
+           height={100}
         />
       </div>
     </div>

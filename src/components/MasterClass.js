@@ -98,6 +98,8 @@ const MasterClass = () => {
                 alt={event.title}
                 className="xl:w-full md:w-full lg:w-full sm:w-full xs:w-full lg:h-[300px] 
                   xl:h-[300px] md:h-[300px] sm:h-[300px] xs:h-[300px] object-cover"
+                width={100}
+                height={100}
               />
               <div
                 className="absolute top-0 left-2 bg-buttonCustomColor

@@ -76,6 +76,8 @@ const Gallery = () => {
                 src="https://i.ibb.co/CtpKL8W/Frame-706122.png"
                 alt="Multi Genre Music Festival 2024"
                 className="w-full h-auto"
+                width={100}
+                height={100}
               />
               <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[20px] xl:pt-[289px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Multi Genre Music Festival 2024
@@ -88,6 +90,8 @@ const Gallery = () => {
                   src="https://i.ibb.co/PZ1dtSq/Frame-706122-1.png"
                   alt=""
                   className="w-full h-auto"
+                   width={100}
+                   height={100}
                 />
                 <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[53px] xl:pt-[257px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Latest Technology Convention
@@ -99,6 +103,8 @@ const Gallery = () => {
                   src="https://i.ibb.co/HhXLvfW/Frame-706122-2.png"
                   alt=""
                   className="w-full h-auto"
+                  width={100}
+                 height={100}
                 />
                 <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[20px] xl:pt-[289px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Prestigious Fine Arts Exhibition
@@ -112,6 +118,8 @@ const Gallery = () => {
               src="https://i.ibb.co/Y0YYYrb/Frame-706122-3.png"
               alt=""
               className="w-full h-auto"
+               width={100}
+               height={100}
             />
             <p className="absolute bottom-0 left-0   xl:pl-[20px] xl:pr-[164px] xl:pt-[660px]  xl:pb-[20px] xl:text-[24px] text-white font-helvetica font-bold  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               Latest Indie Musician Concerts
