@@ -15,16 +15,16 @@ const AboutUs = () => {
   };
 
   const achievementsContent = `
-    <div class="custom-acc-style" style="margin-bottom: 50px; margin-top: 45px">
-        <strong>1. MassArt acted as the pioneer in promoting the Bengal Art culture heritage worldwide through an event named PSDPA (Preview Show of Durga Puja Art).</strong>
+    <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
+        1. MassArt acted as the pioneer in promoting the Bengal Art culture heritage worldwide through an event named PSDPA (Preview Show of Durga Puja Art).
     </div>
-    <div class="custom-acc-style" style="margin-bottom: 50px; margin-top: 45px">
+    <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
         2. In achieving our socio-cultural goals, UNESCO and British Council rendered their hands by being our associates for the last two editions of PSDPA.<br>
     </div>
-    <div class="custom-acc-style" style="margin-bottom: 50px; margin-top: 45px">
+    <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
         3. Completed two successful editions of PSDPA with considerable participation and positive response from both national and international quarters.<br>
     </div>
-    <div class="custom-acc-style" style="margin-bottom: 50px; margin-top: 45px">
+    <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
         4. Enhancement of tourism as MassArt encouraged the inflow of both national and foreign delegates.<br>
     </div>
     <div>
@@ -179,9 +179,9 @@ const AboutUs = () => {
         </div>
 
         {/* Show on mobile */}
-        <div className="md:hidden grid grid-flow-col auto-cols-max gap-3 mb-[17px]  ms-[35px]  overflow-x-auto">
+        <div className="md:hidden grid grid-flow-col auto-cols-max gap-3 mb-[17px]  ms-[30px]  overflow-x-auto">
 
-          <div className="flex justify-center items-center w-[170px]">
+          <div className="flex justify-center items-center w-[170px] custom-width-for-small">
             <div className="group bg-red-50 p-4 h-full rounded-[10px] text-center hover:bg-red-500 transition duration-300">
               <div className="flex justify-center mb-4">
                 <div className="bg-red-500 w-[72px] h-[72px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
@@ -219,7 +219,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center w-[170px]">
+          <div className="flex justify-center items-center w-[170px] custom-width-for-small">
             <div className="group bg-red-50 p-4 h-full rounded-[10px] text-center hover:bg-red-500 transition duration-300">
               <div className="flex justify-center mb-4">
                 <div className="bg-red-500 w-[72px] h-[72px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
@@ -236,7 +236,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center w-[170px]">
+          <div className="flex justify-center items-center w-[170px] custom-width-for-small">
             <div className="group bg-red-50 p-4 h-full rounded-[10px] text-center hover:bg-red-500 transition duration-300">
               <div className="flex justify-center mb-4">
                 <div className="bg-red-500 w-[72px] h-[72px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
@@ -321,7 +321,7 @@ const AboutUs = () => {
                 ),
               }
             ].map((section, index) => (
-              <div className="mb-5" key={index}>
+              <div className="md:mb-[25px] mb-[18px]" key={index}>
                 <div
                   className="flex items-center cursor-pointer"
                   onClick={() => toggleAccordion(index)}
@@ -344,7 +344,7 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className={`accordion-content text-[#454545] md:ps-[59px] ps-[43px] md:text-[18px] text-[12px] leading-[18px] md:leading-[32px] font-normal ${openSections.includes(index) ? "open" : ""}`}>
-                  <p className="text-gray-500 md:mt-[45px] mt-[10px]">{section.content}</p>
+                  <p className="text-gray-500 md:mt-[25px] mt-[10px]">{section.content}</p>
                 </div>
               </div>
             ))}
