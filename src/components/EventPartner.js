@@ -5,7 +5,7 @@ const EventPartener = () => {
     <div className=" bg-white font-helvetica">
       <div
         className="sm:pt-[90px] md:pt-[85px]  md:pb-[91px] lg:pb-[91px] 
-        lg:gap-[101px] md:gap-[50px] md:pl-[185px] md:pr-[185px] lg:pl-[185px] lg:pr-[185px]  
+        lg:gap-[101px] md:gap-[50px] md:px-[150px]  lg:px-[100px]  sm:px-[60px]  xs:px-[30px] 
       grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center  font-helvetica bg-EventPartner"
       >
         <div className=" xs:mb-[50px] xs:pt-[25px]">
@@ -16,7 +16,9 @@ const EventPartener = () => {
           <p
             className="sm:text-[12px] lg:text-[12px] md:text-[12px] 
           xl:pt-[25px]
-          xs:pt-[25px]
+          md:pt-[15px]
+          lg:pt-[15px]
+          xs:pt-[10px]
            xs:text-[12px] font-normal   "
           >
             Find out more about our team, vision, and dedication to creating

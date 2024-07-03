@@ -23,7 +23,7 @@ const Explore = () => {
       >
         <h1
           className="  xl:text-[50px] lg:text-[40px] font-helvetica md:text-[30px]  sm:text-[24px] 
-        xs:text-[18px] font-bold"
+        xs:text-[18px] font-bold lg:pb-[25px] xl:pb-[25px] md:pb-[25px] sm:pb-[25px] xs:pb-[25px]"
         >
           <span className="text-buttonCustomColor">Explore</span> and Join Our{" "}
           <br />
