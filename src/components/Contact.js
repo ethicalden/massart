@@ -170,12 +170,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] grid grid-cols xl:mt-[187px] lg:mt-[100px] mt-[50px]">
+    <div className="xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] grid grid-cols lg:mt-[150px] mt-[50px]">
       <div className="flex flex-col bg-gray-100 p-8 rounded-[10px]">
-        <div className="xl:text-[50px] leading-[56px] text-[24px] font-bold mb-[45px] text-buttonCustomColor">
+        <div className="lg:text-[50px] lg:leading-[56px] text-[24px] leading-[36px] font-bold mb-[35px] text-buttonCustomColor">
           Get in Touch
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:mb-8 mb-4 md:text-[24px] md:leading-[30px] text-[12px] leading-[30px]">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-[50px] gap-[27px] md:mb-8 mb-6 md:text-[24px] md:leading-[30px] text-[12px] leading-[30px]">
           <div className="flex flex-col">
             <input
               type="text"
@@ -183,9 +183,9 @@ const Contact = () => {
               placeholder="First Name"
               value={formData.fName}
               onChange={handleChange}
-              className="black-placeholder font-24px font-normal font-sans w-full pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+              className="black-placeholder font-helvetica md:text-[24px] text-[12px] leading-[30px] w-full pt-0 md:pb-8 pb-[25px] border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
             />
-            {errors.fName && <p className="text-red-500 text-base mt-1">{errors.fName}</p>}
+            {errors.fName && <p className="text-red-500 md:text-base text-[12px] mt-1">{errors.fName}</p>}
           </div>
 
           <div className="flex flex-col w-full">
@@ -195,13 +195,13 @@ const Contact = () => {
               placeholder="Last Name"
               value={formData.lName}
               onChange={handleChange}
-              className="black-placeholder font-24px font-normal font-sans w-full pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+              className="black-placeholder font-helvetica md:text-[24px] text-[12px] leading-[30px] w-full pt-0 md:pb-8 pb-[25px] border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
             />
-            {errors.lName && <p className=" text-red-500 text-base mt-1">{errors.lName}</p>}
+            {errors.lName && <p className=" text-red-500 md:text-base text-[12px] mt-1">{errors.lName}</p>}
           </div>
 
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:mb-8 mb-4 md:text-[24px] md:leading-[30px] text-[12px] leading-[30px]">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-[50px] gap-[27px] md:mb-8 mb-6 md:text-[24px] md:leading-[30px] text-[12px] leading-[30px]">
           <div className="flex flex-col">
             <input
               type="tel"
@@ -209,9 +209,9 @@ const Contact = () => {
               placeholder="Phone"
               value={formData.mobileNumber}
               onChange={handleChange}
-              className="black-placeholder font-24px font-normal font-sans w-full pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+              className="black-placeholder font-helvetica md:text-[24px] text-[12px] leading-[30px] w-full pt-0 md:pb-8 pb-[25px] border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
             />
-            {errors.mobile && <p className=" text-red-500 text-base mt-1">{errors.mobile}</p>}
+            {errors.mobile && <p className=" text-red-500 md:text-base text-[12px] mt-1">{errors.mobile}</p>}
           </div>
 
           <div className="flex flex-col">
@@ -221,13 +221,13 @@ const Contact = () => {
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
-              className="black-placeholder font-24px font-normal font-sans w-full pt-0 md:pb-8 pb-4 border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+              className="black-placeholder font-helvetica md:text-[24px] text-[12px] leading-[30px] w-full pt-0 md:pb-8 pb-[25px] border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
             />
-            {errors.email && <p className=" text-red-500 text-base mt-1">{errors.email}</p>}
+            {errors.email && <p className=" text-red-500 md:text-base text-[12px] mt-1">{errors.email}</p>}
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:mb-8 mb-4 md:text-[24px] md:leading-[30px] text-[12px] leading-[30px]">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-[50px] gap-[27px] md:mb-8 mb-6 md:text-[24px] md:leading-[30px] text-[12px] leading-[30px]">
           <div className="flex flex-col">
             <input
               type="text"
@@ -235,9 +235,9 @@ const Contact = () => {
               placeholder="Address"
               value={formData.address}
               onChange={handleChange}
-              className="md:text-[24px] w-full text-[12px] md:pb-8 pb-4 pt-0 black-placeholder font-24px font-normal font-sans border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+              className="black-placeholder font-helvetica md:text-[24px] text-[12px] leading-[30px] w-full pt-0 md:pb-8 pb-[25px] border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
             />
-            {errors.address && <p className="text-red-500 text-base mt-1">{errors.address}</p>}
+            {errors.address && <p className="text-red-500 md:text-base text-[12px] mt-1">{errors.address}</p>}
           </div>
 
           <div className="flex flex-col">
@@ -247,9 +247,9 @@ const Contact = () => {
               placeholder="Area Code"
               value={formData.areaCode}
               onChange={handleChange}
-              className="md:text-[24px] text-[12px] md:pb-8 pb-4 pt-0 black-placeholder font-24px font-normal font-sans border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
+              className="black-placeholder font-helvetica md:text-[24px] text-[12px] leading-[30px] w-full pt-0 md:pb-8 pb-[25px] border-b-[1px] bg-transparent outline-none border-black p-4 ps-0"
             />
-            {errors.areaCode && <p className="text-red-500 text-base mt-1">{errors.areaCode}</p>}
+            {errors.areaCode && <p className="text-red-500 md:text-base text-[12px] mt-1">{errors.areaCode}</p>}
           </div>
         </div>
 
@@ -262,9 +262,9 @@ const Contact = () => {
           value={formData.message}
           onChange={handleChange}
           maxLength={255}
-          className="md:text-[24px] text-[12px] black-placeholder font-24px font-normal font-sans md:pb-8 pb-4 h-[200px] border-[1px] bg-transparent outline-none border-black p-4 rounded-[10px] mt-4"
+          className="md:text-[24px]  black-placeholder leading-[30px] font-helvetica text-[12px] md:pb-8 pb-4 h-[200px] border-[1px] bg-transparent outline-none border-black p-4 rounded-[10px] mt-4"
         ></textarea>
-        {errors.message && <p className="text-red-500 text-red-500 text-base mt-1">{errors.message}</p>}
+        {errors.message && <p className="text-red-500 md:text-base text-[12px] mt-1">{errors.message}</p>}
 
         {isLoading ? (
           <a
@@ -295,7 +295,7 @@ const Contact = () => {
         ) : (
           <a
             type="button"
-            className="cursor-pointer text-white font-bold md:h-[48px] lg:leading-[48px] h-[32px] leading-[32px] md:text-[18px] text-[12px] bg-buttonCustomColor md:mt-[60px] mt-[30px] rounded-[50px] text-center flex items-center justify-center"
+            className="cursor-pointer text-black hover:text-white font-bold md:h-[48px] lg:leading-[48px] h-[32px] leading-[32px] md:text-[18px] text-[12px] border border-black hover:border-buttonCustomColor duration-200 hover:bg-buttonCustomColor md:mt-[60px] mt-[30px] rounded-[50px] text-center flex items-center justify-center"
             disabled={submitBtnDisable}
             onClick={(e) => handleSubmit(e)}
           >
@@ -304,7 +304,7 @@ const Contact = () => {
         )}
       </div>
 
-      <div className="flex justify-between items-center bg-white-100 grid md:grid-cols-3 p-4 grid-cols-1 md:my-[52px] my-[45px]">
+      <div className="justify-between items-center bg-white-100 grid md:grid-cols-3 p-4 grid-cols-1 md:my-[52px] my-[45px]">
         <div className="flex items-center md:mb-0 mb-6">
           <div className="me-4">
             <div className="bg-buttonCustomColor lg:w-[81px] lg:h-[81px] w-[42px] h-[42px]  flex justify-center items-center text-white rounded-full">
@@ -318,6 +318,23 @@ const Contact = () => {
             </p>
             <p className="xl:text-[18px] lg:text-[15px] text-[12px] text-[#6E6E6E]">
               Chat with live assistant
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center md:mb-0 mb-6">
+          <div className="me-4">
+            <div className="bg-buttonCustomColor lg:w-[81px] lg:h-[81px] w-[42px] h-[42px] flex justify-center items-center text-white rounded-full">
+              <IoIosMail className="text-[20px] lg:text-[39px]" />
+            </div>
+          </div>
+
+          <div>
+            <p className="font-bold xl:text-[30px] lg:text-[24px] text-[18px] mt-2">
+              Mail us Today
+            </p>
+            <p className="xl:text-[18px] lg:text-[15px] text-[12px] text-[#6E6E6E]">
+              Seestrasse 7, Zurich, CH
             </p>
           </div>
         </div>
@@ -339,22 +356,6 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="flex items-center md:mb-0 mb-6">
-          <div className="me-4">
-            <div className="bg-buttonCustomColor lg:w-[81px] lg:h-[81px] w-[42px] h-[42px] flex justify-center items-center text-white rounded-full">
-              <IoIosMail className="text-[20px] lg:text-[39px]" />
-            </div>
-          </div>
-
-          <div>
-            <p className="font-bold xl:text-[30px] lg:text-[24px] text-[18px] mt-2">
-              Mail us Today
-            </p>
-            <p className="xl:text-[18px] lg:text-[15px] text-[12px] text-[#6E6E6E]">
-              Seestrasse 7, Zurich, CH
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

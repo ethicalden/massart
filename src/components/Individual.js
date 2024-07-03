@@ -18,19 +18,26 @@ const Individual = () => {
   };
 
   return (
-    <div className=" xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] md:mt-[150px] mt-[60px]">
-      <div className="grid md:grid-cols-2 grid-cols-1">
+    <div className="max-w-7xl 2xl:ms-auto 2xl:me-auto ms-[35px]  lg:ms-[100px] lg:me-[100px] me-[35px] lg:mt-[150px] mt-[60px]">
+      <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-28 md:gap-14 gap-0">
         <div>
           <Image
             width={527}
             height={777}
-            className="md:w-[527] md:h-[777] w-[367] h-[588]"
-            src="/images/picture 01.png"
+            className="w-full h-auto md:block hidden"
+            src="/photos/big screen/Individual Page/picture 01.png"
+            alt="Image 1" />
+
+          <Image
+            width={366}
+            height={347}
+            className="w-full h-auto md:hidden block"
+            src="/photos/phone screen/individual/picture.png"
             alt="Image 1" />
         </div>
 
-        <div className="md:ms-[65px]">
-          <div className="lg:text-[50px] lg:leading-[56px] md:text-left text-[24px] leading-[36px] font-bold lg:mb-[60px] mb-[40px] md:mt-0 mt-[28px]">
+        <div className="">
+          <div className="lg:text-[50px] lg:leading-[56px] md:text-left text-[24px] leading-[36px] font-bold lg:mb-[60px] mb-[30px] md:mt-0 mt-[25px]">
             arjunpur amra sabai <br className="md:block hidden" />
             <span className="text-red-600"> club</span>
           </div>
@@ -39,7 +46,7 @@ const Individual = () => {
               {
                 title: "title",
                 content:
-                  "To implement this functionality in a Next.js application, you can create a component that manages the image gallery and modal functionality. Here's how you can set it up:",
+                  "ganadevata",
               },
               { title: "concept", content: "Concept content" },
               {
@@ -47,7 +54,7 @@ const Individual = () => {
                 content: "Area of Installation content",
               },
             ].map((section, index) => (
-              <div className="mb-4" key={index}>
+              <div className="mb-2" key={index}>
                 <div
                   className="flex justify-between items-center cursor-pointer"
                   onClick={() => toggleAccordion(index)}
@@ -64,7 +71,7 @@ const Individual = () => {
                   </div>
                 </div>
                 <div
-                  className={`accordion-content lg:text-[24px] text-[16px] font-bold md:border-b-[1px] border-0 mt-[15px] border-black ${openSections.includes(index) ? "open" : ""}`}
+                  className={`accordion-content lg:text-[24px] md:leading-[30px] text-[16px] leading-[18px] font-bold md:border-b-[1px] border-0 mt-[10px] border-black ${openSections.includes(index) ? "open" : ""}`}
                 >
                   <p className="text-gray-500 pb-[10px]">{section.content}</p>
                 </div>
@@ -74,44 +81,50 @@ const Individual = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 my-[51px] md:block hidden">
+      <div className="container mx-auto my-[51px] md:block hidden">
         <div className="grid gap-6 md:grid-cols-2 grid-cols-1 w-full">
-          <div>
+          <div className="grid grid-flow-row gap-6">
             <Image
               width={605}
               height={341}
-              className="md:w-[605px] md:h-[341px] w-[367px] h-[588px]"
-              src="/images/picture 01.png"
-              alt="Image 1" />
-            <div className="grid gap-6 md:grid-cols-2 grid-cols-1  mt-6">
-              <div>
-              <Image
-              width={288}
-              height={341}
-              className="md:w-[288px] md:h-[341px] w-[367px] h-[588px]"
-              src="/images/picture 02.png"
-              alt="Image 1" />
+              className="w-full min-h-full rounded-[10px]"
+              src="/photos/big screen/Individual Page/picture 02.png"
+              alt="Image 1"
+            />
+            <div className="flex">
+              <div className="flex-1 pr-3">
+                <Image
+                  width={288}
+                  height={341}
+                  className="w-full min-h-full object-cover rounded-[10px]"
+                  src="/photos/big screen/Individual Page/picture 04.png"
+                  alt="Image 1"
+                />
               </div>
-              <div>
-              <Image
-              width={288}
-              height={341}
-              className="md:w-[288px] md:h-[341px] w-[367px] h-[588px]"
-              src="/images/picture 01.png"
-              alt="Image 1" />
+              <div className="flex-1 pl-3">
+                <Image
+                  width={288}
+                  height={341}
+                  className="w-full min-h-full object-cover rounded-[10px]"
+                  src="/photos/big screen/Individual Page/picture 05.png"
+                  alt="Image 1"
+                />
               </div>
             </div>
           </div>
           <div>
-          <Image
+            <Image
               width={565}
               height={712}
-              className="md:w-[565px] md:h-[712px] w-[367px] h-[588px]"
-              src="/images/picture 01.png"
-              alt="Image 1" />
+              className="w-full h-auto rounded-[10px]"
+              src="/photos/big screen/Individual Page/picture 03.png"
+              alt="Image 1"
+            />
           </div>
         </div>
+
       </div>
+      
     </div>
   );
 };
