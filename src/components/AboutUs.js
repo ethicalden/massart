@@ -108,7 +108,7 @@ const AboutUs = () => {
                     </div>
                   </div>
                   <div className="text-[32px] leading-[45px] text-black group-hover:text-white font-helvetica text-center mb-[20px]">Discovery and Support</div>
-                  <p className="text-black text-base group-hover:text-white text-[18px] leading-[27px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+                  <p className="text-black font-normal group-hover:text-white text-[18px] leading-[27px] transition duration-300">
                     Seek out, support, and showcase indigenous and contemporary art, culture, and heritage.
                   </p>
                 </div>
@@ -127,7 +127,7 @@ const AboutUs = () => {
                     </div>
                   </div>
                   <div className="text-[32px] leading-[45px] text-black group-hover:text-white font-helvetica text-center mb-[20px]">Amplification</div>
-                  <p className="text-black text-base group-hover:text-white text-[18px] leading-[27px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+                  <p className="text-black font-normal group-hover:text-white text-[18px] leading-[27px] transition duration-300">
                     Amplify the reach of creative talent by acting as a bridge between artists and an appreciative community.
                   </p>
                 </div>
@@ -168,7 +168,7 @@ const AboutUs = () => {
                     </div>
                   </div>
                   <div className="text-[32px] leading-[45px] text-black group-hover:text-white font-helvetica text-center mb-[20px]">Discovery and Support</div>
-                  <p className="text-black text-base group-hover:text-white text-[18px] leading-[27px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+                  <p className="text-black font-normal group-hover:text-white text-[18px] leading-[27px] transition duration-300">
                     Promote and connect artists with audiences both locally and internationally.
                   </p>
                 </div>
