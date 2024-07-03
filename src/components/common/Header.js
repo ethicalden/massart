@@ -121,34 +121,44 @@ const Header = () => {
         className="
         
         absolute bottom-0 left-0 grid grid-cols-2 
-    md:mt-[430px] lg:mt-[430px] xl:mt-[430px] 2xl:mt-[430px]
-    md:mb-[112px] lg:mb-[112px] xl:mb-[112px] 2xl:mb-[112px]
+    md:mt-[430px] lg:mt-[430px] xl:mt-[430px] xs:mt-[430px] sm:mt-[430px]
+    md:mb-[112px] lg:mb-[112px] xl:mb-[112px] xs:mb-[112px] sm:mb-[112px]
     text-black font-helvetica"
       >
         <div className="">
           <h1
-            className="text-white
+            className="text-white xl:text-[80px] lg:text-[70px] md:text-[60px] sm:text-[40px] xs:text-[40px]
             
-        md:ml-[119px] md:mr-[1014px]
-        lg:ml-[119px] lg:mr-[1014px]
-        xl:ml-[119px] xl:mr-[1014px]
-        2xl:ml-[119px] 2xl:mr-[1014px]
-        // ---
-        md:mb-[15px] lg:mb-[15px] xl:mb-[15px]
-        2xl:mb-[15px]"
+        md:ml-[120px] md:mr-[1014px]
+        lg:ml-[120px] lg:mr-[1014px]
+        xl:ml-[120px] xl:mr-[1014px]
+        xs:ml-[120px] sm:ml-[120px]
+        sm:pb-[20px] xs:pb-[20px]
+        md:pb-[30px] lg:pb-[40px] xl:pb-[50px] leading-[80px] text-center 
+        "
           >
-            Witness Biggests
+            Witness <br /> Biggests
           </h1>
-          <div className="flex items-center lg:space-x-[25px] md:ml-[119px] lg:ml-[119px] xl:ml-[119px] 2xl:ml-[119px]">
+          <div
+            className="flex items-center h-[48px] xl:space-x-[25px] lg:space-x-[20px] md:space-x-[20px] 
+            sm:space-x-[15px] xs:space-x-[15px]
+           xs:ml-[120px] sm:ml-[120px] md:ml-[120px] lg:ml-[120px] xl:ml-[120px] "
+          >
             {buttons.map((button) => (
               <button
                 key={button.id}
-                className={`text-[18px] font-bold border border-buttonCustomColor text-white rounded-[100px] ${
-                  activeButton === button.id
-                    ? "bg-buttonCustomColor"
-                    : "border border-buttonCustomColor"
-                } 
-          md:w-[159px] md:h-[48px] lg:w-[159px] lg:h-[48px] xl:w-[159px] xl:h-[48px] 2xl:w-[159px] 2xl:h-[48px]`}
+                className={`xl:text-[18px] lg:text-[18px] md:text-[12px] sm:text-[12px] xs:text-[12px] 
+                xl:px-[36px] xl:py-[12px] 
+                lg:px-[32px] lg:py-[12px]
+                md:px-[15px] md:py-[10px]
+                sm:px-[15px] sm:py-[10px]
+                xs:px-[13px] xs:py-[10px]
+                 font-bold border rounded-[100px]  text-white ${
+                   activeButton === button.id
+                     ? "bg-buttonCustomColor"
+                     : "border border-buttonCustomColor"
+                 } 
+           `}
                 onClick={() => setActiveButton(button.id)}
               >
                 {button.label}
@@ -161,9 +171,9 @@ const Header = () => {
           width={100}
           height={100}
           alt=""
-          className="absolute bottom-0 right-0
-      md:w-[167px] md:h-[130px] lg:w-[167px] lg:h-[130px] xl:w-[167px] xl:h-[130px]
-      2xl:w-[167px] 2xl:h-[130px] mr-[87px]"
+          className="absolute bottom-0 right-0 hidden block-md
+       md:h-[130px]  lg:h-[130px]  xl:h-[130px] object-cover
+       mr-[87px]"
         />
       </div>
     </div>
