@@ -56,7 +56,7 @@ const AboutUs = () => {
               />
             </div>
             <div>
-              <div className="font-[Helvetica] md:text-[49px] leading-[56px] text-[24px] font-bold">
+              <div className="font-[Helvetica] md:text-[49px] leading-[56px] text-[24px] font-bold md:mb-[21px]">
                 <span className="text-red-600">Who</span> we are
               </div>
               <div className="text-[12px] leading-[24px] md:text-[15px] xl:text-[18px] 2xl:text-[20px]">
