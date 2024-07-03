@@ -39,8 +39,9 @@ const Visual = () => {
       md:gap-x-[35px]
       sm:gap-[15px]
       xs:gap-[15px]
+      
 
-       justify-center items-center pt-[29px]"
+       justify-center items-center pt-[29px] "
       >
         <div className="grid grid-cols-2 gap-[35px]">
           {buttons.map((button) => (
@@ -92,26 +93,45 @@ const Visual = () => {
     
   "
       >
-        <div className="xs:mb-[10px] sm:mb-[10px]">
+        <div className="xs:mb-[10px] sm:mb-[10px] ">
           <Image
             src="/images/Rectangle 17 (1).png"
             alt=""
             width={100}
             height={100}
-            className={`w-full bg-green-200 h-[345px] object-cover border border-buttonCustomColor rounded-md`}
-            style={zoomedImage === 1 ? { transform: "scaleY(1.1)" } : {}}
+            className={`w-full bg-green-200 xl:h-[345px] lg:h-[300px] md:h-[250px] sm:h-[250px] xs:h-[200px] object-cover border border-buttonCustomColor rounded-md`}
+            style={
+              zoomedImage == 1
+                ? { transform: "scaleY(1.1)", transformOrigin: "bottom" }
+                : {}
+            }
           />
         </div>
-        <div className="xs:mb-[10px] sm:mb-[10px]">
+        <div className="xs:mb-[20px] sm:mb-[20px] hidden md:block lg:block xl:block">
           <Image
             src="/images/Rectangle 15 (1).png"
             alt=""
             width={100}
             height={100}
-            className={`w-full h-[345px] object-cover border border-buttonCustomColor rounded-md`}
+            className={`w-full xl:h-[345px] lg:h-[300px] md:h-[250px] sm:h-[200px] xs:h-[200px] object-cover border border-buttonCustomColor rounded-md `}
             style={
-              zoomedImage
+              zoomedImage == 2
                 ? { transform: "scaleY(1.1)", transformOrigin: "bottom" }
+                : {}
+            }
+          />
+        </div>
+
+        <div className="xs:mb-[10px] sm:mb-[10px] xs:mt-[20px] sm:mt-[20px] block md:hidden lg:hidden xl:hidden  ">
+          <Image
+            src="/images/Rectangle 15 (1).png"
+            alt=""
+            width={100}
+            height={100}
+            className={`w-full xl:h-[345px] lg:h-[300px] md:h-[250px] sm:h-[200px] xs:h-[200px] object-cover border border-buttonCustomColor rounded-md `}
+            style={
+              zoomedImage == 2
+                ? { transform: "scaleX(1.2)", transformOrigin: "bottom" }
                 : {}
             }
           />
@@ -122,8 +142,12 @@ const Visual = () => {
             alt=""
             width={100}
             height={100}
-            className={`w-full h-[345px] object-cover border border-buttonCustomColor rounded-md`}
-            style={zoomedImage === 3 ? { transform: "scaleY(1.1)" } : {}}
+            className={`w-full xl:h-[345px] lg:h-[300px] md:h-[250px] sm:h-[250px] xs:h-[200px] object-cover border border-buttonCustomColor rounded-md`}
+            style={
+              zoomedImage == 3
+                ? { transform: "scaleY(1.1)", transformOrigin: "bottom" }
+                : {}
+            }
           />
         </div>
       </div>
