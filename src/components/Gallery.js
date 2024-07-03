@@ -21,7 +21,7 @@ const Gallery = () => {
         sm:px-[20px]  
       md:px-[60px]
       xl:px-[120px] 
-      lg:pr-[120px] sm:pt-[15px] lg:pt-[60px] md:pt-[30px] 
+      lg:pr-[120px]  lg:mt-[60px] md:mt-[40px] sm:mt-[40px] xs:mt-[40px]
        text-black bg-white"
       >
         <div
@@ -35,24 +35,32 @@ const Gallery = () => {
          sm:mt-[25px] sm:mb-[25px]"
         >
           <div className=" ">
-            <h1 className=" lg:pt-[8px] text-[50px] font-bold font-helvetica text-buttonCustomColor">
+            <h1
+              className="  xl:text-[50px] 
+              lg:pb-[8px] xl:pb-[25px] xs:pb-[25px] sm:pb-[25px] md:b-[25px] 
+            lg:text-[40px] md:text-[30px] sm:text-[20px] xs:text-[20px]
+            font-bold font-helvetica text-buttonCustomColor"
+            >
               Gallery
             </h1>
 
             <div
-              className="lg:mt-[50px] grid xs:grid-cols-4 sm:grid-cols-4 lg:grid-cols-4 md:grid-cols-4  font-helvetica 
+              className="lg:mt-[50px] grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-4  font-helvetica 
             justify-between  xl:gap-x-[20px]
-             lg:gap-x-[18px]  md:gap-x-[16px]  sm:gap-x-[14px]  xs:gap-[50px]"
+             lg:gap-x-[18px]  md:gap-x-[16px]  sm:gap-x-[14px]  xs:gap-y-[14px] "
             >
               {buttons.map((button) => (
                 <button
                   key={button.id}
-                  className={`sm:text-[12px] md:text-[18px] font-bold rounded    xl:px-[31px] xl:py-[17px] lg:px-[31px] lg:py-[17px] 
-                  sm:px-[14px] sm:py-[8px]   xs:px-[18px] xs:py-[8px]   ${
-                    activeButton === button.id
-                      ? "bg-buttonCustomColor  text-white"
-                      : "border border-buttonCustomColor text-black"
-                  }`}
+                  className={`sm:text-[12px]  xs:text-[12px]  xl:text-[12px]  lg:text-[12px] md:text-[18px] font-bold rounded 
+                  
+                    xl:px-[31px] xl:py-[17px] lg:px-[31px] lg:py-[17px] 
+                    xs:px-[15px] xs:py-[8px]
+                    ${
+                      activeButton === button.id
+                        ? "bg-buttonCustomColor  text-white"
+                        : "border border-buttonCustomColor text-black"
+                    }`}
                   onClick={() => setActiveButton(button.id)}
                 >
                   {button.label}
