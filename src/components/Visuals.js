@@ -5,7 +5,7 @@ import { IoMdFastforward } from "react-icons/io";
 
 const Visual = () => {
   const [activeButton, setActiveButton] = useState("Donor Pass");
-  const [zoomedImage, setZoomedImage] = useState(null);
+  const [zoomedImage, setZoomedImage] = useState(2);
 
   const buttons = [
     { label: "Donor Pass", id: "Donor Pass", imageIndex: 1 },
@@ -74,112 +74,55 @@ const Visual = () => {
       </div>
 
       <div
-        className=" hidden-sm md-block grid md:grid-cols-3
-        
-        xs:gap-x-[10px] 
-        md:gap-x-[15px]
-        lg:gap-x-[18px]
-        xl:gap-x-[23px]
-        
-        xs:grid-cols-1
-        sm:grid-cols-1
-        lg:grid-cols-3
-        xl:grid-cols-3
-        items-center 
-        xs:pt-[29px]  
-        sm:pt-[29px]
-        md:pt-[29px]
-        xl:pt-[84px] 
-        lg:pt-[29px]
-        
-     "
+        className="
+    grid md:grid-cols-3
+    xs:gap-x-[10px] 
+    md:gap-x-[15px]
+    lg:gap-x-[18px]
+    xl:gap-x-[23px]
+    xs:grid-cols-1
+    sm:grid-cols-1
+    lg:grid-cols-3
+    xl:grid-cols-3
+    xs:pt-[29px]  
+    sm:pt-[29px]
+    md:pt-[29px]
+    xl:pt-[84px] 
+    lg:pt-[29px]
+    
+  "
       >
-        <div
-          className="
-          xs:mb-[10px]
-          sm:mb-[10px]
-           
-          xs:h-[250px]
-          sm:h-[250px]
-          xl:h-[345px]
-          md:h-[270px]
-          lg:h-[300px]
-           
-       
-        "
-        >
+        <div className="xs:mb-[10px] sm:mb-[10px]">
           <Image
-            src="https://i.ibb.co/B2NSKPj/picture-02.png"
+            src="/images/Rectangle 17 (1).png"
             alt=""
             width={100}
             height={100}
-            className={`
-            md:w-full md:h-full 
-            xs:w-full xs:h-full
-            sm:w-full sm:h-full
-            lg:w-full lg:h-full
-            xl:w-full xl:h-full
-            
-            border  border-buttonCustomColor rounded-md`}
+            className={`w-full bg-green-200 h-[345px] object-cover border border-buttonCustomColor rounded-md`}
             style={zoomedImage === 1 ? { transform: "scaleY(1.1)" } : {}}
           />
         </div>
-        <div
-          className=" 
-          xs:mb-[10px]
-          sm:mb-[10px]
-          
-          xs:h-[250px]
-          sm:h-[250px]
-          xl:h-[345px]
-          md:h-[270px]
-          lg:h-[300px]
-          "
-        >
+        <div className="xs:mb-[10px] sm:mb-[10px]">
           <Image
-            src="https://i.ibb.co/Y0YYYrb/Frame-706122-3.png"
+            src="/images/Rectangle 15 (1).png"
             alt=""
             width={100}
             height={100}
-            className={`
-            md:w-full md:h-full 
-            xs:w-full xs:h-full
-            sm:w-full sm:h-full
-            lg:w-full lg:h-full
-            xl:w-full xl:h-full
-            border  border-buttonCustomColor rounded-md `}
-            style={zoomedImage === 2 ? { transform: "scaleY(1.1)" } : {}}
+            className={`w-full h-[345px] object-cover border border-buttonCustomColor rounded-md`}
+            style={
+              zoomedImage
+                ? { transform: "scaleY(1.1)", transformOrigin: "bottom" }
+                : {}
+            }
           />
         </div>
-        <div
-          className=" 
-          xs:mb-[10px]
-          sm:mb-[10px]
-          
-          xs:h-[250px]
-          sm:h-[250px]
-          xl:h-[345px]
-          md:h-[270px]
-          lg:h-[300px]
-         
-          
-          
-          "
-        >
+        <div className="xs:mb-[10px] sm:mb-[10px]">
           <Image
             src="https://i.ibb.co/k1dNKT4/picture-05.png"
             alt=""
             width={100}
             height={100}
-            className={`
-             md:w-full md:h-full 
-            xs:w-full xs:h-full
-            sm:w-full sm:h-full
-            lg:w-full lg:h-full
-            xl:w-full xl:h-full
-
-             border  border-buttonCustomColor rounded-md 
-           `}
+            className={`w-full h-[345px] object-cover border border-buttonCustomColor rounded-md`}
             style={zoomedImage === 3 ? { transform: "scaleY(1.1)" } : {}}
           />
         </div>

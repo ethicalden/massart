@@ -1,9 +1,9 @@
 "use client";
-
-import Image from "next/image";
+import { CiLocationOn } from "react-icons/ci";
+import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "/public/styles/MasterClass.css";
 
 const events = [
@@ -92,57 +92,42 @@ const MasterClass = () => {
       <Slider {...settings} className="">
         {events.map((event, index) => (
           <div key={index} className="p-2">
-            <div className="bg-gray-900 rounded-lg overflow-hidden relative">
-              <Image
+            <div className="bg-gray-900 rounded-lg overflow-hidden relative group">
+              <img
                 src={event.image}
                 alt={event.title}
                 className="xl:w-full md:w-full lg:w-full sm:w-full xs:w-full lg:h-[300px] 
                   xl:h-[300px] md:h-[300px] sm:h-[300px] xs:h-[300px] object-cover"
-                width={100}
-                height={100}
               />
               <div
                 className="absolute top-0 left-2 bg-buttonCustomColor
                  text-white xl:ml-[20px] xl:mr-[290px] lg:ml-[15px] md:ml-[12px] 
-                 sm:ml-[10px] xs:ml-[8px] rounded"
+                 sm:ml-[10px] xs:ml-[8px] rounded group-hover:opacity-100 opacity-0"
               >
-                <h1
-                  className="xl:text-[32px] font-inter font-semibold xl:px-[8px] xl:pt-[10px]
+                <p
+                  className="xl:text-[32px] sm:text-[18px] xs:text-[18px] font-inter font-semibold xl:px-[17px] xl:pt-[4px]
                   lg:px-[8px] lg:pt-[10px] md:px-[8px] md:pt-[10px] sm:px-[8px] sm:pt-[10px]
                   xs:px-[8px] xs:pt-[10px]"
                 >
                   {event.date}
-                </h1>
+                </p>
                 <p
-                  className="xl:text-[24px] font-inter font-semibold xl:px-[7px] xl:pb-[10px]
+                  className="xl:text-[24px] sm:text-[12px] xs:text-[12px] font-inter font-semibold xl:px-[7px] xl:pb-[4px]
                   md:px-[7px] md:pb-[10px] lg:px-[7px] lg:pb-[10px] sm:px-[7px] sm:pb-[10px]
                   xs:px-[7px] xs:pb-[10px]"
                 >
                   {event.month}
                 </p>
               </div>
-              <div className="absolute bottom-0 left-0 p-4 bg-black bg-opacity-75 text-white june">
-                <h3 className="font-bold xs:text-[6px] lg:text-[18px] md:text-[18px] sm:text-[12px]">
+              <div className="absolute bottom-0 left-0 p-4  bg-opacity-75 text-white june group-hover:opacity-100 opacity-0">
+                <p className="font-bold xl:text-[24px] sm:text-[12px] xs:text-[14px] lg:text-[18px] md:text-[18px] ">
                   {event.title}
-                </h3>
-                <p className="xs:text-[6px] lg:text-[18px] md:text-[18px] sm:text-[12px] font-normal font-inter">
+                </p>
+                <p className=" lg:text-[16px] md:text-[14px] sm:text-[12px] xs:text-[12px]  font-normal font-inter">
                   {event.author}
                 </p>
-                <p className="flex lg:text-[18px] md:text-[18px] sm:text-[12px] font-normal font-inter">
-                  <svg
-                    className="h-4 w-4 mr-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M17.657 16.657L13.414 20.9c-.78.78-2.047.78-2.828 0l-4.243-4.243a2 2 0 010-2.828l4.243-4.243m1.414-1.414L16.95 7.05a2 2 0 012.828 0l4.243 4.243a2 2 0 010 2.828l-4.243 4.243M7.05 16.95a2 2 0 000-2.828L2.808 11.879a2 2 0 000-2.828L7.05 4.808m5.657-1.414L8.464 2.464A2 2 0 016.343 2H3.464a2 2 0 00-2 2v2.879c0 .53.21 1.04.586 1.414l4.243 4.243"
-                    ></path>
-                  </svg>
+                <p className="flex items-center xl:text-[18px] lg:text-[16px] md:text-[14px] sm:text-[12px] xs:text-[12px] font-normal font-inter">
+                  <CiLocationOn />
                   {event.location}
                 </p>
               </div>

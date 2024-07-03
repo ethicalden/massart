@@ -86,11 +86,11 @@ const Header = () => {
 
           <Link href="/">
             <Image
-              src="https://i.ibb.co/LDFmLLK/Group-1171274734.png"
-              alt="Logo"
+              src="/images/Group 1171274734 (2).png"
+              alt="massart-logo"
               width={100}
               height={100}
-              className=" md:h-[65px]  md:w-[75px] lg:h-[65px] lg:w-[75px] xl:h-[65px] xl:w-[75px] 2xl:h-[65px] 2xl:w-[75px]"
+              className=" h-[76px]  object-contain"
             />
           </Link>
         </div>
