@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const Header = () => {
@@ -93,13 +94,17 @@ const Header = () => {
           </div>
 
           <div className="w-full">
-            <Image
-              src="/images/massart 1.png"
-              alt="massart-logo"
-              width={100}
-              height={100}
-              className=" h-[49px]  object-contain"
-            />
+
+            <Link href="/">
+        <Image
+          src="/images/massart 1.png"
+          alt="massart-logo"
+          width={100}
+          height={100}
+          className="h-[49px] object-contain"
+        />
+
+    </Link>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
