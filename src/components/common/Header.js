@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 const Header = () => {
@@ -18,7 +17,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="relative xl:h-[778px] lg:h-[778px] md:h-[778px] sm:h-[778px] xs:h-[778px]">
+    <div className="relativ xs:h-[669px]">
       <video
         autoPlay
         loop
@@ -30,14 +29,12 @@ const Header = () => {
       </video>
 
       <div
-        className="navbar relative  md:pl-[120px] md:pr-[120px] md:pt-[30px] 
-        xl:px-[120px] xl:pr-[120px] 
-      lg:pl-[120px] lg:pr-[120px] lg:pt-[30px]
-       xl:pt-[30px]
-      2xl:pl-[120px] 2xl:pr-[120px] 2xl:pt-[30px] 
+        className="navbar relative  
+         xs:pl-[34px] xs:pr-[32px]
+     
       "
       >
-        <div className="navbar-start  grid grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1 space-x-[294px] md:space-x-[0px] lg:space-x-[0px] xl:space-x-[0px] 2xl:space-x-[0px]  ">
+        <div className="navbar-start  grid grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1 xs:space-x-[202px] md:space-x-[0px] lg:space-x-[0px] xl:space-x-[0px] 2xl:space-x-[0px]  ">
           <div className="dropdown ">
             <div
               tabIndex={0}
@@ -64,49 +61,70 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-white rounded-box w-52"
             >
-              <li className="text-black font-inter">
-                <a>Get Ticket</a>
+              <li className="text-black font-helvetica">
+                <a>Home</a>
               </li>
-              <li className="text-black font-inter">
-                <a>Schedule</a>
+              <li className="text-black font-helvetica">
+                <a>About</a>
               </li>
-              <li className="text-black font-inter">
-                <a>Speakers</a>
+              <li className="text-black font-helvetica">
+                <a>Concept</a>
               </li>
-              <li className="text-black font-inter">
-                <a>FAQ</a>
+              <li className="text-black font-helvetica">
+                <a>Preview show</a>
               </li>
+
+              <li className="text-black font-helvetica">
+                <a>Gallery</a>
+              </li>
+              <li className="text-black font-helvetica">
+                <a>Press</a>
+              </li>
+              <li className="text-black font-helvetica">
+                <a>Contact</a>
+              </li>
+
               <li className="">
-                <a className=" bg-buttonCustomColor rounded-[10px]    text-white font-poppins text-[18px]">
+                <a className=" bg-buttonCustomColor rounded-[10px]    text-white font-poppins xs:text-[18px]">
                   Button
                 </a>{" "}
               </li>
             </ul>
           </div>
 
-          <Link href="/">
+          <div className="w-full">
             <Image
-              src="/images/Group 1171274734 (2).png"
+              src="/images/massart 1.png"
               alt="massart-logo"
               width={100}
               height={100}
-              className=" h-[76px]  object-contain"
+              className=" h-[49px]  object-contain"
             />
-          </Link>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li className="text-white font-inter">
-              <a>Get Ticket</a>
+            <li className="text-white font-helvetica">
+              <a>Home</a>
             </li>
-            <li className="text-white font-inter">
-              <a>Schedule</a>
+            <li className="text-white font-helvetica">
+              <a>About</a>
             </li>
-            <li className="text-white font-inter">
-              <a>Speakers</a>
+            <li className="text-white font-helvetica">
+              <a>Concept</a>
             </li>
-            <li className="text-white font-inter">
-              <a>FAQ</a>
+            <li className="text-white font-helvetica">
+              <a>Preview show</a>
+            </li>
+
+            <li className="text-white font-helvetica">
+              <a>Gallery</a>
+            </li>
+            <li className="text-white font-helvetica">
+              <a>Press</a>
+            </li>
+            <li className="text-white font-helvetica">
+              <a>Contact</a>
             </li>
           </ul>
         </div>
@@ -120,54 +138,27 @@ const Header = () => {
       <div
         className="
         
-        absolute bottom-0 left-0 grid grid-cols-2 
-    md:mt-[430px] lg:mt-[430px] xl:mt-[430px] xs:mt-[430px] sm:mt-[430px]
-    md:mb-[112px] lg:mb-[112px] xl:mb-[112px] xs:mb-[112px] sm:mb-[112px]
+        absolute bottom-[85px] left-0 w-full grid justify-center items-center 
+   
     text-black font-helvetica"
       >
-        <div className="">
-          <h1
-            className="text-white xl:text-[80px] lg:text-[70px] md:text-[60px] sm:text-[40px] xs:text-[40px]
-            
-        md:ml-[120px] md:mr-[1014px]
-        lg:ml-[120px] lg:mr-[1014px]
-        xl:ml-[120px] xl:mr-[1014px]
-        xs:ml-[120px] sm:ml-[120px]
-        sm:pb-[20px] xs:pb-[20px]
-        md:pb-[30px] lg:pb-[40px] xl:pb-[50px] leading-[80px] text-center 
-        "
-          >
-            Witness <br /> Biggests
-          </h1>
-          <div
-            className="flex items-center h-[48px] xl:space-x-[25px] lg:space-x-[20px] md:space-x-[20px] 
-            sm:space-x-[15px] xs:space-x-[15px]
-           xs:ml-[120px] sm:ml-[120px] md:ml-[120px] lg:ml-[120px] xl:ml-[120px] "
-          >
-            {buttons.map((button) => (
-              <button
-                key={button.id}
-                className={`xl:text-[18px] lg:text-[18px] md:text-[12px] sm:text-[12px] xs:text-[12px] 
-                xl:px-[36px] xl:py-[12px] 
-                lg:px-[32px] lg:py-[12px]
-                md:px-[15px] md:py-[10px]
-                sm:px-[15px] sm:py-[10px]
-                xs:px-[13px] xs:py-[10px]
-                 font-bold border rounded-[100px]  text-white ${
-                   activeButton === button.id
-                     ? "bg-buttonCustomColor"
-                     : "border border-buttonCustomColor"
-                 } 
-           `}
-                onClick={() => setActiveButton(button.id)}
-              >
-                {button.label}
+        {/* <div className="">
+          <div className="">
+            <h1 className="xs:text-[36px] xs:leading-[40px] text-white font-helvetica font-bold xs:pb-[27px]">
+              Witness Bengal
+            </h1>
+            <div className="flex gap-x-[14px] justify-center ">
+              <button className="text-white xs:px-[17px] xs:py-[4px] font-helvetica font-bold xs:text-[12px] xs:leading-[24px] bg-buttonCustomColor xs:rounded-full hover:bg-transparent transition-colors duration-300 ease-in-out border-transparent border hover:border-buttonCustomColor">
+                Get Ticket
               </button>
-            ))}
+              <button className="text-white xs:px-[17px] xs:py-[4px] font-helvetica font-bold xs:text-[12px] xs:leading-[24px] border border-buttonCustomColor xs:rounded-full hover:bg-buttonCustomColor hover:border-transparent transition-colors duration-300 ease-in-out">
+                View More
+              </button>
+            </div>
           </div>
-        </div>
+        </div> */}
         <Image
-          src="/images/unesco.png"
+          src="/public/images/unescoHeader.png"
           width={100}
           height={100}
           alt=""

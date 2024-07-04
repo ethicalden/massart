@@ -62,13 +62,13 @@ const Review = () => {
   };
 
   return (
-    <div className="py-12 bg-white custom-widhth-silck ">
-      <div className="   text-center xl:px-[120px] lg:px-[100px] md:px-[70px] sm:px-[60px] xs:px-[40px]">
-        <h2 className="text-3xl font-extrabold ">
+    <div className=" bg-white custom-widhth-silck ">
+      <div className="xs:pl-[32px] xs:pr-[56px] xs:pb-[25px] xs:pt-[60px]">
+        <h2 className="xs:text-[24px] font-bold xs:leading-[36px] xs:text-left">
           What our <span className="text-red-500">popular customers </span>are
           saying
         </h2>
-        <p className="mt-4 xl:text-[18px] xs:text-[12px] sm:text-[12px] ">
+        <p className="xs:pt-[10px] xs:text-[12px] font-normal xs:leading-[18px]  ">
           Find out more about our team, vision, and dedication to creating
           extraordinary experiences. In this section, we share our story and our
           commitment to the success of each event.

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const HomeAboutUs = () => {
   return (
     <div
@@ -10,25 +12,16 @@ const HomeAboutUs = () => {
       lg:mx-[100px]
         md:mx-[60px] 
         sm:mx-[45px]
-        xs:mx-[30px]
+        xs:mx-[32px]
     
     "
     >
       <div className="">
-        <h1 className="">
-          <span
-            className="text-buttonCustomColor xl:text-[50px] lg:text-[40px] md:text-[30px]
-          sm:text-[20px]"
-          >
-            About
-          </span>{" "}
-          us
+        <h1 className="xs:text-[24px] xs:leading-[36px] font-helvetica font-bold xs:pb-[15px]">
+          <span className="text-buttonCustomColor ">About </span> massArt
         </h1>
         <p
-          className="xl:text-[18px] lg:text-[14px] md:text-[14px] sm:text-[12px] xs:text-[12px]
-          font-normal font-helvetica xl:pt-[25px] lg:pt-[25px] md:pt-[20px] 
-        sm:pt-[15px] xs:pt-[15px] xl:pb-[35px] lg:pb-[25px] md:pb-[20px] 
-        sm:pb-[15px] xs:pb-[15px]
+          className=" font-normal font-helvetica xs:text-[12px] xs:leading-[18px] xs:pb-[25px]
         "
         >
           Durga puja is Bengal’s biggest festival that takes place over a week
@@ -38,28 +31,15 @@ const HomeAboutUs = () => {
           act of vanquishing the demon Mahishasura.
         </p>
 
-        <button
-          className="sm:mb-[25px] xs:mb-[25px]
-            bg-buttonCustomColor text-white  
-          xs:px-[36px] xs:py-[12px] 
-        lg:px-[36px] lg:py-[12px] 
-        xl:text-[18px]
-        lg:text-[16px]
-        md:text-[14px]
-        sm:text-[12px] 
-        xs:text-[12px] 
-        rounded-[100px]"
-        >
-          Know more
-        </button>
-      </div>
-
-      <img
-        src="/images/picture (16).png"
-        alt="Durga Puja"
-        className="w-full h-[358px] object-cover rounded-[20px]
+        <Image
+          src="/images/picture (16).png"
+          alt="Durga Puja"
+          width={100}
+          height={100}
+          className="w-full h-[347px] object-cover rounded-[10px]
              "
-      />
+        />
+      </div>
     </div>
   );
 };

@@ -5,12 +5,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "/public/styles/MasterClass.css";
+import Image from "next/image";
 
 const events = [
   {
     date: "20",
     month: "Jan",
-    image: "https://i.ibb.co/F8mcvH3/Card-1.png",
+    image: "/images/ExcitingLine.jpg",
     title: "Brush & Palette Masterclass",
     location: "Grand City Convention Center",
     author: "Brandon Levin",
@@ -18,7 +19,7 @@ const events = [
   {
     date: "20",
     month: "Jan",
-    image: "https://i.ibb.co/2MbcNMV/Card-2.png",
+    image: "/images/ExcitingLine.jpg",
     title: "Brush & Palette Masterclass",
     location: "Grand City Convention Center",
     author: "Brandon Levin",
@@ -26,7 +27,7 @@ const events = [
   {
     date: "20",
     month: "Jan",
-    image: "https://i.ibb.co/cJsW2dY/Card-3.png",
+    image: "/images/ExcitingLine.jpg",
     title: "Brush & Palette Masterclass",
     location: "Grand City Convention Center",
     author: "Brandon Levin",
@@ -34,7 +35,7 @@ const events = [
   {
     date: "20",
     month: "Jan",
-    image: "https://i.ibb.co/F8mcvH3/Card-1.png",
+    image: "/images/ExcitingLine.jpg",
     title: "Brush & Palette Masterclass",
     location: "Grand City Convention Center",
     author: "Brandon Levin",
@@ -42,7 +43,7 @@ const events = [
   {
     date: "20",
     month: "Jan",
-    image: "https://i.ibb.co/2MbcNMV/Card-2.png",
+    image: "/images/ExcitingLine.jpg",
     title: "Brush & Palette Masterclass",
     location: "Grand City Convention Center",
     author: "Brandon Levin",
@@ -84,49 +85,37 @@ const MasterClass = () => {
   };
 
   return (
-    <div
-      className="custom-widhth-silck sm:mt-[11px] xl:mt-[43px] lg:mt-[30px] 
-     md:mt-[25px] xs:pt-[11px] md:mb-[150px] lg:mb-[100px] sm:mb-[70px] xs:mb-[50px]
-     xs:mx-[30px] sm:mx-[30px] md:mx-[60px] lg:mx-[100px] xl:mx-[120px]"
-    >
+    <div className="custom-widhth-silck ">
       <Slider {...settings} className="">
         {events.map((event, index) => (
-          <div key={index} className="p-2">
-            <div className="bg-gray-900 rounded-lg overflow-hidden relative group">
-              <img
+          <div key={index} className="">
+            <div className=" relative group h-[509px]">
+              <Image
+                className="w-full h-full object-cover"
                 src={event.image}
                 alt={event.title}
-                className="xl:w-full md:w-full lg:w-full sm:w-full xs:w-full lg:h-[300px] 
-                  xl:h-[300px] md:h-[300px] sm:h-[300px] xs:h-[300px] object-cover"
+                height={100}
+                width={100}
               />
               <div
-                className="absolute top-0 left-2 bg-buttonCustomColor
-                 text-white xl:ml-[20px] xl:mr-[290px] lg:ml-[15px] md:ml-[12px] 
-                 sm:ml-[10px] xs:ml-[8px] rounded group-hover:opacity-100 opacity-0"
+                className="absolute top-0 left-[32px] bg-buttonCustomColor
+                 group-hover:opacity-100 opacity-0"
               >
-                <p
-                  className="xl:text-[32px] sm:text-[18px] xs:text-[18px] font-inter font-semibold xl:px-[17px] xl:pt-[4px]
-                  lg:px-[8px] lg:pt-[10px] md:px-[8px] md:pt-[10px] sm:px-[8px] sm:pt-[10px]
-                  xs:px-[8px] xs:pt-[10px]"
-                >
+                <p className="xs:text-[20px] xs:leading-[23px] font-bold font-helvetica text-white xs:px-[14px] xs:pt-[19px]">
                   {event.date}
                 </p>
-                <p
-                  className="xl:text-[24px] sm:text-[12px] xs:text-[12px] font-inter font-semibold xl:px-[7px] xl:pb-[4px]
-                  md:px-[7px] md:pb-[10px] lg:px-[7px] lg:pb-[10px] sm:px-[7px] sm:pb-[10px]
-                  xs:px-[7px] xs:pb-[10px]"
-                >
+                <p className="xs:text-[20px] xs:leading-[23px] font-bold font-helvetica text-white xs:px-[14px] xs:pb-[19px]">
                   {event.month}
                 </p>
               </div>
               <div className="absolute bottom-0 left-0 p-4  bg-opacity-75 text-white june group-hover:opacity-100 opacity-0">
-                <p className="font-bold xl:text-[24px] sm:text-[12px] xs:text-[14px] lg:text-[18px] md:text-[18px] ">
+                <p className="xs:text-[20px] xs:leading-[32px] font-bold font-helvetica xs:pb-[2px]">
                   {event.title}
                 </p>
-                <p className=" lg:text-[16px] md:text-[14px] sm:text-[12px] xs:text-[12px]  font-normal font-inter">
+                <p className="xs:text-[12px] xs:leading-[13px] font-normal font-helvetica ">
                   {event.author}
                 </p>
-                <p className="flex items-center xl:text-[18px] lg:text-[16px] md:text-[14px] sm:text-[12px] xs:text-[12px] font-normal font-inter">
+                <p className="xs:pb-[11px] xs:text-[12px] xs:leading-[16px] font-helvetica font-normal flex items-center">
                   <CiLocationOn />
                   {event.location}
                 </p>

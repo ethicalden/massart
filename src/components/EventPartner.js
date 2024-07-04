@@ -4,7 +4,7 @@ const EventPartener = () => {
   return (
     <div className=" bg-white font-helvetica">
       <div
-        className="sm:pt-[90px] md:pt-[85px]  md:pb-[91px] lg:pb-[91px] 
+        className=" xs:mt-[60px] xs:pt-[40px] sm:pt-[90px] md:pt-[85px]  md:pb-[91px] lg:pb-[91px] 
         lg:gap-[101px] md:gap-[50px] md:px-[150px]  lg:px-[100px]  sm:px-[60px]  xs:px-[30px] 
       grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center  font-helvetica bg-EventPartner"
       >
@@ -39,7 +39,7 @@ const EventPartener = () => {
                 xs:pr-[27px]  xs:pl-[20px] xs:pe-[18px]
               pt-[18px] "
               >
-                100K+
+                2.5 crores
               </p>
               <p
                 className="font-helvetica text-[12px] font-normal  
@@ -49,13 +49,14 @@ const EventPartener = () => {
                 sm:pr-[27px]  sm:pl-[20px] sm:pe-[18px]
                 xs:pr-[27px]  xs:pl-[20px] xs:pe-[18px] "
               >
-                Events That Took Place
+                of people from around the world visit kolkata durga puja
+                ArtEvents That Took Place
               </p>
             </div>
 
             <div className="  ">
               <p className="font-helvetica text-[20px] font-bold pl-[20px] pr-[27px] pt-[18px] ">
-                1M
+                3,000 +
               </p>
               <p
                 className="font-helvetica text-[12px] font-normal  
@@ -65,15 +66,15 @@ const EventPartener = () => {
                 sm:pr-[27px]  sm:pl-[20px] sm:pe-[18px]
                 xs:pr-[27px]  xs:pl-[20px] xs:pe-[18px]"
               >
-                Active Users Reached
+                durga puja Art installations
               </p>
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  pb-[42px] lg:gap-[60px] md:gap-[60px]">
+          <div className="grid sm:grid-cols-1   pb-[42px] lg:gap-[60px] md:gap-[60px]">
             <div className="">
               <p className="font-helvetica text-[20px] font-bold pl-[20px] pr-[27px] pt-[18px]">
-                500+
+                2 million
               </p>
               <p
                 className="font-helvetica text-[12px] font-normal xl:pr-[27px]  xl:pl-[20px] xl:pe-[18px] 
@@ -82,13 +83,14 @@ const EventPartener = () => {
                 sm:pr-[27px]  sm:pl-[20px] sm:pe-[18px]
                 xs:pr-[27px]  xs:pl-[20px] xs:pe-[18px] "
               >
-                Existing Partnerships
+                people find scope of earning livelihood in the sphere of
+                tourism, transport, food and artisanry
               </p>
             </div>
 
             <div className="">
               <p className="font-helvetica text-[20px] font-bold pl-[20px] pr-[27px] pt-[18px]">
-                30+
+                4.6%
               </p>
               <p
                 className="font-helvetica text-[12px] font-normal xl:pr-[27px]  xl:pl-[20px] xl:pe-[18px] 
@@ -97,7 +99,7 @@ const EventPartener = () => {
                 sm:pr-[27px]  sm:pl-[20px] sm:pe-[18px]
                 xs:pr-[27px]  xs:pl-[20px] xs:pe-[18px]"
               >
-                Award Winning
+                turnover amount shares in bengal gdp
               </p>
             </div>
           </div>
