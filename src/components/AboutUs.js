@@ -347,8 +347,10 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className={`accordion-content text-[#454545] md:ps-[59px] ps-[43px] md:text-[18px] text-[12px] leading-[18px] md:leading-[32px] font-normal ${openSections.includes(index) ? "open" : ""}`}>
-                <p className="text-[#454545] md:mt-[25px] mt-[10px]">{section.content}</p>
+              <div className="text-[#454545] md:mt-[25px] mt-[10px]">
+                {section.content}
               </div>
+            </div>
             </div>
           ))}
         </div>
