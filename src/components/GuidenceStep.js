@@ -8,22 +8,17 @@ const AccordionItem = ({ number, title, content, isOpen, onClick }) => (
     <button
       onClick={onClick}
       className={`w-full text-left  font-bold flex 
-       xl:px-[32px] lg:px-[25px]
-       md:px-[20px] sm:px-[15px] xs:px-[15px] ${
+       x xs:px-[15px] ${
          isOpen ? "bg-buttonCustomColor text-white" : "bg-white"
        } transition-colors duration-300`}
     >
       <div className="flex justify-between place-items-baseline">
         <div className="w-1/6  ">
-          <span className="font-bold lg:text-[32px] md:text-[25px] sm:text-[20px]  xs:text-[18px] ">
-            {number}
-          </span>
+          <span className="font-bold   xs:text-[18px] ">{number}</span>
         </div>
         <div className="w-5/6 ">
           <div className=" flex  font-bold justify-between items-center">
-            <span className="font-helvetica lg:text-[32px] md:text-[25px] sm:text-[20px]  xs:text-[16px]">
-              {title}
-            </span>
+            <span className="font-helvetica   xs:text-[16px]">{title}</span>
             {isOpen ? (
               <HiMiniMinusSmall className="text-buttonCustomColor bg-white xl:w-[28px] xl:h-[28px] lg:w-[28px] lg:h-[28px] md:w-[28px] md:h-[28px]  xs:w-[28px] xs:h-[28px] sm:w-[28px] sm:h-[20px] flex items-center justify-center rounded-[24px]" />
             ) : (
@@ -36,7 +31,7 @@ const AccordionItem = ({ number, title, content, isOpen, onClick }) => (
             }`}
           >
             <div
-              className={` md:pb-[30px] md:pt-[30px] lg:pb-[30px] lg:pt-[30px] xl:pb-[40px] xl:pt-[40px]  sm:pb-[25px] sm:pt-[25px]   xs:pb-[25px] xs:pt-[25px]  lg:text-[15px] md:text-[15px] sm:text-[12px]  xs:text-[12px] font-normal ${
+              className={`  xs:pt-[25px]    xs:text-[12px] font-normal ${
                 isOpen ? "bg-buttonCustomColor" : "bg-white"
               } text-white`}
             >
@@ -91,8 +86,8 @@ const GuidenceStep = () => {
   ];
 
   return (
-    <div className="lg:pt-[52px] md:pt-[52px] sm:pt-[52px] md:px-[120px] rounded-lg">
-      <div className="flex flex-wrap  -mx-2">
+    <div className=" rounded-lg">
+      <div className="flex flex-wrap  -mx-2 xs:px-[32px] xs:pt-[]">
         <div className="w-full md:w-1/2  px-2">
           {items.slice(0, 3).map((item, index) => (
             <AccordionItem

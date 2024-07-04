@@ -26,14 +26,14 @@ export default function Home() {
         <HomeAboutUs />
         <Visual />
         <Gallery />
-        {/* <Concept />
+        <Concept />
         <Video />
         <Explore />
         <MasterClass />
         <EventPartener />
         <Review />
         <GuidanceHeading />
-        <GuidenceStep /> */}
+        <GuidenceStep />
       </main>
       <Footer />
     </div>

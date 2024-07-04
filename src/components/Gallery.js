@@ -58,7 +58,7 @@ const Gallery = () => {
                 </p>
               </div>
             </div>
-            <div className="pt-[8px] pb-[25px]">
+            <div className="pt-[8px] ">
               <div className="grid grid-cols-2 gap-[8px]">
                 <div className="relative group">
                   <div className="h-[239px] w-full ">
@@ -130,15 +130,14 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-          <div>
-            <button
-              className="
-            "
-            >
-              Browse more
-            </button>
-          </div>
         </div>
+        {/* button */}
+        <button
+          className="xs:mt-[25px]  xs:text-[12px] xs:leading-[14px] font-helvetica font-bold text-buttonCustomColor border border-buttonCustomColor
+           xs:px-[17px] xs:py-[9px] rounded-full"
+        >
+          Browse more
+        </button>
       </div>
     </div>
   );

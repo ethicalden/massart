@@ -3,67 +3,79 @@ import Image from "next/image";
 const SocialContributor = () => {
   return (
     <div
-      className="xl:mt-[150px] lg:mt-[150px] md:mt-[150px] sm:mt-[150px] xs:mt-[150px]
-      xl:mx-[120px] lg:mx-[120px] md:mx-[120px] sm:mx-[120px] xs:mx-[120px]
+      className=" xs:px-[32px] xs:pt-[72px] xs:pb-[72px]
    "
     >
       <div
-        className="grid grid-cols-3 
+        className="grid grid-cols-3 xs:gap-x-[25px] justify-between items-center
          "
       >
-        <div>
+        <div className=" h-[25px]  ">
           <Image
-            className=" h-[98px] object-cover"
-            src="/images/logo 01.png"
+            className=" w-full h-full object-cover"
+            src="/images/BritishCouncil_Logo.png"
             alt="logo"
             width={100}
             height={100}
           />
         </div>
 
-        <div className="">
+        <div className="h-[61px] bg-EventPartner px-[23px] py-[12px]">
           <Image
-            className=" h-[98px] object-cover"
-            src="/images/logo 02.png"
+            className="w-full h-full  object-cover"
+            src="/images/unesco.png"
             alt="logo"
             width={100}
             height={100}
           />
         </div>
 
-        <div>
+        <div className="h-[40px] ">
           <Image
-            className=" h-[98px] object-cover"
-            src="/images/logo 03.png"
+            className="w-full h-full object-cover"
+            src="/images/india.png"
             alt="logo"
             width={100}
             height={100}
           />
         </div>
       </div>
-      <hr className="xl:my-[39px] bg-black" />
-      <div className="grid grid-cols-3">
-        <Image
-          className="  h-[98px] object-cover"
-          src="/images/logo 01.png"
-          alt="logo"
-          width={100}
-          height={100}
-        />
-        <Image
-          className=" h-[98px] object-cover"
-          src="/images/logo 02.png"
-          alt="logo"
-          width={100}
-          height={100}
-        />
-        <Image
-          className=" h-[98px] object-cover"
-          src="/images/logo 03.png"
-          alt="logo"
-          width={100}
-          height={100}
-        />
+
+      <hr className="xs:my-[10px] bg-black" />
+
+      <div
+        className="grid grid-cols-3 xs:gap-x-[25px] justify-between items-center
+         "
+      >
+        <div className=" h-[25px]">
+          <Image
+            className=" w-full h-full object-cover"
+            src="/images/BritishCouncil_Logo.png"
+            alt="logo"
+            width={100}
+            height={100}
+          />
+        </div>
+
+        <div className="h-[61px] bg-EventPartner px-[23px] py-[12px]">
+          <Image
+            className="w-full h-full  object-cover"
+            src="/images/unesco.png"
+            alt="logo"
+            width={100}
+            height={100}
+          />
+        </div>
+
+        <div className="h-[40px] ">
+          <Image
+            className="w-full h-full object-cover"
+            src="/images/india.png"
+            alt="logo"
+            width={100}
+            height={100}
+          />
+        </div>
       </div>
     </div>
   );

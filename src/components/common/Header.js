@@ -65,17 +65,28 @@ const Header = () => {
               className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-white rounded-box w-52"
             >
               <li className="text-black font-inter">
-                <a>Get Ticket</a>
+                <a>Home</a>
               </li>
               <li className="text-black font-inter">
-                <a>Schedule</a>
+                <a>About</a>
               </li>
               <li className="text-black font-inter">
-                <a>Speakers</a>
+                <a>Concept</a>
               </li>
               <li className="text-black font-inter">
-                <a>FAQ</a>
+                <a>Preview show</a>
               </li>
+
+              <li className="text-black font-inter">
+                <a>Gallery</a>
+              </li>
+              <li className="text-black font-inter">
+                <a>Press</a>
+              </li>
+              <li className="text-black font-inter">
+                <a>Contact</a>
+              </li>
+
               <li className="">
                 <a className=" bg-buttonCustomColor rounded-[10px]    text-white font-poppins text-[18px]">
                   Button
@@ -96,17 +107,27 @@ const Header = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li className="text-white font-inter">
-              <a>Get Ticket</a>
+            <li className="text-white font-helvetica">
+              <a>Home</a>
             </li>
-            <li className="text-white font-inter">
-              <a>Schedule</a>
+            <li className="text-white font-helvetica">
+              <a>About</a>
             </li>
-            <li className="text-white font-inter">
-              <a>Speakers</a>
+            <li className="text-white font-helvetica">
+              <a>Concept</a>
             </li>
-            <li className="text-white font-inter">
-              <a>FAQ</a>
+            <li className="text-white font-helvetica">
+              <a>Preview show</a>
+            </li>
+
+            <li className="text-white font-helvetica">
+              <a>Gallery</a>
+            </li>
+            <li className="text-white font-helvetica">
+              <a>Press</a>
+            </li>
+            <li className="text-white font-helvetica">
+              <a>Contact</a>
             </li>
           </ul>
         </div>
@@ -124,7 +145,7 @@ const Header = () => {
    
     text-black font-helvetica"
       >
-        <div className="">
+        {/* <div className="">
           <div className="">
             <h1 className="xs:text-[36px] xs:leading-[40px] text-white font-helvetica font-bold xs:pb-[27px]">
               Witness Bengal
@@ -138,7 +159,7 @@ const Header = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
         <Image
           src="/public/images/unescoHeader.png"
           width={100}
