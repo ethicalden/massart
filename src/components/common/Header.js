@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 const Header = () => {
@@ -18,7 +17,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="relative xl:h-[778px] lg:h-[778px] md:h-[778px]  xs:h-[778px]">
+    <div className="relativ xs:h-[669px]">
       <video
         autoPlay
         loop
@@ -30,14 +29,12 @@ const Header = () => {
       </video>
 
       <div
-        className="navbar relative  md:pl-[120px] md:pr-[120px] md:pt-[30px] 
-        xl:px-[120px] xl:pr-[120px] 
-      lg:pl-[120px] lg:pr-[120px] lg:pt-[30px]
-       xl:pt-[30px]
-      2xl:pl-[120px] 2xl:pr-[120px] 2xl:pt-[30px] 
+        className="navbar relative  
+         xs:pl-[34px] xs:pr-[32px]
+     
       "
       >
-        <div className="navbar-start  grid grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1 space-x-[294px] md:space-x-[0px] lg:space-x-[0px] xl:space-x-[0px] 2xl:space-x-[0px]  ">
+        <div className="navbar-start  grid grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1 xs:space-x-[202px] md:space-x-[0px] lg:space-x-[0px] xl:space-x-[0px] 2xl:space-x-[0px]  ">
           <div className="dropdown ">
             <div
               tabIndex={0}
@@ -64,46 +61,46 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-white rounded-box w-52"
             >
-              <li className="text-black font-inter">
+              <li className="text-black font-helvetica">
                 <a>Home</a>
               </li>
-              <li className="text-black font-inter">
+              <li className="text-black font-helvetica">
                 <a>About</a>
               </li>
-              <li className="text-black font-inter">
+              <li className="text-black font-helvetica">
                 <a>Concept</a>
               </li>
-              <li className="text-black font-inter">
+              <li className="text-black font-helvetica">
                 <a>Preview show</a>
               </li>
 
-              <li className="text-black font-inter">
+              <li className="text-black font-helvetica">
                 <a>Gallery</a>
               </li>
-              <li className="text-black font-inter">
+              <li className="text-black font-helvetica">
                 <a>Press</a>
               </li>
-              <li className="text-black font-inter">
+              <li className="text-black font-helvetica">
                 <a>Contact</a>
               </li>
 
               <li className="">
-                <a className=" bg-buttonCustomColor rounded-[10px]    text-white font-poppins text-[18px]">
+                <a className=" bg-buttonCustomColor rounded-[10px]    text-white font-poppins xs:text-[18px]">
                   Button
                 </a>{" "}
               </li>
             </ul>
           </div>
 
-          <Link href="/">
+          <div className="w-full">
             <Image
-              src="/images/Group 1171274734 (2).png"
+              src="/images/massart 1.png"
               alt="massart-logo"
               width={100}
               height={100}
-              className=" h-[76px]  object-contain"
+              className=" h-[49px]  object-contain"
             />
-          </Link>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

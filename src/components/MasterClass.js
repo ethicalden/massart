@@ -19,7 +19,7 @@ const events = [
   {
     date: "20",
     month: "Jan",
-    image: "https://i.ibb.co/2MbcNMV/Card-2.png",
+    image: "/images/ExcitingLine.jpg",
     title: "Brush & Palette Masterclass",
     location: "Grand City Convention Center",
     author: "Brandon Levin",
@@ -27,7 +27,7 @@ const events = [
   {
     date: "20",
     month: "Jan",
-    image: "https://i.ibb.co/cJsW2dY/Card-3.png",
+    image: "/images/ExcitingLine.jpg",
     title: "Brush & Palette Masterclass",
     location: "Grand City Convention Center",
     author: "Brandon Levin",
@@ -35,7 +35,7 @@ const events = [
   {
     date: "20",
     month: "Jan",
-    image: "https://i.ibb.co/F8mcvH3/Card-1.png",
+    image: "/images/ExcitingLine.jpg",
     title: "Brush & Palette Masterclass",
     location: "Grand City Convention Center",
     author: "Brandon Levin",
@@ -43,7 +43,7 @@ const events = [
   {
     date: "20",
     month: "Jan",
-    image: "https://i.ibb.co/2MbcNMV/Card-2.png",
+    image: "/images/ExcitingLine.jpg",
     title: "Brush & Palette Masterclass",
     location: "Grand City Convention Center",
     author: "Brandon Levin",
