@@ -2,7 +2,7 @@
 "use client";
 
 import Image from 'next/image';
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useSwipeable } from 'react-swipeable';
 
 
@@ -56,6 +56,16 @@ const PreviewShow_two = () => {
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [slides.length]);
 
+
+ const [isSelectTab, setIsSelectTab] = useState(0);
+
+
+
+  const handleTabChange = (indexNum) => {
+    setIsSelectTab(indexNum);
+  }
+
+
   return (
 
     <div>
@@ -106,16 +116,32 @@ const PreviewShow_two = () => {
       <div className="scroll-container 2xl:ms-auto 2xl:me-auto max-w-7xl">
         <div className="w-full overflow-x-auto flex justify-center">
           <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  ms-[63px]  me-[0]">
-            <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
+            <button onClick={() => handleTabChange(3)} className={
+           isSelectTab === 0
+          ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
+          : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
+      }>
               Plan your visit
             </button>
-            <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black">
+            <button onClick={() => handleTabChange(3)} className={
+           isSelectTab === 1
+          ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
+          : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
+      }>
               Programme
             </button>
-            <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black">
+            <button onClick={() => handleTabChange(3)} className={
+           isSelectTab === 2
+          ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
+          : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
+      }>
               Events
             </button>
-            <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black ms:[100px]">
+            <button onClick={() => handleTabChange(3)} className={
+           isSelectTab === 3
+          ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
+          : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
+      }>
               Beyond Art
             </button>
           </div>
