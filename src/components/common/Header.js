@@ -17,7 +17,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="relativ xs:h-[669px]">
+    <div className="relative xs:h-[80vh]">
       <video
         autoPlay
         loop

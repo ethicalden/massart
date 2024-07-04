@@ -3,15 +3,9 @@ import Image from "next/image";
 const HomeAboutUs = () => {
   return (
     <div
-      className="  pt-[60px] bg-white font-helvetica grid sm:grid-cols-1
+      className="  xs:pt-[60px] bg-white font-helvetica grid 
       xs:grid-cols-1
-       xl:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 
-      xl:gap-[106px]
      
-      xl:mx-[120px] 
-      lg:mx-[100px]
-        md:mx-[60px] 
-        sm:mx-[45px]
         xs:mx-[32px]
     
     "
