@@ -15,20 +15,16 @@ const AboutUs = () => {
   };
 
   const achievementsContent = `
-    <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
-        1. MassArt acted as the pioneer in promoting the Bengal Art culture heritage worldwide through an event named PSDPA (Preview Show of Durga Puja Art).
+    <div class="custom-acc-container">
+      <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
+        1. MassArt acted as the pioneer in promoting the bengal Art culture  heritage worldwide through an event named psdpa (preview show of durga  puja Art).
     </div>
     <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
-        2. In achieving our socio-cultural goals, UNESCO and British Council rendered their hands by being our associates for the last two editions of PSDPA.<br>
+        2. In achieving our socio-cultural goals, unesco and british council  rendered their hands by being our associates for the last two editions  of psdpa<br>
     </div>
     <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
-        3. Completed two successful editions of PSDPA with considerable participation and positive response from both national and international quarters.<br>
+        3. Completed two successful editions of psdpa with considerable.<br>
     </div>
-    <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
-        4. Enhancement of tourism as MassArt encouraged the inflow of both national and foreign delegates.<br>
-    </div>
-    <div>
-        5. Successfully acted as an enhancer of the glory of Bengal Art, culture, and heritage among Art-loving people across the globe.
     </div>
   `;
 
@@ -40,7 +36,7 @@ const AboutUs = () => {
           <div className="lg:block hidden">
             <Image
               src="/photos/big screen/about us/picture 01.png"
-              className="w-full h-auto rounded-[50px]"
+              className="rounded-[50px]"
               alt="logo"
               width={527}
               height={338}
@@ -49,7 +45,7 @@ const AboutUs = () => {
           <div className="lg:hidden flex justify-center">
             <Image
               src="/photos/phone screen/about us/picture01.png"
-              className="lg:w-full h-auto"
+              className=""
               alt="logo"
               width={527}
               height={338}
@@ -182,14 +178,14 @@ const AboutUs = () => {
       </div>
 
       {/* Show on mobile */}
-      <div className="md:hidden grid grid-flow-col auto-cols-max gap-3 mb-[17px]  ms-[30px]  overflow-x-auto">
+      <div className="md:hidden grid grid-flow-col auto-cols-max gap-3 mb-[17px]  ms-[30px]  overflow-x-auto no-scrollbar">
 
         <div className="flex justify-center items-center w-[170px] custom-width-for-small">
-          <div className="group bg-red-50 p-4 h-full rounded-[10px] text-center hover:bg-red-500 transition duration-300">
+          <div className="group p-4 h-full rounded-[10px] text-center bg-red-500 transition duration-300">
             <div className="flex justify-center mb-4">
-              <div className="bg-red-500 w-[72px] h-[72px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+              <div className=" w-[72px] h-[72px] flex justify-center items-center rounded-full bg-white transition duration-300">
                 <svg
-                  className="text-white group-hover:text-red-600"
+                  className="text-red-600"
                   width="35"
                   height="37"
                   viewBox="0 0 50 53"
@@ -215,36 +211,36 @@ const AboutUs = () => {
 
               </div>
             </div>
-            <div className="text-[18px] leading-[19px] text-black group-hover:text-white font-helvetica text-center mb-[20px] font-bold">Discovery and Support</div>
-            <p className="text-black group-hover:text-white text-[12px] leading-[18px] transition duration-300">
+            <div className="text-[18px] leading-[19px]  text-white font-helvetica text-center mb-[20px] font-bold">Discovery and Support</div>
+            <p className="text-white text-[12px] leading-[18px] transition duration-300">
               Seek out, support, and showcase indigenous and contemporary art, culture, and heritage.
             </p>
           </div>
         </div>
 
         <div className="flex justify-center items-center w-[170px] custom-width-for-small">
-          <div className="group bg-red-50 p-4 h-full rounded-[10px] text-center hover:bg-red-500 transition duration-300">
+          <div className="group bg-red-50 p-4 h-full rounded-[10px] text-center  transition duration-300">
             <div className="flex justify-center mb-4">
-              <div className="bg-red-500 w-[72px] h-[72px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
-                <svg className="text-white group-hover:text-red-600" width="28" height="39" viewBox="0 0 38 53" xmlns="http://www.w3.org/2000/svg">
+              <div className="bg-red-500 w-[72px] h-[72px] flex justify-center items-center rounded-full  transition duration-300">
+                <svg className="text-white " width="28" height="39" viewBox="0 0 38 53" xmlns="http://www.w3.org/2000/svg">
                   <path d="M30.0879 35.2204C30.4199 35.5591 30.4199 36.0897 30.0879 36.4283C29.922 36.5977 29.7117 36.6767 29.4904 36.6767C29.2691 36.6767 29.0588 36.5977 28.8928 36.4283L26.7682 34.2609C26.4362 33.9223 26.4362 33.3917 26.7682 33.053C27.1002 32.7144 27.6203 32.7144 27.9522 33.053L30.0769 35.2204H30.0879ZM38 19.9018V41.0454C38 42.6258 36.7385 43.9127 35.1893 43.9127H24.4222C24.6325 44.9851 25.0641 46.0349 25.6948 46.9945H27.244C29.8002 46.9945 31.9691 48.7894 32.4118 51.2503C32.4892 51.6679 32.5778 52.1421 32.2458 52.5597C31.8917 53 31.3494 53 30.94 53C23.0169 53 14.9942 53 7.07105 53H7.03785C6.63948 53 6.10833 53 5.76529 52.5597C5.42225 52.1421 5.51077 51.6679 5.5993 51.239C6.04193 48.7781 8.21083 46.9832 10.767 46.9832H12.3162C12.947 46.0236 13.3786 44.9738 13.5888 43.9014H2.82178C1.27256 43.9014 0.0110597 42.6145 0.0110597 41.0341V19.8905C0.0110597 18.3101 1.27256 17.0232 2.82178 17.0232H35.1782C36.7274 17.0232 37.9889 18.3101 37.9889 19.8905L38 19.9018ZM36.3291 19.9018C36.3291 19.2584 35.82 18.7391 35.1893 18.7391H2.83285C2.20209 18.7391 1.69307 19.2584 1.69307 19.9018V41.0454C1.69307 41.6888 2.20209 42.2081 2.83285 42.2081H35.1893C35.82 42.2081 36.3291 41.6888 36.3291 41.0454V19.9018ZM27.0006 12.1917H37.159C37.6238 12.1917 38 11.8079 38 11.3338C38 9.49372 37.3582 7.94718 36.1409 6.85218C35.643 6.40064 35.0676 6.05069 34.4368 5.80234C35.0454 5.18147 35.4106 4.33482 35.4106 3.39787C35.4106 1.52396 33.9167 0 32.0798 0C30.2429 0 28.749 1.52396 28.749 3.39787C28.749 4.34611 29.1252 5.20405 29.7449 5.81363C27.742 6.61512 26.1706 8.47774 26.1706 11.3225C26.1706 11.5482 26.2592 11.7627 26.4141 11.9321C26.569 12.0901 26.7793 12.1804 27.0116 12.1804L27.0006 12.1917ZM27.3768 28.1425C27.5871 28.1425 27.8084 28.0635 27.9744 27.8941L30.099 25.7267C30.431 25.3881 30.431 24.8575 30.099 24.5188C29.767 24.1802 29.2469 24.1802 28.915 24.5188L26.7903 26.6863C26.4584 27.0249 26.4584 27.5555 26.7903 27.8941C26.9563 28.0635 27.1666 28.1425 27.3879 28.1425H27.3768ZM31.6704 29.6213H28.6715C28.2068 29.6213 27.8305 30.0051 27.8305 30.4792C27.8305 30.9534 28.2068 31.3372 28.6715 31.3372H31.6704C32.1351 31.3372 32.5114 30.9534 32.5114 30.4792C32.5114 30.0051 32.1351 29.6213 31.6704 29.6213ZM13.9208 12.203H24.0792C24.544 12.203 24.9202 11.8192 24.9202 11.345C24.9202 9.50501 24.2784 7.95847 23.0612 6.86347C22.5632 6.41193 21.9878 6.06198 21.357 5.81363C21.9656 5.19276 22.3308 4.34611 22.3308 3.40916C22.3308 1.53525 20.8369 0.0112886 19 0.0112886C17.1631 0.0112886 15.6692 1.53525 15.6692 3.40916C15.6692 4.3574 16.0454 5.21534 16.6651 5.82492C14.6622 6.62641 13.0909 8.48903 13.0909 11.3338C13.0909 11.5595 13.1794 11.774 13.3343 11.9433C13.4892 12.1014 13.6995 12.1917 13.9319 12.1917L13.9208 12.203ZM25.5288 28.0522C26.0821 28.6956 26.392 29.5536 26.392 30.4679C26.392 32.1612 25.3075 33.8771 23.2493 34.0351V38.0313C23.2493 39.0586 22.3419 39.8149 21.1025 39.8149C19.8631 39.8149 18.9557 39.0699 18.9557 38.0313V37.4669L11.9621 33.911V36.925C11.9621 37.9974 11.0879 38.8102 9.92603 38.8102C9.42807 38.8102 8.96331 38.6635 8.59813 38.3813C8.14443 38.0313 7.88992 37.512 7.88992 36.925V33.3465C6.53989 33.1208 5.4997 31.9242 5.4997 30.4792C5.4997 28.8763 6.78334 27.5668 8.35468 27.5668H10.933L18.9668 23.4803V22.9159C18.9668 21.8886 19.8742 21.1323 21.1136 21.1323C22.3529 21.1323 23.2603 21.8773 23.2603 22.9159V26.912C24.4112 27.0023 25.1305 27.5555 25.5399 28.0296L25.5288 28.0522ZM18.9447 25.3994L11.9511 28.9553V32.0032L18.9447 35.5591V25.3994ZM24.71 30.4679C24.71 29.689 24.3116 28.7972 23.2382 28.6505V32.308C23.6587 32.2515 24.0017 32.0709 24.2563 31.7661C24.544 31.4275 24.71 30.9534 24.71 30.4567V30.4679ZM5.90914 12.7674C5.44438 12.7674 5.06814 13.1512 5.06814 13.6253V15.2058C5.06814 15.6799 5.44438 16.0637 5.90914 16.0637H32.0577C32.5224 16.0637 32.8987 15.6799 32.8987 15.2058V13.6253C32.8987 13.1512 32.5224 12.7674 32.0577 12.7674C31.5929 12.7674 31.2167 13.1512 31.2167 13.6253V14.3591H19.8189V13.6253C19.8189 13.1512 19.4426 12.7674 18.9779 12.7674C18.5131 12.7674 18.1369 13.1512 18.1369 13.6253V14.3591H6.73908V13.6253C6.73908 13.1512 6.36284 12.7674 5.89807 12.7674H5.90914ZM0.829936 12.203H10.9883C11.4531 12.203 11.8293 11.8192 11.8293 11.345C11.8293 9.50501 11.1875 7.95847 9.97029 6.86347C9.47233 6.41193 8.89691 6.06198 8.26616 5.81363C8.87477 5.19276 9.23995 4.34611 9.23995 3.40916C9.23995 1.53525 7.74607 0.0112886 5.90914 0.0112886C4.07222 0.0112886 2.57833 1.53525 2.57833 3.40916C2.57833 4.3574 2.95457 5.21534 3.57425 5.82492C1.57134 6.62641 0 8.48903 0 11.3338C0 11.5595 0.0885194 11.774 0.243441 11.9433C0.398362 12.1014 0.608614 12.1917 0.840996 12.1917L0.829936 12.203Z" fill="currentColor" />
                 </svg>
 
               </div>
             </div>
-            <div className="text-[18px] leading-[19px] text-black group-hover:text-white font-helvetica text-center mb-[20px] font-bold">Amplification</div>
-            <p className="text-black group-hover:text-white text-[12px] leading-[18px] transition duration-300">
+            <div className="text-[18px] leading-[19px] text-black  font-helvetica text-center mb-[20px] font-bold">Amplification</div>
+            <p className="text-black  text-[12px] leading-[18px] transition duration-300">
               Amplify the reach of creative talent by acting as a bridge between artists and an appreciative community.
             </p>
           </div>
         </div>
 
         <div className="flex justify-center items-center w-[170px] custom-width-for-small">
-          <div className="group bg-red-50 p-4 h-full rounded-[10px] text-center hover:bg-red-500 transition duration-300">
+          <div className="group  p-4 h-full rounded-[10px] text-center bg-red-500 transition duration-300">
             <div className="flex justify-center mb-4">
-              <div className="bg-red-500 w-[72px] h-[72px] flex justify-center items-center rounded-full group-hover:bg-white transition duration-300">
+              <div className=" w-[72px] h-[72px] flex justify-center items-center rounded-full bg-white transition duration-300">
 
-                <svg className="text-white group-hover:text-red-600" width="28" height="39" viewBox="0 0 47 52" xmlns="http://www.w3.org/2000/svg">
+                <svg className=" text-red-600" width="28" height="39" viewBox="0 0 47 52" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3.77344 19.8088V31.692C3.91439 31.692 4.03366 31.6811 4.17461 31.6811C4.31556 31.6811 4.44567 31.6811 4.57577 31.692V19.8088H3.77344Z" fill="currentColor" />
                   <path d="M8.12095 39.0863C8.06674 39.1731 8.00168 39.2598 7.92578 39.3465L18.8223 45.6459C18.8656 45.5375 18.9307 45.4182 18.9849 45.3098C19.05 45.1797 19.1259 45.0496 19.2018 44.9303L8.37032 38.6743C8.30527 38.8153 8.21853 38.9562 8.13179 39.0863" fill="currentColor" />
                   <path d="M37.9701 38.6744L27.1387 44.9304C27.2254 45.0605 27.3013 45.1906 27.3664 45.3207C27.4206 45.4292 27.4748 45.5267 27.5182 45.6352L38.4147 39.3358C38.3388 39.2599 38.2737 39.1732 38.2195 39.0756C38.1327 38.9455 38.046 38.8154 37.9701 38.6636" fill="currentColor" />
@@ -271,8 +267,8 @@ const AboutUs = () => {
                 </svg>
               </div>
             </div>
-            <div className="text-[18px] leading-[19px] text-black group-hover:text-white font-helvetica text-center mb-[20px] font-bold">Discovery and Support</div>
-            <p className="text-black group-hover:text-white text-[12px] leading-[18px] transition duration-300">
+            <div className="text-[18px] leading-[19px]  text-white font-helvetica text-center mb-[20px] font-bold">Discovery and Support</div>
+            <p className="text-white text-[12px] leading-[18px] transition duration-300">
               Promote and connect artists with audiences both locally and internationally.
             </p>
           </div>
@@ -288,10 +284,10 @@ const AboutUs = () => {
 
       <div className="flex mt-[34px] md:mt-[152px]">
 
-        <div className="md:w-[38%] w-[40%]">
+        <div className="md:w-[40%] w-[50%]">
           <Image
             src="/photos/big screen/about us/picture 02.png"
-            className="w-full h-auto md:block hidden"
+            className="md:block hidden"
             alt="logo"
             width={527}
             height={836}
@@ -299,7 +295,7 @@ const AboutUs = () => {
 
           <Image
             src="/photos/phone screen/about us/picture02.png"
-            className="w-full h-auto md:hidden block"
+            className="h-auto md:hidden block"
             alt="logo"
             width={193}
             height={427}
@@ -307,7 +303,7 @@ const AboutUs = () => {
 
 
         </div>
-        <div className="md:w-[62%] w-[60%] md:p-[62px] p-[19px] md:py-[45px] py-0">
+        <div className="md:w-[60%] w-[50%] md:p-[62px] p-[19px] md:py-[45px] py-0 pe-[30px] ps-0 xtra-small-device-padding">
           <div className="md:block hidden font-[Helvetica] lg:text-[50px] lg:leading-[56px] md:text-[36px] md:leading-[46px] text-[24px] font-bold md:mb-[71px] mb:[30px]">
             A <span className="text-red-600">non-profit</span> organization conceived in <span className="text-red-600">June 2022 </span>
           </div>

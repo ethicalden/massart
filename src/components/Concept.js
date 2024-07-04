@@ -5,19 +5,26 @@ const Concept = () => {
   return (
     <div>
 
-      <div className="xl:ms-[125px] ms-[35px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[35px] md:mt-[150px] mt-[60px]">
-        <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-[106px] gap-7 md:mb-[61px] mb-7">
+      <div className="xl:ms-[125px] ms-[33px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[33px] md:mt-[150px] mt-[60px]">
+        <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-[106px] gap-[17px] md:mb-[61px] mb-7">
           <div>
             <Image
               src="/photos/big screen/concept/picture 01.png"
-              className="md:w-[527px] md:h-[777px] w-[366px] h-[347px]"
-              alt="logo"
+              className="md:block hidden"
+              alt="img"
               width={527}
               height={777}
             />
+            <Image
+              src="/photos/phone screen/concept/picture 1.png"
+              className="md:hidden block"
+              alt="img"
+              width={366}
+              height={347}
+            />
           </div>
           <div>
-            <div className="font-[Helvetica] md:text-[49px] leading-[56px] text-[24px] font-bold mb-[20px]">
+            <div className="font-[Helvetica] md:text-[49px] leading-[56px] text-[24px] font-bold mb-[5px]">
               <span className="text-red-600">What</span> is durga puja Art
             </div>
 
@@ -133,17 +140,17 @@ const Concept = () => {
       </div>
 
       {/* Show on mobile */}
-      <div className="md:hidden grid grid-flow-col auto-cols-max gap-5 mb-[17px]  ms-[35px]  overflow-x-auto">
-        <div className="relative rounded-lg overflow-hidden justify-center flex">
+      <div className="md:hidden grid grid-flow-col auto-cols-max gap-5 mb-[17px]  ms-[33px]  overflow-x-auto  no-scrollbar">
+        <div className="relative group rounded-lg overflow-hidden justify-center flex duration-150">
           <Image
-            className="lg:w-[165px] lg:h-[249px]"
+            className=""
             width={165}
             height={249}
-            src="/photos/big screen/concept/picture 02.png"
+            src="/photos/phone screen/concept/picture 2.png"
             alt=""
           />
           <div
-            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-2 text-white"           
+            className="hidden absolute text-[12px] top-0 bottom-0 left-0 right-0 group-hover:flex flex-col justify-end p-2 text-white"           
           >
             <p className="text-[12px] leading-[15px] font-[Helvetica] mb-[10px]">
               contemporary durga puja Art
@@ -154,14 +161,14 @@ const Concept = () => {
 
         <div className="relative group rounded-lg overflow-hidden justify-center flex">
           <Image
-            className="lg:w-[165px] lg:h-[249px]"
+            className=""
             width={165}
             height={249}
-            src="/photos/big screen/concept/picture 03.png"
+            src="/photos/phone screen/concept/picture 3.png"
             alt=""
           />
           <div
-            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-2 text-white"
+            className="hidden absolute text-[12px] top-0 bottom-0 left-0 right-0 group-hover:flex flex-col justify-end p-2 text-white"
           
           >
             <p className="text-[12px] leading-[15px] font-[Helvetica] mb-[10px]">
@@ -173,14 +180,14 @@ const Concept = () => {
 
         <div className="relative group rounded-lg overflow-hidden justify-center flex">
           <Image
-            className="lg:w-[165px] lg:h-[249px]"
+            className=""
             width={165}
             height={249}
-            src="/photos/big screen/concept/picture 04.png"
+            src="/photos/phone screen/concept/picture 2.png"
             alt=""
           />
           <div
-            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-2 text-white"
+            className="hidden absolute text-[12px] top-0 bottom-0 left-0 right-0 group-hover:flex flex-col justify-end p-2 text-white"
             style={{
               background:
                 "linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))",

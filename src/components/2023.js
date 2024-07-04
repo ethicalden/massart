@@ -73,11 +73,15 @@ const TwoZeroTwoThree = () => {
           />
         </div>
         <div>
-          <div className="font-[Helvetica] lg:text-[50px] lg:leading-[56px] md:text-[36px] md:leading-[46px] text-[24px] leading-[36px] font-bold mb-[20px]">
+          <div className="md:block hidden font-[Helvetica] lg:text-[50px] lg:leading-[56px] md:text-[36px] md:leading-[46px] text-[24px] leading-[36px] font-bold mb-[20px]">
             Preview Show <span className="text-red-600">2023</span>
           </div>
 
-          <div className="md:text-[18px] md:leading-[24px] text-[12px] leading-[18px]">
+          <div className="md:hidden block font-[Helvetica] lg:text-[50px] lg:leading-[56px] md:text-[36px] md:leading-[46px] text-[24px] leading-[36px] font-bold mb-[20px]">
+          <span className="text-red-600">What</span> is durga puja Art
+          </div>
+
+          <div className="md:block hidden md:text-[18px] md:leading-[24px] text-[12px] leading-[18px]">
             <p className="md:mb-9 mb-5 font-normal font-helvetica">
               Every year, we are confronted with new categories of Durga Puja
               Art and artists, displaying ever newer templates of contemporary
@@ -105,6 +109,20 @@ const TwoZeroTwoThree = () => {
               Chowdhury, and Samira Ich have entered the fray at various times,
               along with professional Art directors from cinema, commercial and
               graphic artists, and even textile designers.
+            </p>
+          </div>
+
+          <div className="md:hidden block md:text-[18px] md:leading-[24px] text-[12px] leading-[18px]">
+            <p className="md:mb-9 mb-5 font-normal font-helvetica">
+            durga puja is bengal’s biggest festival that takes place over a week  or so in september-october, on dates varying every year but announced  well in advance. at the centre of the celebration is the figure of  goddess durga, crafted traditionally in clay, who is worshipped in the  act of vanquishing the demon mahishasura. it is particularly in the  streets of kolkata (calcutta), the capital of the state, that durga puja  transcends religious bounds and serves as the cradle for the world’s  largest publicly funded Art show. while the worship of durga and her  four divine children remains the ritualistic core, the temporary  shelters of the idols – structures created from months in advance in  street corners – become exquisite works of artistic expression, unique  to each locality every year. thus there is a different artistic  interpretation offered in every locality through the choice of a  different theme to which the entire structure conforms.
+            </p>
+
+            <p className="md:mb-9 mb-5">
+            every autumn, the entire city wakes up to an explosion of creativity,  with every neighbourhood decked up in unique templates that are a  mélange of traditional Art and contemporary concepts, that are diverse  and creative enough to rival any international art biennale. commercial  promotion and sponsorship have kept pace with the explosion of Art,  providing an eco-system of community support.
+            </p>
+
+            <p className="md:mb-9 mb-5">
+            as a result, every year, the durga puja experience is different and  diverse. the evolution of durga puja of kolkata into an inclusive,  community-driven celebration of Art has been hailed by unesco, which  describes it as "the best instance of the public performance of religion  and Art, and as thriving ground for collaborative artists and  designers...”. durga puja has been inscribed on its list of intangible  cultural heritage of humanity in 2021.
             </p>
           </div>
         </div>

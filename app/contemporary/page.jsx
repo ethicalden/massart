@@ -15,9 +15,7 @@ const Contemporary = () => {
             <main className="font-helvetica overflow-hidden max-w-[1440px] m-auto">
                 <div className="text-[#FFFFFF] text-xs grid grid-cols-2 ml-8 mr-8 gap-[10px] mt-[60px] mb-[60px] md:hidden">
                     <ContemporaryPhoneGrid />
-                    <ContemporaryPhoneGrid />
-                    <ContemporaryPhoneGrid />
-                    <ContemporaryPhoneGrid />
+                  
                 </div>
                 <div className="ml-[120px] mr-[120px] text-base font-bold  grid-cols-3 gap-5 mt-[152px] mb-[152px] hidden md:grid">
                     <ContemporaryBggreenGrid />

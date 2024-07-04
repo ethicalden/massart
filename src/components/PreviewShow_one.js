@@ -55,17 +55,17 @@ const PreviewShow_one = () => {
           <div>
             <Image
               className="w-auto h-auto object-cover md:block hidden"
-              src="/photos/big screen/2025/Rectangle 2.png"
+              src="/photos/big screen/2024/Group 1.png"
               alt=""
               width={527}
               height={777}
             />
             <Image
-              className="w-auto h-auto object-cover md:hidden block"
-              src="/photos/big screen/2025/Rectangle 2.png"
+              className="md:hidden block"
+              src="/photos/phone screen/2024/Rectangle 2.png"
               alt=""
-              width={527}
-              height={777}
+              width={366}
+              height={540}
             />
           </div>
           <div>
@@ -95,9 +95,9 @@ const PreviewShow_one = () => {
         </div>
       </div>
 
-      <div className="scroll-container 2xl:ms-auto 2xl:me-auto max-w-7xl">
-        <div className="w-full overflow-x-auto flex justify-center">
-          <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  ms-[63px]  me-[0]">
+      <div className="scroll-container 2xl:ms-auto 2xl:me-auto max-w-7xl no-scrollbar">
+        <div className="w-full overflow-x-auto flex justify-center no-scrollbar">
+          <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  ms-[70px]  me-[0]">
             <button onClick={() => handleTabChange(0)}   className={
            isSelectTab === 0
           ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
