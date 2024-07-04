@@ -18,7 +18,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="relative xl:h-[778px] lg:h-[778px] md:h-[778px] sm:h-[778px] xs:h-[778px]">
+    <div className="relative xl:h-[778px] lg:h-[778px] md:h-[778px]  xs:h-[778px]">
       <video
         autoPlay
         loop
@@ -120,54 +120,27 @@ const Header = () => {
       <div
         className="
         
-        absolute bottom-0 left-0 grid grid-cols-2 
-    md:mt-[430px] lg:mt-[430px] xl:mt-[430px] xs:mt-[430px] sm:mt-[430px]
-    md:mb-[112px] lg:mb-[112px] xl:mb-[112px] xs:mb-[112px] sm:mb-[112px]
+        absolute bottom-[85px] left-0 w-full grid justify-center items-center 
+   
     text-black font-helvetica"
       >
         <div className="">
-          <h1
-            className="text-white xl:text-[80px] lg:text-[70px] md:text-[60px] sm:text-[40px] xs:text-[40px]
-            
-        md:ml-[120px] md:mr-[1014px]
-        lg:ml-[120px] lg:mr-[1014px]
-        xl:ml-[120px] xl:mr-[1014px]
-        xs:ml-[120px] sm:ml-[120px]
-        sm:pb-[20px] xs:pb-[20px]
-        md:pb-[30px] lg:pb-[40px] xl:pb-[50px] leading-[80px] text-center 
-        "
-          >
-            Witness <br /> Biggests
-          </h1>
-          <div
-            className="flex items-center h-[48px] xl:space-x-[25px] lg:space-x-[20px] md:space-x-[20px] 
-            sm:space-x-[15px] xs:space-x-[15px]
-           xs:ml-[120px] sm:ml-[120px] md:ml-[120px] lg:ml-[120px] xl:ml-[120px] "
-          >
-            {buttons.map((button) => (
-              <button
-                key={button.id}
-                className={`xl:text-[18px] lg:text-[18px] md:text-[12px] sm:text-[12px] xs:text-[12px] 
-                xl:px-[36px] xl:py-[12px] 
-                lg:px-[32px] lg:py-[12px]
-                md:px-[15px] md:py-[10px]
-                sm:px-[15px] sm:py-[10px]
-                xs:px-[13px] xs:py-[10px]
-                 font-bold border rounded-[100px]  text-white ${
-                   activeButton === button.id
-                     ? "bg-buttonCustomColor"
-                     : "border border-buttonCustomColor"
-                 } 
-           `}
-                onClick={() => setActiveButton(button.id)}
-              >
-                {button.label}
+          <div className="">
+            <h1 className="xs:text-[36px] xs:leading-[40px] text-white font-helvetica font-bold xs:pb-[27px]">
+              Witness Bengal
+            </h1>
+            <div className="flex gap-x-[14px] justify-center ">
+              <button className="text-white xs:px-[17px] xs:py-[4px] font-helvetica font-bold xs:text-[12px] xs:leading-[24px] bg-buttonCustomColor xs:rounded-full hover:bg-transparent transition-colors duration-300 ease-in-out border-transparent border hover:border-buttonCustomColor">
+                Get Ticket
               </button>
-            ))}
+              <button className="text-white xs:px-[17px] xs:py-[4px] font-helvetica font-bold xs:text-[12px] xs:leading-[24px] border border-buttonCustomColor xs:rounded-full hover:bg-buttonCustomColor hover:border-transparent transition-colors duration-300 ease-in-out">
+                View More
+              </button>
+            </div>
           </div>
         </div>
         <Image
-          src="/images/unesco.png"
+          src="/public/images/unescoHeader.png"
           width={100}
           height={100}
           alt=""

@@ -37,7 +37,8 @@ const Footer = () => {
               </ul>
             </div>
             <p className="#FFFFFF w-[36vw] text-[8px] md:hidden">
-             Copyright &copy; {new Date().getFullYear()}&nbsp;massArt, Designed & Developed Ethically
+              Copyright &copy; {new Date().getFullYear()}&nbsp;massArt, Designed
+              & Developed Ethically
               <span>
                 <a
                   href="https://www.ethicalden.com/"
@@ -72,15 +73,15 @@ const Footer = () => {
                     placeholder="Email Address out"
                   />
                   {/* <input type="email" placeholder="Email Address out"  /> */}
-              <div className="bg-buttonCustomColor p-4">
-              <Image
-                src="/photos/send.png"
-                alt="send-button"
-                width={30}
-                height={30}
-                className="mx-auto"
-              />
-            </div>
+                  <div className="bg-buttonCustomColor p-4">
+                    <Image
+                      src="/photos/send.png"
+                      alt="send-button"
+                      width={30}
+                      height={30}
+                      className="mx-auto"
+                    />
+                  </div>
                 </div>
               </li>
             </ul>
@@ -93,7 +94,8 @@ const Footer = () => {
         font-helvetica
         text-white "
         >
-            Copyright &copy; {new Date().getFullYear()}&nbsp;massArt, Designed & Developed Ethically
+          Copyright &copy; {new Date().getFullYear()}&nbsp;massArt, Designed &
+          Developed Ethically
           <span>
             <a
               href="https://www.ethicalden.com/"
