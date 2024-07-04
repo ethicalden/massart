@@ -43,18 +43,25 @@ const PreviewShow_one = () => {
   return (
 
     <div>
-      <div className="xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] md:mt-[150px] mt-[60px]">
+      <div className="xl:ms-[125px] ms-[33px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[33px] md:mt-[150px] mt-[60px]">
         <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-[106px] lg:gap-[90px] gap-[30px] md:mb-[157px] mb-5">
           <div className="font-[Helvetica] md:hidden block text-[24px] leading-[30px] font-bold">
             Preview Show <span className="text-red-600">2024</span>
           </div>
           <div>
             <Image
-              className="w-full h-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
+              className="w-auto h-auto object-cover md:block hidden"
+              src="/photos/big screen/2025/Rectangle 2.png"
               alt=""
-              width={100}
-              height={100}
+              width={527}
+              height={777}
+            />
+            <Image
+              className="w-auto h-auto object-cover md:hidden block"
+              src="/photos/big screen/2025/Rectangle 2.png"
+              alt=""
+              width={527}
+              height={777}
             />
           </div>
           <div>
@@ -62,31 +69,31 @@ const PreviewShow_one = () => {
               Preview Show <span className="text-red-600">2024</span>
             </div>
             <div className="md:text-[18px] md:leading-[30px] text-[12px] md:block hidden">
-              <p className="md:mb-9 mb-5" style={{ fontFamily: 'sans-serif' }}>
+              <p className="md:mb-9 mb-5">
                 The preview show, conceived by massArt, received overwhelming response in its inaugural year in 2022, being hailed at home and abroad as a breakthrough idea by creating a space to accommodate tourists who want to soak in the creative aspect of Durga Puja without jostling with the crowd.
               </p>
-              <p className="md:mb-9 mb-5" style={{ fontFamily: 'sans-serif' }}>
+              <p className="md:mb-9 mb-5">
                 MassArt is back this year with its 3rd initiative, the preview show 2024 of Durga Puja Art. Over five days - from September 30 to October 4 - the preview show will showcase a selection of the finest creations: 22 contemporary, 2 traditional, and 2 aristocrat household Durga Pujas. Before pre-registered tourists from beyond the borders of the state and the country.
               </p>
-              <p className="md:mb-9 mb-5" style={{ fontFamily: 'sans-serif' }}>
+              <p className="md:mb-9 mb-5">
                 Alongside the preview show at the puja sites, an exhibition on ‘Making of Durga Puja Art’ will take place during the period at the iconic town hall. The exhibition is a journey through the entire process, from conception to execution, using audio-visual footage and live demonstration. There is also an opportunity to sample the craftsmanship of artists and collect specimens of their art before stepping out to enjoy the creations on view at the chosen puja sites.
               </p>
             </div>
-            <div className="md:text-[18px] md:leading-[30px] text-[12px] leading-[18px] md:hidden block -mt-3">
-              <p className="md:mb-9 mb-5" style={{ fontFamily: 'sans-serif' }}>
+            <div className="md:text-[18px] md:leading-[30px] text-[13px] leading-[21px] md:hidden block -mt-3">
+              <p className="md:mb-9 mb-5">
                 Durga puja is bengal's biggest festival that takes place over a week or so in september-october, on dates varying every year but announced well in advance. at the centre of the celebration is the figure of goddess durga, crafted traditionally in clay, who is worshipped in the act of vanquishing the demon mahishasura.
               </p>
             </div>
           </div>
         </div>
-        <div className="font-[Helvetica] md:text-[50px] md:leading-[56px] w-full md:text-center text-left text-[24px] font-bold md:mb-[50px] mb-[28px]">
+        <div className="font-[Helvetica] md:text-[50px] md:leading-[56px] w-full md:text-center text-left text-[24px] leading-[36px] font-bold md:mb-[50px] mb-[22px]">
           Preview Show <span className="text-red-600">2024</span>
         </div>
       </div>
 
-      <div className="scroll-container">
+      <div className="scroll-container 2xl:ms-auto 2xl:me-auto max-w-7xl">
         <div className="w-full overflow-x-auto flex justify-center">
-          <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  ms-[38px]  me-[0]">
+          <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  ms-[63px]  me-[0]">
             <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
               Plan your visit
             </button>
@@ -96,7 +103,7 @@ const PreviewShow_one = () => {
             <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black">
               Events
             </button>
-            <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black">
+            <button className="md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black ms:[100px]">
               Beyond Art
             </button>
           </div>
@@ -106,20 +113,20 @@ const PreviewShow_one = () => {
 
 
       <div
-        className="w-full h-full relative rounded-lg bg-cover md:mb-[150px] mb-[60px]"
+        className="w-full h-full relative rounded-[10px] bg-cover md:mb-[150px] mb-[60px]"
         style={{
           backgroundImage: 'url("https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg")',
         }}
       >
         <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
-        <div className="relative grid md:grid-cols-3 grid-cols-1 p-10 md:py-[75px] py-[40px] items-center">
+        <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
           <div className="col-span-2 lg:mx-[150px] text-white">
             <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
-            <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white" style={{ fontFamily: 'sans-serif' }}>
+            <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </div>
           </div>
-          <div className="col-span-1 md:text-center text-left">
+          <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
             <button onClick={toggleModal} className="md:w-[173px] md:h-[48px] w-[92px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
               Get Ticket
             </button>
@@ -133,8 +140,8 @@ const PreviewShow_one = () => {
         How to reach <br /> <span className="text-buttonCustomColor">Kolkata?</span>
       </div>
 
-      <div className='mb-[60px] md:hidden block'>
-      <Carousel/>
+      <div className='mb-[58px] md:hidden block'>
+        <Carousel />
       </div>
       <div className="md:grid hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] mb-[150px]">
         <div className="flex justify-center items-center">
@@ -149,7 +156,7 @@ const PreviewShow_one = () => {
                 <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
-            <p className="text-black text-[18px] leading-[30px] text-base group-hover:text-white transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+            <p className="text-black text-[18px] leading-[30px] text-base group-hover:text-white transition duration-300">
               Netaji Subhas Chandra Bose International Airport, Kolkata, and its neighboring district airport, Kazi Nazrul Islam Airport in Andal, Burdwan, have airways access to almost all major cities of India and abroad.
             </p>
           </div>
@@ -166,7 +173,7 @@ const PreviewShow_one = () => {
                 <FaTrainSubway className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
-            <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+            <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300">
               Kolkata is directly connected for railways also in terms of Indian major cities. There are two main railway stations for the city - Sealdah and Howrah.
             </p>
           </div>
@@ -183,7 +190,7 @@ const PreviewShow_one = () => {
                 <IoMdBus className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
-            <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+            <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300">
               The city is well-connected by the road network to the rest of the country. NH 2 connects Delhi with Kolkata. Other important national highways are NH 6 (Mumbai), NH 34 (Siliguri), and NH 41 (Haldia).
             </p>
           </div>
@@ -198,12 +205,12 @@ const PreviewShow_one = () => {
 
       {/* getting arround kolkata section */}
 
-      <div className="bg-[#EFEDED] md:py-20 py-[33px] md:mb-[160px] mb-[60px]">
+      <div className="bg-[#EFEDED] md:py-20 py-[38px] md:mb-[160px] mb-[60px]">
         <div className="text-center font-[Helvetica] md:text-[50px] text-[24px] md:leading-[56px] leading-[30px]  font-bold mb-[25px]">
           Getting arround<br></br> <span className="text-buttonCustomColor">Kolkata</span>
         </div>
 
-        <Carousel/>
+        <Carousel />
 
         <div className="md:grid hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px]">
           <div className="flex justify-center items-center">
@@ -215,7 +222,7 @@ const PreviewShow_one = () => {
                   <FaPeopleGroup className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
                 </div>
               </div>
-              <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+              <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300">
                 We offer group coaches in which you can travel in comfort from one location to another, in the company of friends and fellow visitors. Do let us know in advance should you wish to make reservations.
               </p>
             </div>
@@ -230,7 +237,7 @@ const PreviewShow_one = () => {
                   <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
                 </div>
               </div>
-              <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+              <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300">
                 Netaji Subhas Chandra Bose International Airport, Kolkata, and its neighboring district airport, Kazi Nazrul Islam Airport in Andal, Burdwan, have airways access to almost all major cities of India and abroad.
               </p>
             </div>
@@ -245,7 +252,7 @@ const PreviewShow_one = () => {
                   <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
                 </div>
               </div>
-              <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+              <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300">
                 Netaji Subhas Chandra Bose International Airport, Kolkata, and its neighboring district airport, Kazi Nazrul Islam Airport in Andal, Burdwan, have airways access to almost all major cities of India and abroad.
               </p>
             </div>
@@ -260,7 +267,7 @@ const PreviewShow_one = () => {
                   <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
                 </div>
               </div>
-              <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+              <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300">
                 Netaji Subhas Chandra Bose International Airport, Kolkata, and its neighboring district airport, Kazi Nazrul Islam Airport in Andal, Burdwan, have airways access to almost all major cities of India and abroad.
               </p>
             </div>
@@ -275,7 +282,7 @@ const PreviewShow_one = () => {
                   <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
                 </div>
               </div>
-              <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+              <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300">
                 Netaji Subhas Chandra Bose International Airport, Kolkata, and its neighboring district airport, Kazi Nazrul Islam Airport in Andal, Burdwan, have airways access to almost all major cities of India and abroad.
               </p>
             </div>
@@ -291,8 +298,8 @@ const PreviewShow_one = () => {
         where to <span className="text-buttonCustomColor">stay?</span>
       </div>
 
-      <div className='mb-[60px] md:hidden block'>
-      <Carousel/>
+      <div className='mb-[58px] md:hidden block'>
+        <Carousel />
       </div>
 
       <div className="md:grid hidden lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] mb-[150px]">
@@ -305,7 +312,7 @@ const PreviewShow_one = () => {
                 <GiAirplaneDeparture className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
-            <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+            <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300">
               Netaji Subhas Chandra Bose International Airport, Kolkata, and its neighboring district airport, Kazi Nazrul Islam Airport in Andal, Burdwan, have airways access to almost all major cities of India and abroad.
             </p>
           </div>
@@ -320,7 +327,7 @@ const PreviewShow_one = () => {
                 <FaTrainSubway className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
-            <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+            <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300">
               Kolkata is directly connected for railways also in terms of Indian major cities. There are two main railway stations for the city - Sealdah and Howrah.
             </p>
           </div>
@@ -335,7 +342,7 @@ const PreviewShow_one = () => {
                 <FaRoad className="group-hover:text-red-500 text-white w-[52px] h-[52px]" />
               </div>
             </div>
-            <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300" style={{ fontFamily: 'sans-serif' }}>
+            <p className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300">
               Kolkata is directly connected by national and state highways.
             </p>
           </div>
@@ -344,10 +351,10 @@ const PreviewShow_one = () => {
       </div>
       {/* carousel */}
 
-    
 
-     
-        {/* <div className="relative flex overflow-hidden rounded-lg">
+
+
+      {/* <div className="relative flex overflow-hidden rounded-lg">
           <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             {slides.map((slide, index) => (
               <div
@@ -365,7 +372,7 @@ const PreviewShow_one = () => {
                   </div>
                   <p
                     className="text-black text-base group-hover:text-white text-[18px] leading-[30px] transition duration-300"
-                    style={{ fontFamily: 'sans-serif' }}
+                  
                   >
                     {slide.text}
                   </p>
@@ -377,8 +384,8 @@ const PreviewShow_one = () => {
 
 
 
-        {/* Navigation buttons */}
-        {/* <button
+      {/* Navigation buttons */}
+      {/* <button
           onClick={() => setCurrentSlide((currentSlide - 1 + slides.length) % slides.length)}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
         >
@@ -390,7 +397,7 @@ const PreviewShow_one = () => {
         >
           <MdKeyboardArrowRight />
         </button> */}
-        {/* <div className="flex justify-center space-x-2 mt-4">
+      {/* <div className="flex justify-center space-x-2 mt-4">
           {slides.map((_, index) => (
             <button
               key={index}
@@ -400,7 +407,7 @@ const PreviewShow_one = () => {
           ))}
         </div> */}
 
-      
+
 
 
 
@@ -411,24 +418,24 @@ const PreviewShow_one = () => {
           id="default-modal"
           tabIndex="-1"
           aria-hidden="true"
-          className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-50"
+          className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-[#D9D9D9] bg-opacity-50"
         >
           <div className="relative p-4 w-full max-w-2xl max-h-full">
-            <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div className="relative shadow">
 
-              <div className="p-4 md:py-[58px] px-[40px]">
+              <div className="md:p-5 p-[20px] bg-[#D9D9D9] rounded-[10px]">
 
-                <div className="font-[Helvetica] text-[50px] leading-[59px] font-bold mb-[34px]">
+                <div className="font-[Helvetica] md:text-[50px] md:leading-[59px] text-[24px] leading-[33px] font-bold mb-[20px]">
                   <span className="text-red-600">ticket </span> options will be available soon.
                 </div>
-                <p className='text-[18px] leading-[30px] mb-[34px]' style={{ fontFamily: 'sans-serif' }}>more ticket options including student concession are available. please call +91 8420460550</p>
-                <button
+                <p className='md:text-[18px] md:leading-[30px] text-[13px] leading-[20px] mb-[27px]'>more ticket options including student concession are available. please call +91 8420460550</p>
+                <div className='leading-[0px]'>   <button
                   type="button"
-                  className="w-[97px] h-[48px] border rounded-full text-[18px] leading-[24px] border-red-600 hover:bg-red-600 hover:text-white delay-150"
+                  className="md:w-[97px] md:h-[48px] w-[39px] h-[22px] border rounded-full md:text-[18px] md:leading-[24px] text-[12px] leading-[16px] border-black hover:bg-red-600 hover:border-buttonCustomColor hover:text-white delay-150"
                   onClick={toggleModal}
                 >
                   ok
-                </button>
+                </button></div>
               </div>
 
             </div>

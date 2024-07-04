@@ -10,15 +10,15 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 
 const carouselData = [
   {
-    text: "Kolkata is directly connected by national and state highways.",
+    text: "netaji subhas chandra bose international airport, kolkata and its neighbourhood district airport kazi nazrul islam airport, andal, burdwan have airways access to almost all the major cities of india and abroad.",
     icon: <FaRoad className="group-hover:text-red-500 text-white" />,
   },
   {
-    text: "Another text for the second slide.",
+    text: "netaji subhas chandra bose international airport, kolkata and its neighbourhood district airport kazi nazrul islam airport, andal, burdwan have airways access to almost all the major cities of india and abroad.",
     icon: <FaPeopleGroup className="group-hover:text-red-500 text-white" />,
   },
   {
-    text: "And a different text for the third slide.",
+    text: "netaji subhas chandra bose international airport, kolkata and its neighbourhood district airport kazi nazrul islam airport, andal, burdwan have airways access to almost all the major cities of india and abroad.",
     icon: <IoMdBus className="group-hover:text-red-500 text-white" />,
   },
 ];
@@ -63,8 +63,8 @@ const Carousel = () => {
                 </div>
               </div>
               <p
-                className="text-black group-hover:text-white text-base  text-[11px] leading-[21px] transition duration-300"
-                style={{ fontFamily: "sans-serif" }}
+                className="text-black group-hover:text-white text-base  text-[11.5px] leading-[18px] transition duration-300"
+                
               >
                 {item.text}
               </p>       
