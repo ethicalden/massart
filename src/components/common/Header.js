@@ -64,7 +64,7 @@ const Header = () => {
             >
             
               <li className="text-black font-helvetica">
-                  <Link href="/">Home</Link>
+                <Link href="/">Home</Link>
               </li>
                 <li className="text-black font-helvetica">
                 <Link href="/about-us">About</Link>
@@ -112,7 +112,7 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li className="text-white font-helvetica">
-              <a>Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className="text-white font-helvetica">
               <Link href="/about-us">About</Link>
