@@ -62,27 +62,29 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-white rounded-box w-52"
             >
+            
               <li className="text-black font-helvetica">
-                <a>Home</a>
+                  <Link href="/">Home</Link>
+              </li>
+                <li className="text-black font-helvetica">
+                <Link href="/about-us">About</Link>
               </li>
               <li className="text-black font-helvetica">
-                <a>About</a>
+                 <Link href="/concept">Concept</Link>
               </li>
               <li className="text-black font-helvetica">
-                <a>Concept</a>
-              </li>
-              <li className="text-black font-helvetica">
-                <a>Preview show</a>
+                 <Link href="/preview-show-2024">Preview show</Link>
               </li>
 
               <li className="text-black font-helvetica">
                 <a>Gallery</a>
+                <Link href="/gallery">Gallery</Link>
               </li>
               <li className="text-black font-helvetica">
                 <a>Press</a>
               </li>
               <li className="text-black font-helvetica">
-                <a>Contact</a>
+                <Link href="/contact-us">Contact</Link>
               </li>
 
               <li className="">
@@ -95,7 +97,7 @@ const Header = () => {
 
           <div className="w-full">
 
-            <Link href="/">
+        <Link href="/">
         <Image
           src="/images/massart 1.png"
           alt="massart-logo"
@@ -113,23 +115,23 @@ const Header = () => {
               <a>Home</a>
             </li>
             <li className="text-white font-helvetica">
-              <a>About</a>
+              <Link href="/about-us">About</Link>
             </li>
             <li className="text-white font-helvetica">
-              <a>Concept</a>
+              <Link href="/concept">Concept</Link>
             </li>
             <li className="text-white font-helvetica">
-              <a>Preview show</a>
+              <Link href="/preview-show-2024">Preview Show</Link>
             </li>
 
             <li className="text-white font-helvetica">
-              <a>Gallery</a>
+              <Link href="/gallery">Gallery</Link>
             </li>
             <li className="text-white font-helvetica">
               <a>Press</a>
             </li>
             <li className="text-white font-helvetica">
-              <a>Contact</a>
+               <Link href="/contact-us">Contact Us</Link>
             </li>
           </ul>
         </div>
