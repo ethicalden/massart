@@ -116,21 +116,21 @@ const PreviewShow_two = () => {
       <div className="scroll-container 2xl:ms-auto 2xl:me-auto max-w-7xl">
         <div className="w-full overflow-x-auto flex justify-center">
           <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  ms-[63px]  me-[0]">
-            <button onClick={() => handleTabChange(3)} className={
+            <button onClick={() => handleTabChange(0)} className={
            isSelectTab === 0
           ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
           : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
       }>
               Plan your visit
             </button>
-            <button onClick={() => handleTabChange(3)} className={
+            <button onClick={() => handleTabChange(1)} className={
            isSelectTab === 1
           ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
           : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
       }>
               Programme
             </button>
-            <button onClick={() => handleTabChange(3)} className={
+            <button onClick={() => handleTabChange(2)} className={
            isSelectTab === 2
           ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
           : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
