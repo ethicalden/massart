@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSwipeable } from 'react-swipeable';
 
 
@@ -10,23 +10,23 @@ const TwoZeroTwoThree = () => {
   const slides = [
     {
       imageUrl:
-        "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
-      title: "contemporary durga puja Art",
+        "/photos/big screen/concept/picture 01.png",
+      title: "contemporary durga puja Art 1",
     },
     {
       imageUrl:
-        "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
-      title: "contemporary durga puja Art",
+        "/photos/big screen/concept/picture 02.png",
+      title: "contemporary durga puja Art 2",
     },
     {
       imageUrl:
-        "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
-      title: "contemporary durga puja Art",
+        "/photos/big screen/concept/picture 03.png",
+      title: "contemporary durga puja Art 3",
     },
     {
       imageUrl:
-        "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
-      title: "contemporary durga puja Art",
+        "/photos/big screen/concept/picture 04.png",
+      title: "contemporary durga puja Art 4",
     },
   ];
 
@@ -45,33 +45,40 @@ const TwoZeroTwoThree = () => {
   //   setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   // };
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  //   }, 3000); // Change slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 3000); // Change slide every 3 seconds
 
-  //   return () => clearInterval(interval); // Cleanup interval on component unmount
-  // }, [slides.length]);
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [slides.length]);
 
   return (
-    <div className=" xl:ms-[125px] ms-[38px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[38px] md:mt-[150px] mt-[60px]">
-      <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-[106px] gap-7 lg:mb-[157px] mb-7">
+    <div className="max-w-7xl 2xl:ms-auto 2xl:me-auto xl:ms-[125px] ms-[33px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[33px] lg:mt-[150px] md:mt=[100px] mt-[60px]">
+      <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-[106px] md:gap-[52px] gap-7 lg:mb-[157px] mb-7">
         <div className="flex justify-center">
           <Image
-            className="md:w-[527px] md:h-[777px] w-[366px] h-[427px] rounded-lg"
+            className="lg:w-full w-2/3 h-auto rounded-[50px] lg:block hidden"
             width={527}
             height={777}
             src="/photos/big screen/concept/picture 01.png"
             alt=""
           />
+          <Image
+            className="md:w-2/3 w-full h-auto rounded-[10px] lg:hidden block"
+            width={366}
+            height={347}
+            src="/photos/phone screen/2023/picture.png"
+            alt=""
+          />
         </div>
         <div>
-          <div className="font-[Helvetica] md:text-[50px] text-[24px] font-bold mb-[20px]">
+          <div className="font-[Helvetica] lg:text-[50px] lg:leading-[56px] md:text-[36px] md:leading-[46px] text-[24px] leading-[36px] font-bold mb-[20px]">
             Preview Show <span className="text-red-600">2023</span>
           </div>
 
-          <div className="md:text-[17px] leading-[24px] text-[12px]">
-            <p className="md:mb-9 mb-5 font-normal" style={{ fontFamily: 'sans-serif' }}>
+          <div className="md:text-[18px] md:leading-[24px] text-[12px] leading-[18px]">
+            <p className="md:mb-9 mb-5 font-normal font-helvetica">
               Every year, we are confronted with new categories of Durga Puja
               Art and artists, displaying ever newer templates of contemporary
               Art and design—diverse and creative enough to rival any
@@ -81,14 +88,14 @@ const TwoZeroTwoThree = () => {
               of the festival.
             </p>
 
-            <p className="md:mb-9 mb-5" style={{ fontFamily: 'sans-serif' }}>
+            <p className="md:mb-9 mb-5">
               While the creativity comes from artists and Art designers, the
               work of setting up and decorating a pandal, or transporting the
               idols from the place of production to pandals, is still mostly
               done by a hired workforce.
             </p>
 
-            <p className="md:mb-9 mb-5" style={{ fontFamily: 'sans-serif' }}>
+            <p className="md:mb-9 mb-5">
               Our preview show is a journey through the entire process. From
               conception to the final outcome, using cutting-edge audio-visual
               techniques, we provide an immersive experience that will leave you
@@ -103,13 +110,13 @@ const TwoZeroTwoThree = () => {
         </div>
       </div>
 
-      <div className="md:grid lg:grid-cols-2 grid-cols-1 md:gap-[106px] gap-7 lg:mb-[157px] mb-7 hidden">
-        <div className="font-[Helvetica] md:text-[50px] text-[24px] font-bold">
+      <div className="md:grid lg:grid-cols-2 grid-cols-1 lg:gap-[106px] md:gap-[20px] gap-7 lg:mb-[157px] mb-7 hidden">
+        <div className="font-[Helvetica] lg:text-[50px] lgleading-[59px] md:text-[36px] md:leading-[46px] text-[24px] leading-[36px] font-bold">
           selected Art <span className="text-red-600"> <br className="md:block hidden" /> venue </span>
         </div>
         <div>
-          <div className="text-[18px]  font-normal">
-            <p style={{ fontFamily: 'sans-serif' }}>
+          <div className="md:text-[18px] md:leading-[24px] font-normal">
+            <p>
               Out of a pool of over 3000 Durga Puja organizing associations who
               are keen to be in the list, only 26 Durga Puja Art venues were
               selected for PSDP2023. Among them, 22 were contemporary, 2
@@ -131,13 +138,13 @@ const TwoZeroTwoThree = () => {
             alt=""
           />
           <div
-            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-5 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
             style={{
               background:
                 "linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))",
             }}
           >
-            <p className="text-[23px] leading-[30px] font-bold font-[Helvetica] mb-[10px]">
+            <p className="text-[24px] leading-[32px] font-bold font-[Helvetica] mb-[10px]">
               contemporary durga puja Art
             </p>
             <div>
@@ -160,13 +167,13 @@ const TwoZeroTwoThree = () => {
             alt=""
           />
           <div
-            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-5 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
             style={{
               background:
                 "linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))",
             }}
           >
-            <p className="text-[23px] leading-[30px] font-bold font-[Helvetica] mb-[10px]">
+            <p className="text-[24px] leading-[32px] font-bold font-[Helvetica] mb-[10px]">
               contemporary durga puja Art 1
             </p>
             <div>
@@ -189,13 +196,13 @@ const TwoZeroTwoThree = () => {
             alt=""
           />
           <div
-            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-5 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
             style={{
               background:
                 "linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))",
             }}
           >
-            <p className="text-[23px] leading-[30px] font-bold font-[Helvetica] mb-[10px]">
+            <p className="text-[24px] leading-[32px] font-bold font-[Helvetica] mb-[10px]">
               contemporary durga puja Art
             </p>
             <div>
@@ -218,13 +225,13 @@ const TwoZeroTwoThree = () => {
             alt=""
           />
           <div
-            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-6 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+            className="absolute text-[12px] top-0 bottom-0 left-0 right-0 flex flex-col justify-end p-5 text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
             style={{
               background:
                 "linear-gradient(2deg, rgba(129, 129, 129, 0.5), rgba(0, 0, 0, 0.5))",
             }}
           >
-            <p className="text-[23px] leading-[30px] font-bold font-[Helvetica] mb-[10px]">
+            <p className="text-[24px] leading-[32px] font-bold font-[Helvetica] mb-[10px]">
               contemporary durga puja Art
             </p>
             <div>
@@ -240,50 +247,50 @@ const TwoZeroTwoThree = () => {
       </div>
 
       {/* show on mobile */}
-      <div className="md:hidden block font-[Helvetica] md:text-[50px] text-[24px] font-bold mb-[20px]">
-        Preview Show <span className="text-red-600">2023</span>
+      <div className="md:hidden block font-[Helvetica] md:text-[50px] text-[24px] font-bold mb-[25px]">
+        selected Art <span className="text-red-600">venue</span>
       </div>
-    
+
       <div className="relative w-full mb-[60px] md:hidden block" {...handlers}>
-      <div className="relative h-64 overflow-hidden rounded-lg">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className="absolute w-full h-full transition-opacity duration-300 ease-in-out"
-            style={{ opacity: index === currentSlide ? 1 : 0 }}
-          >
-            <Image
-              src={slide.imageUrl}
-              alt=""
-              width={100}
-              height={100}
-              className="w-full object-cover"
-            />
+        <div className="relative h-64 overflow-hidden rounded-lg">
+          {slides.map((slide, index) => (
             <div
-              className="absolute inset-0 bg-[rgbe 0 0 0 0] flex flex-col justify-end p-3 text-white opacity-0 transition-opacity duration-300 ease-in-out"
-              style={{
-                opacity: index === currentSlide ? 1 : 0,
-                background:
-                  "linear-gradient(360deg, black, rgba(249, 0, 0, 0), rgba(249, 0, 0, 0), rgba(249, 0, 0, 0))",
-              }}
+              key={index}
+              className="absolute w-full h-full transition-opacity duration-300 ease-in-out"
+              style={{ opacity: index === currentSlide ? 1 : 0 }}
             >
-              <p className="text-[20px] leading-[23px] font-bold mb-2">
-                {slide.title}
-              </p>
+              <Image
+                src={slide.imageUrl}
+                alt=""
+                width={100}
+                height={100}
+                className="w-full object-cover"
+              />
+              <div
+                className="absolute inset-0 bg-[rgbe 0 0 0 0] flex flex-col justify-end p-3 text-white opacity-0 transition-opacity duration-300 ease-in-out"
+                style={{
+                  opacity: index === currentSlide ? 1 : 0,
+                  background:
+                    "linear-gradient(360deg, black, rgba(249, 0, 0, 0), rgba(249, 0, 0, 0), rgba(249, 0, 0, 0))",
+                }}
+              >
+                <p className="text-[20px] leading-[23px] font-bold mb-2">
+                  {slide.title}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className="justify-center flex space-x-2 mt-3">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-3 h-3 rounded-full ${index === currentSlide ? "bg-black" : "bg-gray-300"}`}
+            />
+          ))}
+        </div>
       </div>
-      <div className="justify-center flex space-x-2 mt-4">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full ${index === currentSlide ? "bg-black" : "bg-gray-300"}`}
-          />
-        ))}
-      </div>
-    </div>
 
     </div>
   );
