@@ -4,7 +4,32 @@ import Image from "next/image";
 import { useState } from "react";
 
 const AboutUs = () => {
-  const [openSections, setOpenSections] = useState([]);
+
+
+  const achievementsContent = `
+ <div class="custom-acc-container">
+      <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
+        1. MassArt acted as the pioneer in promoting the Bengal Art culture and heritage worldwide through an event named PSDPA (Preview Show of Durga Puja Art).
+      </div>
+      <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
+        2. In achieving our socio-cultural goals, UNESCO and British Council rendered their hands by being our associates for the last two editions of PSDPA.
+      </div>
+      <div class="custom-acc-style hidden-mobile" style="margin-bottom: 33px; margin-top: 25px">
+        3. Completed two successful editions of PSDPA with considerable participation and positive response from both national and international quarters.
+      </div>
+      <div class="custom-acc-style hidden-desktop" style="margin-bottom: 33px; margin-top: 25px">
+        3. Completed two successful editions of PSDPA with considerable.
+      </div>
+      <div class="custom-acc-style hidden-mobile" style="margin-bottom: 33px; margin-top: 25px">
+        4. Enhancement of the tourism as MassArt encouraged the inflow of both national and foreign delegates.
+      </div>
+      <div class="custom-acc-style hidden-mobile" style="margin-bottom: 33px; margin-top: 25px">
+        5. Successfully acted as an enhancer of the glory of Bengal Art, culture, and heritage among the Art loving people across the globe.
+      </div>
+    </div>
+  `;
+
+  const [openSections, setOpenSections] = useState([1]);
 
   const toggleAccordion = (index) => {
     if (openSections.includes(index)) {
@@ -14,19 +39,16 @@ const AboutUs = () => {
     }
   };
 
-  const achievementsContent = `
-    <div class="custom-acc-container">
-      <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
-        1. MassArt acted as the pioneer in promoting the bengal Art culture  heritage worldwide through an event named psdpa (preview show of durga  puja Art).
-    </div>
-    <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
-        2. In achieving our socio-cultural goals, unesco and british council  rendered their hands by being our associates for the last two editions  of psdpa<br>
-    </div>
-    <div class="custom-acc-style" style="margin-bottom: 33px; margin-top: 25px">
-        3. Completed two successful editions of psdpa with considerable.<br>
-    </div>
-    </div>
-  `;
+  const sections = [
+    {
+      title: "Our aim",
+      content: "To implement this functionality in a Next.js application, you can create a component that manages the image gallery and modal functionality. Here's how you can set it up:",
+    },
+    {
+      title: "What we have achieved",
+      content: <div dangerouslySetInnerHTML={{ __html: achievementsContent }} />,
+    },
+  ];
 
   return (
     <div>
@@ -301,26 +323,13 @@ const AboutUs = () => {
             height={427}
           />
 
-
         </div>
         <div className="md:w-[60%] w-[50%] md:p-[62px] p-[19px] md:py-[45px] py-0 pe-[30px] ps-0 xtra-small-device-padding">
           <div className="md:block hidden font-[Helvetica] lg:text-[50px] lg:leading-[56px] md:text-[36px] md:leading-[46px] text-[24px] font-bold md:mb-[71px] mb:[30px]">
             A <span className="text-red-600">non-profit</span> organization conceived in <span className="text-red-600">June 2022 </span>
           </div>
-          {[
-            {
-              title: "Our aim",
-              content:
-                "To implement this functionality in a Next.js application, you can create a component that manages the image gallery and modal functionality. Here's how you can set it up:",
-            },
-            {
-              title: "What we have achieved",
-              content: (
-                <div dangerouslySetInnerHTML={{ __html: achievementsContent }} />
-              ),
-            }
-          ].map((section, index) => (
-            <div className="md:mb-[25px] mb-[18px]" key={index}>
+          {sections.map((section, index) => (
+            <div className="md:mb-[25px] mb-[10px]" key={index}>
               <div
                 className="flex items-center cursor-pointer"
                 onClick={() => toggleAccordion(index)}
@@ -343,10 +352,10 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className={`accordion-content text-[#454545] md:ps-[59px] ps-[43px] md:text-[18px] text-[12px] leading-[18px] md:leading-[32px] font-normal ${openSections.includes(index) ? "open" : ""}`}>
-              <div className="text-[#454545] md:mt-[25px] mt-[10px]">
-                {section.content}
+                <div className="text-[#454545] md:mt-[25px] mt-[10px]">
+                  {section.content}
+                </div>
               </div>
-            </div>
             </div>
           ))}
         </div>

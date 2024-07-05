@@ -296,17 +296,28 @@ body {
   /* Tailwind hover:bg-red-500 */
 }
 
-@media (max-width: 430px) {
+@media (max-width: 767px) {
   .custom-acc-style {
     margin-top: 0px !important;
     margin-bottom: 16px !important;
   }
-
-  /* .custom-acc-style:last-child {
-    margin-bottom: 0;
-    background: red;
-  } */
+  .hidden-mobile{
+    display: none;
+  }
+ 
 }
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
 
 @media (max-width: 375px) {
   .custom-width-for-small {
