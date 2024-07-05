@@ -8,17 +8,22 @@ const AccordionItem = ({ number, title, content, isOpen, onClick }) => (
     <button
       onClick={onClick}
       className={`w-full text-left  font-bold flex 
-       x xs:px-[15px] ${
-         isOpen ? "bg-buttonCustomColor text-white" : "bg-white"
-       } transition-colors duration-300`}
+        ${
+          isOpen ? "bg-buttonCustomColor text-white" : "bg-white"
+        } transition-colors duration-300`}
     >
       <div className="flex justify-between place-items-baseline">
         <div className="w-1/6  ">
-          <span className="font-bold   xs:text-[18px] ">{number}</span>
+          <span className="font-bold font-helvetica text-[24px] leading-[27px] ">
+            {number}
+          </span>
         </div>
         <div className="w-5/6 ">
           <div className=" flex  font-bold justify-between items-center">
-            <span className="font-helvetica   xs:text-[16px]">{title}</span>
+            <span className="font-helvetica text-[20px] leading-[26px] font-bold">
+              {title}
+            </span>
+
             {isOpen ? (
               <HiMiniMinusSmall className="text-buttonCustomColor bg-white xl:w-[28px] xl:h-[28px] lg:w-[28px] lg:h-[28px] md:w-[28px] md:h-[28px]  xs:w-[28px] xs:h-[28px] sm:w-[28px] sm:h-[20px] flex items-center justify-center rounded-[24px]" />
             ) : (
@@ -32,7 +37,7 @@ const AccordionItem = ({ number, title, content, isOpen, onClick }) => (
           >
             <div
               className={`  xs:pt-[25px]    xs:text-[12px] font-normal ${
-                isOpen ? "bg-buttonCustomColor" : "bg-white"
+                isOpen ? "bg-buttonCustomColor pb-[25px]" : "bg-white"
               } text-white`}
             >
               {content}

@@ -1,6 +1,14 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { CiFacebook } from "react-icons/ci";
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaPinterest,
+  FaWhatsapp,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -138,11 +146,11 @@ const Header = () => {
       <div
         className="
         
-        absolute bottom-[85px] left-0 w-full grid justify-center items-center 
+        absolute bottom-[35px] left-0 w-full grid justify-center items-center 
    
     text-black font-helvetica"
       >
-        {/* <div className="">
+        <div className="">
           <div className="">
             <h1 className="xs:text-[36px] xs:leading-[40px] text-white font-helvetica font-bold xs:pb-[27px]">
               Witness Bengal
@@ -156,8 +164,17 @@ const Header = () => {
               </button>
             </div>
           </div>
-        </div> */}
-        <Image
+          <div className="flex space-x-[10px] text-white pt-[39px] text-[18px] justify-center ">
+            <CiFacebook />
+            <FaLinkedinIn />
+            <FaPinterest />
+            <FaXTwitter />
+            <FaWhatsapp />
+            <FaInstagram />
+          </div>
+        </div>
+
+        {/* <Image
           src="/public/images/unescoHeader.png"
           width={100}
           height={100}
@@ -165,7 +182,7 @@ const Header = () => {
           className="absolute bottom-0 right-0 hidden block-md
        md:h-[130px]  lg:h-[130px]  xl:h-[130px] object-cover
        mr-[87px]"
-        />
+        /> */}
       </div>
     </div>
   );

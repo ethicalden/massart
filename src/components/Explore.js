@@ -6,7 +6,7 @@ const Explore = () => {
       className="  
          xs:pt-[60px] xs:pb-[25px] xs:px-[32px]"
     >
-      <h1 className=" xs:text-[24px] xs:leading-[33px] font-bold font-helvetica">
+      <h1 className="pr-[20%] xs:text-[24px] xs:leading-[33px] font-bold font-helvetica">
         <span className=" text-buttonCustomColor ">Explore</span> and Join Our
         Exciting <span className="text-buttonCustomColor">Lineup</span>
       </h1>

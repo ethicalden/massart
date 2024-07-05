@@ -89,9 +89,9 @@ const MasterClass = () => {
       <Slider {...settings} className="">
         {events.map((event, index) => (
           <div key={index} className="">
-            <div className=" relative group h-[509px]">
+            <div className=" relative group h-[723px]">
               <Image
-                className="w-full h-full object-cover"
+                className="w-[100vw] h-full object-cover"
                 src={event.image}
                 alt={event.title}
                 height={100}
@@ -108,7 +108,7 @@ const MasterClass = () => {
                   {event.month}
                 </p>
               </div>
-              <div className="absolute bottom-0 left-0 p-4  bg-opacity-75 text-white june group-hover:opacity-100 opacity-0">
+              {/* <div className="absolute bottom-0 left-0 p-4  bg-opacity-75 text-white june group-hover:opacity-100 opacity-0">
                 <p className="xs:text-[20px] xs:leading-[32px] font-bold font-helvetica xs:pb-[2px]">
                   {event.title}
                 </p>
@@ -119,7 +119,7 @@ const MasterClass = () => {
                   <CiLocationOn />
                   {event.location}
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

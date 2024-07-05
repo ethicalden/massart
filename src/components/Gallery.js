@@ -9,34 +9,20 @@ const Gallery = () => {
         <h1 className="xs:text-[24px] leading-[36px] text-buttonCustomColor ">
           The gallery of Durga puja Art
         </h1>
-        <div className="flex gap-x-[8px] xs:py-[25px] items-center">
+        <div className="flex gap-x-[15px] xs:py-[25px] items-center">
           <button
-            className="xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[14.5px] xs:py-[8px] 
+            className="xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[38.5px] xs:py-[8px] 
            text-white bg-buttonCustomColor border border-transparent 
            hover:bg-transparent hover:text-black hover:border-buttonCustomColor rounded-[3px]"
           >
             Still
           </button>
           <button
-            className="xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[8px] xs:py-[8px] 
+            className="xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[38.5px] xs:py-[8px] 
             bg-transparent  border text-black border-buttonCustomColor
            hover:bg-buttonCustomColor hover:text-white hover:border-transparent rounded-[3px]"
           >
             Video
-          </button>
-          <button
-            className="xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[12.5px] xs:py-[8px] 
-            bg-transparent  border text-black border-buttonCustomColor
-           hover:bg-buttonCustomColor hover:text-white hover:border-transparent rounded-[3px]"
-          >
-            Film
-          </button>
-          <button
-            className="xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[17px] xs:py-[8px] 
-            bg-transparent  border text-black border-buttonCustomColor
-           hover:bg-buttonCustomColor hover:text-white hover:border-transparent rounded-[3px]"
-          >
-            All
           </button>
         </div>
         {/* gallery image */}
@@ -136,7 +122,7 @@ const Gallery = () => {
           className="xs:mt-[25px]  xs:text-[12px] xs:leading-[14px] font-helvetica font-bold text-buttonCustomColor border border-buttonCustomColor
            xs:px-[17px] xs:py-[9px] rounded-full"
         >
-          Browse more
+          Browse More Video
         </button>
       </div>
     </div>
