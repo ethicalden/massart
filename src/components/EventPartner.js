@@ -2,7 +2,7 @@ import React from "react";
 
 const EventPartener = () => {
   return (
-    <div className=" bg-white pt-[60px] font-helvetica">
+    <div className=" bg-white pt-[50px] font-helvetica">
       <div className="   px-[32px] font-helvetica bg-EventPartner">
         <div className="py-[41px] ">
           <h1 className=" font-bold  font-helvetica text-[24px] leading-[36px] ">

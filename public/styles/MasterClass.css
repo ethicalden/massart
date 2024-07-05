@@ -1,5 +1,4 @@
-/* MasterClass.css */
-.slick-dots {
+MasterClass.css .slick-dots {
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -7,27 +6,27 @@
 }
 
 .slick-dots li {
-  margin: 0 5px;
+  margin: 50px 5px;
 }
 
 .slick-dots li button:before {
-  font-size: 12px;
+  font-size: 50px;
   line-height: 12px;
   width: 10px;
   height: 10px;
-  background-color: #d3d3d3; /* Light gray color for inactive dots */
+  background-color: #d3d3d3;
   border-radius: 50%;
   content: "";
   display: inline-block;
 }
 
 .slick-dots li.slick-active button:before {
-  background-color: #ed2127; /* Red color for active dot */
+  background-color: #ed2127;
 }
 
 .slick-dots li:nth-child(3) button:before {
-  background-color: #00000033; /* Red color for the middle dot */
+  background-color: #00000033;
 }
-.custom-widhth-silck .slick-list {
+/* .custom-widhth-silck .slick-list {
   width: 100%;
-}
+} */

@@ -4,7 +4,7 @@ const Explore = () => {
   return (
     <div
       className="  
-         xs:pt-[60px] xs:pb-[25px] xs:px-[32px]"
+         xs:pt-[40px] xs:pb-[25px] xs:px-[32px]"
     >
       <h1 className="pr-[20%] xs:text-[24px] xs:leading-[33px] font-bold font-helvetica">
         <span className=" text-buttonCustomColor ">Explore</span> and Join Our

@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "/public/styles/MasterClass.css";
 import Image from "next/image";
+import { FaLocationDot } from "react-icons/fa6";
 
 const events = [
   {
@@ -72,6 +73,7 @@ const MasterClass = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          dots: true,
         },
       },
       {
@@ -79,17 +81,18 @@ const MasterClass = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],
   };
 
   return (
-    <div className="custom-widhth-silck ">
+    <div className="custom-widhth-silck overflow-hidden">
       <Slider {...settings} className="">
         {events.map((event, index) => (
           <div key={index} className="">
-            <div className=" relative group h-[723px]">
+            <div className=" relative group h-[500px]">
               <Image
                 className="w-[100vw] h-full object-cover"
                 src={event.image}
@@ -108,18 +111,18 @@ const MasterClass = () => {
                   {event.month}
                 </p>
               </div>
-              {/* <div className="absolute bottom-0 left-0 p-4  bg-opacity-75 text-white june group-hover:opacity-100 opacity-0">
+              <div className="absolute bottom-[65px] left-[32px]  bg-opacity-75 text-white june group-hover:opacity-100 opacity-0">
                 <p className="xs:text-[20px] xs:leading-[32px] font-bold font-helvetica xs:pb-[2px]">
                   {event.title}
                 </p>
-                <p className="xs:text-[12px] xs:leading-[13px] font-normal font-helvetica ">
+                <p className="xs:text-[12px] pb-[11px] xs:leading-[13px] font-normal font-helvetica ">
                   {event.author}
                 </p>
-                <p className="xs:pb-[11px] xs:text-[12px] xs:leading-[16px] font-helvetica font-normal flex items-center">
-                  <CiLocationOn />
+                <p className="xs:text-[12px] xs:leading-[16px] font-helvetica font-normal flex items-center">
+                  <FaLocationDot className="mr-[9px]" />
                   {event.location}
                 </p>
-              </div> */}
+              </div>
             </div>
           </div>
         ))}

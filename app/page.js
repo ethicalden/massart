@@ -28,8 +28,8 @@ export default function Home() {
         <Gallery />
         <Concept />
         <Video />
-        {/* <Explore /> */}
-        {/* <MasterClass /> */}
+        <Explore />
+        <MasterClass />
         <EventPartener />
         <Review />
         <GuidanceHeading />

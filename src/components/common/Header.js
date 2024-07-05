@@ -25,7 +25,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="relative xs:h-[80vh]">
+    <div className="relative xs:h-[80vh] ">
       <video
         autoPlay
         loop
@@ -37,12 +37,23 @@ const Header = () => {
       </video>
 
       <div
-        className="navbar relative  
-         xs:pl-[34px] xs:pr-[32px]
+        className="navbar relative
+         xs:pl-[34px] xs:pr-[32px] pt-[50px]
      
       "
       >
-        <div className="navbar-start  grid grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1 xs:space-x-[202px] md:space-x-[0px] lg:space-x-[0px] xl:space-x-[0px] 2xl:space-x-[0px]  ">
+        {/* mobile */}
+        <div className=" flex justify-between items-center w-full  ">
+          <div className="">
+            <Image
+              src="/images/massart 1.png"
+              alt="massart-logo"
+              width={100}
+              height={100}
+              className=" w-[42px] h-[49px]  "
+            />
+          </div>
+
           <div className="dropdown ">
             <div
               tabIndex={0}
@@ -52,7 +63,7 @@ const Header = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-9 w-9"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -67,7 +78,7 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-white rounded-box w-52"
+              className="menu menu-sm dropdown-content right-0 mt-3 z-10 p-2 shadow bg-white rounded-[5px] w-56"
             >
               <li className="text-black font-helvetica">
                 <a>Home</a>
@@ -91,25 +102,10 @@ const Header = () => {
               <li className="text-black font-helvetica">
                 <a>Contact</a>
               </li>
-
-              <li className="">
-                <a className=" bg-buttonCustomColor rounded-[10px]    text-white font-poppins xs:text-[18px]">
-                  Button
-                </a>{" "}
-              </li>
             </ul>
           </div>
-
-          <div className="w-full">
-            <Image
-              src="/images/massart 1.png"
-              alt="massart-logo"
-              width={100}
-              height={100}
-              className=" h-[49px]  object-contain"
-            />
-          </div>
         </div>
+
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li className="text-white font-helvetica">
