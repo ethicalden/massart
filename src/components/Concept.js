@@ -140,7 +140,7 @@ const Concept = () => {
       </div>
 
       {/* Show on mobile */}
-      <div className="md:hidden grid grid-flow-col auto-cols-max gap-5 mb-[17px]  ms-[33px]  overflow-x-auto  no-scrollbar">
+      <div className="md:hidden grid grid-flow-col auto-cols-max gap-5 mb-[17px]  px-[33px]  overflow-x-auto  no-scrollbar">
         <div className="relative group rounded-lg overflow-hidden justify-center flex duration-150">
           <Image
             className=""
