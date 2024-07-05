@@ -56,14 +56,14 @@ const Carousel = () => {
     <div className="relative custom-slick-style md:hidden block">
       <Slider {...sliderSettings}>
         {carouselData.map((item, index) => (
-          <div key={index} className="slide-item group p-[37px] h-full rounded-lg text-center transition duration-300">           
+          <div key={index} className="slide-item group py-[37px] px-[20px] h-full rounded-lg text-center transition duration-300">           
               <div className="flex justify-center mb-4">
-                <div className=" w-[84px] h-[84px] bg-red-600 icon-hover flex justify-center items-center rounded-full transition duration-300">
+                <div className=" w-[85px] h-[85px] bg-red-600 icon-hover flex justify-center items-center rounded-full transition duration-300">
                   {item.icon}
                 </div>
               </div>
               <p
-                className="text-black group-hover:text-white text-base  text-[11.5px] leading-[18px] transition duration-300"
+                className="text-black group-hover:text-white font-normal text-[12px] leading-[14px] transition duration-300"
                 
               >
                 {item.text}

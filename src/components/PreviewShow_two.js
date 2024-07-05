@@ -115,7 +115,7 @@ const PreviewShow_two = () => {
 
       <div className="scroll-container 2xl:ms-auto 2xl:me-auto max-w-7xl no-scrollbar">
         <div className="w-full overflow-x-auto flex justify-center no-scrollbar">
-          <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  ms-[70px]  me-[0]">
+          <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  ms-[65px]  me-[0]">
             <button onClick={() => handleTabChange(0)} className={
            isSelectTab === 0
           ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"

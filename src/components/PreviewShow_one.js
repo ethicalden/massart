@@ -31,7 +31,7 @@ const PreviewShow_one = () => {
   // ];
 
   const [isOpen, setIsOpen] = useState(false);
-    const [isSelectTab, setIsSelectTab] = useState(0);
+  const [isSelectTab, setIsSelectTab] = useState(0);
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
@@ -48,7 +48,7 @@ const PreviewShow_one = () => {
 
     <div>
       <div className="xl:ms-[125px] ms-[33px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[33px] md:mt-[150px] mt-[60px]">
-        <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-[106px] lg:gap-[90px] gap-[30px] md:mb-[157px] mb-5">
+        <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-[106px] lg:gap-[90px] gap-[15px] md:mb-[157px] mb-5">
           <div className="font-[Helvetica] md:hidden block text-[24px] leading-[30px] font-bold">
             Preview Show <span className="text-red-600">2024</span>
           </div>
@@ -83,7 +83,7 @@ const PreviewShow_one = () => {
                 Alongside the preview show at the puja sites, an exhibition on ‘Making of Durga Puja Art’ will take place during the period at the iconic town hall. The exhibition is a journey through the entire process, from conception to execution, using audio-visual footage and live demonstration. There is also an opportunity to sample the craftsmanship of artists and collect specimens of their art before stepping out to enjoy the creations on view at the chosen puja sites.
               </p>
             </div>
-            <div className="md:text-[18px] md:leading-[30px] text-[13px] leading-[21px] md:hidden block -mt-3">
+            <div className="md:text-[18px] md:leading-[30px] text-[12px] leading-[18px] font-helvetica md:hidden block">
               <p className="md:mb-9 mb-5">
                 Durga puja is bengal's biggest festival that takes place over a week or so in september-october, on dates varying every year but announced well in advance. at the centre of the celebration is the figure of goddess durga, crafted traditionally in clay, who is worshipped in the act of vanquishing the demon mahishasura.
               </p>
@@ -97,33 +97,33 @@ const PreviewShow_one = () => {
 
       <div className="scroll-container 2xl:ms-auto 2xl:me-auto max-w-7xl no-scrollbar">
         <div className="w-full overflow-x-auto flex justify-center no-scrollbar">
-          <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  ms-[70px]  me-[0]">
-            <button onClick={() => handleTabChange(0)}   className={
-           isSelectTab === 0
-          ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
-          : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
-      }>
+          <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  md:ms-[0] ms-[64px]  me-[0]">
+            <button onClick={() => handleTabChange(0)} className={
+              isSelectTab === 0
+                ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
+                : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
+            }>
               Plan your visit
             </button>
             <button onClick={() => handleTabChange(1)} className={
-           isSelectTab === 1
-          ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
-          : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
-      }>
+              isSelectTab === 1
+                ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
+                : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
+            }>
               Programme
             </button>
             <button onClick={() => handleTabChange(2)} className={
-           isSelectTab === 2
-          ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
-          : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
-      }>
+              isSelectTab === 2
+                ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
+                : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
+            }>
               Events
             </button>
             <button onClick={() => handleTabChange(3)} className={
-           isSelectTab === 3
-          ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
-          : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
-      }>
+              isSelectTab === 3
+                ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
+                : "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] border border-buttonCustomColor text-black"
+            }>
               Beyond Art
             </button>
           </div>
@@ -131,108 +131,108 @@ const PreviewShow_one = () => {
         <div className="md:hidden block blur-effect"></div>
       </div>
 
-{
-  isSelectTab == 0 && <div
-        className="w-full h-full relative rounded-[10px] bg-cover md:mb-[150px] mb-[60px]"
-        style={{
-          backgroundImage: 'url("https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg")',
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
-        <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
-          <div className="col-span-2 lg:mx-[150px] text-white">
-            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
-            <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      {
+        isSelectTab == 0 && <div
+          className="w-full h-full relative rounded-[10px] bg-cover md:mb-[150px] mb-[60px]"
+          style={{
+            backgroundImage: `url('/photos/big screen/2024/Rectangle 26.png')`
+          }}
+        >
+          <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
+          <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
+            <div className="col-span-2 lg:mx-[150px] text-white">
+              <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
+              <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </div>
+            </div>
+            <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
+              <button onClick={toggleModal} className="md:w-[173px] md:h-[48px] w-[92px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
+                Get Ticket
+              </button>
+
             </div>
           </div>
-          <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
-            <button onClick={toggleModal} className="md:w-[173px] md:h-[48px] w-[92px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
-              Get Ticket
-            </button>
-
-          </div>
         </div>
-      </div>
-}
+      }
 
 
-{
-  isSelectTab == 1 && <div
-        className="w-full h-full relative rounded-[10px] bg-cover md:mb-[150px] mb-[60px]"
-        style={{
-          backgroundImage: 'url("https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg")',
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
-        <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
-          <div className="col-span-2 lg:mx-[150px] text-white">
-            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
-            <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      {
+        isSelectTab == 1 && <div
+          className="w-full h-full relative rounded-[10px] bg-cover md:mb-[150px] mb-[60px]"
+          style={{
+            backgroundImage: `url('/photos/big screen/2024/Rectangle 26.png')`
+          }}
+        >
+          <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
+          <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
+            <div className="col-span-2 lg:mx-[150px] text-white">
+              <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
+              <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </div>
+            </div>
+            <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
+              <button onClick={toggleModal} className="md:w-[173px] md:h-[48px] w-[92px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
+                Get Ticket
+              </button>
+
             </div>
           </div>
-          <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
-            <button onClick={toggleModal} className="md:w-[173px] md:h-[48px] w-[92px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
-              Get Ticket
-            </button>
-
-          </div>
         </div>
-      </div>
-}
+      }
 
 
-{
-  isSelectTab == 2 && <div
-        className="w-full h-full relative rounded-[10px] bg-cover md:mb-[150px] mb-[60px]"
-        style={{
-          backgroundImage: 'url("https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg")',
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
-        <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
-          <div className="col-span-2 lg:mx-[150px] text-white">
-            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
-            <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      {
+        isSelectTab == 2 && <div
+          className="w-full h-full relative rounded-[10px] bg-cover md:mb-[150px] mb-[60px]"
+          style={{
+            backgroundImage: `url('/photos/big screen/2024/Rectangle 26.png')`
+          }}
+        >
+          <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
+          <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
+            <div className="col-span-2 lg:mx-[150px] text-white">
+              <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
+              <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </div>
+            </div>
+            <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
+              <button onClick={toggleModal} className="md:w-[173px] md:h-[48px] w-[92px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
+                Get Ticket
+              </button>
+
             </div>
           </div>
-          <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
-            <button onClick={toggleModal} className="md:w-[173px] md:h-[48px] w-[92px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
-              Get Ticket
-            </button>
-
-          </div>
         </div>
-      </div>
-}
+      }
 
-{
-  isSelectTab == 3 && <div
-        className="w-full h-full relative rounded-[10px] bg-cover md:mb-[150px] mb-[60px]"
-        style={{
-          backgroundImage: 'url("https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg")',
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
-        <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
-          <div className="col-span-2 lg:mx-[150px] text-white">
-            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
-            <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      {
+        isSelectTab == 3 && <div
+          className="w-full h-full relative rounded-[10px] bg-cover md:mb-[150px] mb-[60px]"
+          style={{
+            backgroundImage: `url('/photos/big screen/2024/Rectangle 26.png')`
+          }}
+        >
+          <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
+          <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
+            <div className="col-span-2 lg:mx-[150px] text-white">
+              <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
+              <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </div>
+            </div>
+            <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
+              <button onClick={toggleModal} className="md:w-[173px] md:h-[48px] w-[92px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
+                Get Ticket
+              </button>
+
             </div>
           </div>
-          <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
-            <button onClick={toggleModal} className="md:w-[173px] md:h-[48px] w-[92px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white">
-              Get Ticket
-            </button>
-
-          </div>
         </div>
-      </div>
-}
-      
+      }
+
 
       {/* how to reach kolkata section */}
       <div className="text-center font-[Helvetica] md:text-[50px] text-[24px] md:leading-[56px] leading-[30px] font-bold md:mb-[50px] mb-[30px]">
@@ -514,7 +514,7 @@ const PreviewShow_one = () => {
 
       {isOpen && (
         <div
-          id="default-modal"
+          id="default-modal custom-bg-fullScreen"
           tabIndex="-1"
           aria-hidden="true"
           className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-[#D9D9D9] bg-opacity-50"
@@ -522,7 +522,7 @@ const PreviewShow_one = () => {
           <div className="relative p-4 w-full max-w-2xl max-h-full">
             <div className="relative shadow">
 
-              <div className="md:p-5 p-[20px] bg-[#D9D9D9] rounded-[10px]">
+              <div className="md:p-[50px] p-[20px] bg-[#D9D9D9] rounded-[10px]">
 
                 <div className="font-[Helvetica] md:text-[50px] md:leading-[59px] text-[24px] leading-[33px] font-bold mb-[20px]">
                   <span className="text-red-600">ticket </span> options will be available soon.

@@ -4,6 +4,7 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -327,4 +328,8 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
   /* Safari and Chrome */
+}
+
+div#default-modal\ custom-bg-fullScreen {
+  background: rgb(0 0 0 / 60%);
 }
