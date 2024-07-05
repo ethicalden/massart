@@ -47,14 +47,14 @@ const PreviewShow_one = () => {
   return (
 
     <div>
-      <div className="xl:ms-[125px] ms-[33px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[33px] md:mt-[150px] mt-[60px]">
+      <div className="max-w-7xl 2xl:ms-auto 2xl:me-auto xl:ms-[125px] ms-[33px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[33px] md:mt-[150px] mt-[60px]">
         <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-[106px] lg:gap-[90px] gap-[15px] md:mb-[157px] mb-5">
           <div className="font-[Helvetica] md:hidden block text-[24px] leading-[30px] font-bold">
             Preview Show <span className="text-red-600">2024</span>
           </div>
           <div>
             <Image
-              className="w-auto h-auto object-cover md:block hidden"
+              className="object-cover md:block hidden"
               src="/photos/big screen/2024/Group 1.png"
               alt=""
               width={527}
@@ -95,9 +95,9 @@ const PreviewShow_one = () => {
         </div>
       </div>
 
-      <div className="scroll-container 2xl:ms-auto 2xl:me-auto max-w-7xl no-scrollbar">
+      <div className="scroll-container 2xl:ms-auto 2xl:me-auto max-w-7xl no-scrollbar mx-auto">
         <div className="w-full overflow-x-auto flex justify-center no-scrollbar">
-          <div className="md:w-1/2 w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  md:ms-[0] ms-[64px]  me-[0]">
+          <div className="lg:w-[50%] md:justify-center justify-start w-full grid grid-flow-col md:gap-9 gap-3 md:mb-[50px] mb-[30px]  md:ms-[0] ms-[64px]  me-[0]">
             <button onClick={() => handleTabChange(0)} className={
               isSelectTab === 0
                 ? "md:w-[173px] md:h-[48px] w-[117px] h-[32px] font-bold md:text-[18px] text-[12px] font-helvetica rounded-[100px] bg-buttonCustomColor text-white"
