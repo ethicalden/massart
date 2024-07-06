@@ -4,79 +4,125 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
 * {
   font-family: "Helvetica";
 }
+
 body {
   background: #fff;
   color: black;
 }
+
 @font-face {
   font-family: "Helvetica";
   font-style: normal;
+
   font-weight: 400; /* Normal weight */
   src:
     local("Helvetica"),
     url("/fonts/Helvetica.woff") format("woff");
+
+  font-weight: 400;
+  /* Normal weight */
+  src: local("Helvetica"), url("/fonts/Helvetica.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica";
   font-style: oblique;
+
   font-weight: 400; /* Normal weight */
   src:
     local("Helvetica Oblique"),
     url("/fonts/Helvetica-Oblique.woff") format("woff");
+
+  font-weight: 400;
+  /* Normal weight */
+  src: local("Helvetica Oblique"), url("/fonts/Helvetica-Oblique.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica Compressed";
   font-style: normal;
+
   font-weight: 400; /* Normal weight */
   src:
     local("Helvetica Compressed"),
     url("/fonts/helvetica-compressed-5871d14b6903a.woff") format("woff");
+
+  font-weight: 400;
+  /* Normal weight */
+  src: local("Helvetica Compressed"), url("/fonts/helvetica-compressed-5871d14b6903a.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica Rounded Bold";
   font-style: normal;
+
   font-weight: 700; /* Bold weight */
   src:
     local("Helvetica Rounded Bold"),
     url("/fonts/helvetica-rounded-bold-5871d05ead8de.woff") format("woff");
+
+  font-weight: 700;
+  /* Bold weight */
+  src: local("Helvetica Rounded Bold"), url("/fonts/helvetica-rounded-bold-5871d05ead8de.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica";
   font-style: normal;
+
   font-weight: 700; /* Bold weight */
   src:
     local("Helvetica"),
     url("/fonts/Helvetica-Bold.woff") format("woff");
+
+  font-weight: 700;
+  /* Bold weight */
+  src: local("Helvetica"), url("/fonts/Helvetica-Bold.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica";
   font-style: oblique;
+
   font-weight: 700; /* Bold weight */
   src:
     local("Helvetica Bold Oblique"),
     url("/fonts/Helvetica-BoldOblique.woff") format("woff");
+
+  font-weight: 700;
+  /* Bold weight */
+  src: local("Helvetica Bold Oblique"), url("/fonts/Helvetica-BoldOblique.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica";
   font-style: normal;
+
   font-weight: 300; /* Light weight */
   src:
     local("Helvetica Light"),
     url("/fonts/helvetica-light-587ebe5a59211.woff") format("woff");
+
+  font-weight: 300;
+  /* Light weight */
+  src: local("Helvetica Light"), url("/fonts/helvetica-light-587ebe5a59211.woff") format("woff");
+
 }
 
 body {
@@ -125,6 +171,7 @@ body {
 .black-placeholder::placeholder {
   color: black;
 }
+
 .accordion-content {
   max-height: 0;
   overflow: hidden;
@@ -146,7 +193,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Ensure the blur effect doesn't interfere with scrolling */
+  pointer-events: none;
+  /* Ensure the blur effect doesn't interfere with scrolling */
 }
 
 .blur-effect:after {
@@ -158,6 +206,7 @@ body {
   top: 0;
   left: 0;
 }
+
 /* components/Carousel.module.css */
 
 .carousel {
@@ -209,15 +258,25 @@ body {
   height: 30px;
   color: black !important;
 }
+
 .custom-slick-style svg {
   width: 44px;
   height: 44px;
 }
+
+.prev-arrow {
+  margin-left: 33px;
+  margin-right: 10px;
+}
+
+.next-arrow {
+  margin-right: 33px;
+  margin-left: 10px;
+}
+
 .prev-arrow,
 .next-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+
   background-color: #d9d9d9;
   color: black;
   border: none;
@@ -232,11 +291,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .prev-arrow svg,
 .next-arrow svg {
   height: 30px;
   color: #fff;
 }
+
 .prev-arrow:hover,
 .next-arrow:hover {
   background-color: rgba(0, 0, 0, 0.7);
@@ -249,6 +310,7 @@ body {
 .next-arrow {
   right: 55px;
 }
+
 /* .slick-list {
   width: 50%;
   height: 100%;
@@ -264,24 +326,94 @@ body {
   border-radius: 10px;
 } */
 
+
+.slick-list {
+  width: 50%;
+  height: 100%;
+}
+
+.slick-slider.slick-initialized {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-slick-style .slick-list {
+  background-color: #fef2f2;
+  /* Tailwind bg-red-50 */
+  border-radius: 10px;
+  width: 264px;
+}
+
 .custom-slick-style .slick-list:hover {
-  background-color: #ef4444; /* Tailwind hover:bg-red-500 */
+  background-color: #ef4444;
+  /* Tailwind hover:bg-red-500 */
 }
+
 .custom-slick-style .slick-list:hover .icon-hover {
-  background-color: white; /* Tailwind hover:bg-red-500 */
+  background-color: white;
+  /* Tailwind hover:bg-red-500 */
 }
+
 .custom-slick-style .slick-list:hover .icon-hover svg {
-  color: #ef4444 !important; /* Tailwind hover:bg-red-500 */
+  color: #ef4444 !important;
+  /* Tailwind hover:bg-red-500 */
 }
-@media (max-width: 425px) {
+
+@media (max-width: 767px) {
   .custom-acc-style {
+
     margin-top: 20px !important;
     margin-bottom: 24px !important;
+
+    margin-top: 0px !important;
+    margin-bottom: 16px !important;
+  }
+  .hidden-mobile{
+    display: none;
+  }
+ 
+}
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+
   }
 }
+
+@media (min-width: 769px) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
 
 @media (max-width: 375px) {
   .custom-width-for-small {
     width: 150px;
   }
+
 }
+=======
+  .xtra-small-device-padding{
+    padding-left: 20px;
+    padding-right: 5px;
+  }
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+div#default-modal\ custom-bg-fullScreen {
+  background: rgb(0 0 0 / 60%);
+}
+

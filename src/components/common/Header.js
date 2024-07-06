@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { CiFacebook } from "react-icons/ci";
 import {
@@ -80,55 +81,73 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content right-0 mt-3 z-10 p-2 shadow bg-white rounded-[5px] w-56"
             >
+            
               <li className="text-black font-helvetica">
-                <a>Home</a>
+                <Link href="/">Home</Link>
+              </li>
+                <li className="text-black font-helvetica">
+                <Link href="/about-us">About</Link>
               </li>
               <li className="text-black font-helvetica">
-                <a>About</a>
+                 <Link href="/concept">Concept</Link>
               </li>
               <li className="text-black font-helvetica">
-                <a>Concept</a>
-              </li>
-              <li className="text-black font-helvetica">
-                <a>Preview show</a>
+                 <Link href="/preview-show-2024">Preview show</Link>
               </li>
 
               <li className="text-black font-helvetica">
                 <a>Gallery</a>
+                <Link href="/gallery">Gallery</Link>
               </li>
               <li className="text-black font-helvetica">
                 <a>Press</a>
               </li>
               <li className="text-black font-helvetica">
-                <a>Contact</a>
+                <Link href="/contact-us">Contact</Link>
               </li>
             </ul>
           </div>
+
+
+          <div className="w-full">
+
+        <Link href="/">
+        <Image
+          src="/images/massart 1.png"
+          alt="massart-logo"
+          width={100}
+          height={100}
+          className="h-[49px] object-contain"
+        />
+
+    </Link>
+          </div>
+
         </div>
 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li className="text-white font-helvetica">
-              <a>Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className="text-white font-helvetica">
-              <a>About</a>
+              <Link href="/about-us">About</Link>
             </li>
             <li className="text-white font-helvetica">
-              <a>Concept</a>
+              <Link href="/concept">Concept</Link>
             </li>
             <li className="text-white font-helvetica">
-              <a>Preview show</a>
+              <Link href="/preview-show-2024">Preview Show</Link>
             </li>
 
             <li className="text-white font-helvetica">
-              <a>Gallery</a>
+              <Link href="/gallery">Gallery</Link>
             </li>
             <li className="text-white font-helvetica">
               <a>Press</a>
             </li>
             <li className="text-white font-helvetica">
-              <a>Contact</a>
+               <Link href="/contact-us">Contact Us</Link>
             </li>
           </ul>
         </div>

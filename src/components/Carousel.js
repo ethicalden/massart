@@ -10,15 +10,15 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 
 const carouselData = [
   {
-    text: "Kolkata is directly connected by national and state highways.",
+    text: "netaji subhas chandra bose international airport, kolkata and its neighbourhood district airport kazi nazrul islam airport, andal, burdwan have airways access to almost all the major cities of india and abroad.",
     icon: <FaRoad className="group-hover:text-red-500 text-white" />,
   },
   {
-    text: "Another text for the second slide.",
+    text: "netaji subhas chandra bose international airport, kolkata and its neighbourhood district airport kazi nazrul islam airport, andal, burdwan have airways access to almost all the major cities of india and abroad.",
     icon: <FaPeopleGroup className="group-hover:text-red-500 text-white" />,
   },
   {
-    text: "And a different text for the third slide.",
+    text: "netaji subhas chandra bose international airport, kolkata and its neighbourhood district airport kazi nazrul islam airport, andal, burdwan have airways access to almost all the major cities of india and abroad.",
     icon: <IoMdBus className="group-hover:text-red-500 text-white" />,
   },
 ];
@@ -56,15 +56,15 @@ const Carousel = () => {
     <div className="relative custom-slick-style md:hidden block">
       <Slider {...sliderSettings}>
         {carouselData.map((item, index) => (
-          <div key={index} className="slide-item group p-4  h-full rounded-lg text-center transition duration-300">           
+          <div key={index} className="slide-item group py-[37px] px-[20px] h-full rounded-lg text-center transition duration-300">           
               <div className="flex justify-center mb-4">
-                <div className=" w-[84px] h-[84px] bg-red-600 icon-hover flex justify-center items-center rounded-full transition duration-300">
+                <div className=" w-[85px] h-[85px] bg-red-600 icon-hover flex justify-center items-center rounded-full transition duration-300">
                   {item.icon}
                 </div>
               </div>
               <p
-                className="text-black group-hover:text-white text-base  text-[11px] leading-[21px] transition duration-300"
-                style={{ fontFamily: "sans-serif" }}
+                className="text-black group-hover:text-white font-normal text-[12px] leading-[14px] transition duration-300"
+                
               >
                 {item.text}
               </p>       
