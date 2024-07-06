@@ -327,12 +327,12 @@ body {
 } */
 
 
-.slick-list {
+/* .slick-list {
   width: 50%;
   height: 100%;
-}
+} */
 
-.slick-slider.slick-initialized {
+.custom-slick-style .slick-slider.slick-initialized {
   display: flex;
   justify-content: space-between;
   align-items: center;
