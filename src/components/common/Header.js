@@ -2,6 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { CiFacebook } from "react-icons/ci";
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaPinterest,
+  FaWhatsapp,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +26,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="relativ xs:h-[669px]">
+    <div className="relative xs:h-[80vh] ">
       <video
         autoPlay
         loop
@@ -30,12 +38,23 @@ const Header = () => {
       </video>
 
       <div
-        className="navbar relative  
-         xs:pl-[34px] xs:pr-[32px]
+        className="navbar relative
+         xs:pl-[34px] xs:pr-[32px] pt-[50px]
      
       "
       >
-        <div className="navbar-start  grid grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1 xs:space-x-[202px] md:space-x-[0px] lg:space-x-[0px] xl:space-x-[0px] 2xl:space-x-[0px]  ">
+        {/* mobile */}
+        <div className=" flex justify-between items-center w-full  ">
+          <div className="">
+            <Image
+              src="/images/massart 1.png"
+              alt="massart-logo"
+              width={100}
+              height={100}
+              className=" w-[42px] h-[49px]  "
+            />
+          </div>
+
           <div className="dropdown ">
             <div
               tabIndex={0}
@@ -45,7 +64,7 @@ const Header = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-9 w-9"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -60,7 +79,7 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-white rounded-box w-52"
+              className="menu menu-sm dropdown-content right-0 mt-3 z-10 p-2 shadow bg-white rounded-[5px] w-56"
             >
             
               <li className="text-black font-helvetica">
@@ -86,14 +105,9 @@ const Header = () => {
               <li className="text-black font-helvetica">
                 <Link href="/contact-us">Contact</Link>
               </li>
-
-              <li className="">
-                <a className=" bg-buttonCustomColor rounded-[10px]    text-white font-poppins xs:text-[18px]">
-                  Button
-                </a>{" "}
-              </li>
             </ul>
           </div>
+
 
           <div className="w-full">
 
@@ -108,7 +122,9 @@ const Header = () => {
 
     </Link>
           </div>
+
         </div>
+
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li className="text-white font-helvetica">
@@ -145,11 +161,11 @@ const Header = () => {
       <div
         className="
         
-        absolute bottom-[85px] left-0 w-full grid justify-center items-center 
+        absolute bottom-[35px] left-0 w-full grid justify-center items-center 
    
     text-black font-helvetica"
       >
-        {/* <div className="">
+        <div className="">
           <div className="">
             <h1 className="xs:text-[36px] xs:leading-[40px] text-white font-helvetica font-bold xs:pb-[27px]">
               Witness Bengal
@@ -163,8 +179,17 @@ const Header = () => {
               </button>
             </div>
           </div>
-        </div> */}
-        <Image
+          <div className="flex space-x-[10px] text-white pt-[39px] text-[18px] justify-center ">
+            <CiFacebook />
+            <FaLinkedinIn />
+            <FaPinterest />
+            <FaXTwitter />
+            <FaWhatsapp />
+            <FaInstagram />
+          </div>
+        </div>
+
+        {/* <Image
           src="/public/images/unescoHeader.png"
           width={100}
           height={100}
@@ -172,7 +197,7 @@ const Header = () => {
           className="absolute bottom-0 right-0 hidden block-md
        md:h-[130px]  lg:h-[130px]  xl:h-[130px] object-cover
        mr-[87px]"
-        />
+        /> */}
       </div>
     </div>
   );

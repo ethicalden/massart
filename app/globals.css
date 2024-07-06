@@ -13,7 +13,6 @@
 
 * {
   font-family: "Helvetica";
-
 }
 
 body {
@@ -24,57 +23,106 @@ body {
 @font-face {
   font-family: "Helvetica";
   font-style: normal;
+
+  font-weight: 400; /* Normal weight */
+  src:
+    local("Helvetica"),
+    url("/fonts/Helvetica.woff") format("woff");
+
   font-weight: 400;
   /* Normal weight */
   src: local("Helvetica"), url("/fonts/Helvetica.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica";
   font-style: oblique;
+
+  font-weight: 400; /* Normal weight */
+  src:
+    local("Helvetica Oblique"),
+    url("/fonts/Helvetica-Oblique.woff") format("woff");
+
   font-weight: 400;
   /* Normal weight */
   src: local("Helvetica Oblique"), url("/fonts/Helvetica-Oblique.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica Compressed";
   font-style: normal;
+
+  font-weight: 400; /* Normal weight */
+  src:
+    local("Helvetica Compressed"),
+    url("/fonts/helvetica-compressed-5871d14b6903a.woff") format("woff");
+
   font-weight: 400;
   /* Normal weight */
   src: local("Helvetica Compressed"), url("/fonts/helvetica-compressed-5871d14b6903a.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica Rounded Bold";
   font-style: normal;
+
+  font-weight: 700; /* Bold weight */
+  src:
+    local("Helvetica Rounded Bold"),
+    url("/fonts/helvetica-rounded-bold-5871d05ead8de.woff") format("woff");
+
   font-weight: 700;
   /* Bold weight */
   src: local("Helvetica Rounded Bold"), url("/fonts/helvetica-rounded-bold-5871d05ead8de.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica";
   font-style: normal;
+
+  font-weight: 700; /* Bold weight */
+  src:
+    local("Helvetica"),
+    url("/fonts/Helvetica-Bold.woff") format("woff");
+
   font-weight: 700;
   /* Bold weight */
   src: local("Helvetica"), url("/fonts/Helvetica-Bold.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica";
   font-style: oblique;
+
+  font-weight: 700; /* Bold weight */
+  src:
+    local("Helvetica Bold Oblique"),
+    url("/fonts/Helvetica-BoldOblique.woff") format("woff");
+
   font-weight: 700;
   /* Bold weight */
   src: local("Helvetica Bold Oblique"), url("/fonts/Helvetica-BoldOblique.woff") format("woff");
+
 }
 
 @font-face {
   font-family: "Helvetica";
   font-style: normal;
+
+  font-weight: 300; /* Light weight */
+  src:
+    local("Helvetica Light"),
+    url("/fonts/helvetica-light-587ebe5a59211.woff") format("woff");
+
   font-weight: 300;
   /* Light weight */
   src: local("Helvetica Light"), url("/fonts/helvetica-light-587ebe5a59211.woff") format("woff");
+
 }
 
 body {
@@ -263,6 +311,22 @@ body {
   right: 55px;
 }
 
+/* .slick-list {
+  width: 50%;
+  height: 100%;
+} */
+/* .slick-slider.slick-initialized {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+} */
+
+/* .custom-slick-style .slick-list {
+  background-color: #fef2f2; 
+  border-radius: 10px;
+} */
+
+
 .slick-list {
   width: 50%;
   height: 100%;
@@ -298,6 +362,10 @@ body {
 
 @media (max-width: 767px) {
   .custom-acc-style {
+
+    margin-top: 20px !important;
+    margin-bottom: 24px !important;
+
     margin-top: 0px !important;
     margin-bottom: 16px !important;
   }
@@ -309,6 +377,7 @@ body {
 @media (max-width: 768px) {
   .hidden-mobile {
     display: none;
+
   }
 }
 
@@ -323,6 +392,9 @@ body {
   .custom-width-for-small {
     width: 150px;
   }
+
+}
+=======
   .xtra-small-device-padding{
     padding-left: 20px;
     padding-right: 5px;
@@ -344,3 +416,4 @@ body {
 div#default-modal\ custom-bg-fullScreen {
   background: rgb(0 0 0 / 60%);
 }
+

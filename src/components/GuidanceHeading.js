@@ -2,7 +2,7 @@ import React from "react";
 
 const GuidanceHeading = () => {
   return (
-    <div className=" xs:pt-[60px] bg-white xs:pl-[32px]  xs:pr-[56px] xs:text-left xs:pb-[15px]">
+    <div className=" xs:pt-[60px] bg-white xs:px-[32px] xs:text-left xs:pb-[15px]">
       <h1 className="xs:text-[24px] xs:leading-[36px] font-bold font-helvetica ">
         <span className="text-buttonCustomColor">Frequently </span>Asked
         Questions
