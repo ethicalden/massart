@@ -1,8 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 const Gallery = () => {
+     const [isSelectTab, setIsSelectTab] = useState(0);
+  const handleTabChange = (indexNum) => {
+    setIsSelectTab(indexNum);
+  }
   return (
     <div className="xs:pt-[60px] xs:px-[32px]">
       <div>
@@ -10,20 +16,26 @@ const Gallery = () => {
           The gallery of Durga puja Art
         </h1>
         <div className="flex gap-x-[15px] xs:py-[25px] items-center">
-          <button
-            className="xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[38.5px] xs:py-[8px] 
-           text-white bg-buttonCustomColor border border-transparent 
-           hover:bg-transparent hover:text-black hover:border-buttonCustomColor rounded-[3px]"
-          >
-            Still
-          </button>
-          <button
-            className="xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[38.5px] xs:py-[8px] 
-            bg-transparent  border text-black border-buttonCustomColor
-           hover:bg-buttonCustomColor hover:text-white hover:border-transparent rounded-[3px]"
-          >
-            Video
-          </button>
+         <button
+      onClick={() => handleTabChange(0)}
+      className={
+        isSelectTab === 0
+          ? "xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[38.5px] xs:py-[8px] text-white bg-buttonCustomColor border border-transparent hover:bg-transparent hover:text-black hover:border-buttonCustomColor rounded-[3px]"
+          : "xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[38.5px] xs:py-[8px] bg-transparent border text-black border-buttonCustomColor hover:bg-buttonCustomColor hover:text-white hover:border-transparent rounded-[3px]"
+      }
+    >
+      Still
+    </button>
+           <button
+      onClick={() => handleTabChange(1)}
+      className={
+        isSelectTab === 1
+          ? "xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[38.5px] xs:py-[8px] text-white bg-buttonCustomColor border border-transparent hover:bg-transparent hover:text-black hover:border-buttonCustomColor rounded-[3px]"
+          : "xs:text-[12px] xs:leading-[18px] font-helvetica font-bold xs:px-[38.5px] xs:py-[8px] bg-transparent border text-black border-buttonCustomColor hover:bg-buttonCustomColor hover:text-white hover:border-transparent rounded-[3px]"
+      }
+    >
+      Video
+    </button>
         </div>
         {/* gallery image */}
         <div>
@@ -118,12 +130,15 @@ const Gallery = () => {
           </div>
         </div>
         {/* button */}
-        <button
+        <Link href='/gallery'>
+         <button
           className="xs:mt-[25px]  xs:text-[12px] xs:leading-[14px] font-helvetica font-bold text-buttonCustomColor border border-buttonCustomColor
            xs:px-[17px] xs:py-[9px] rounded-full"
         >
           Browse More Video
         </button>
+        </Link>
+       
       </div>
     </div>
   );

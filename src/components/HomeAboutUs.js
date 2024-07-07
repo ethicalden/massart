@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const HomeAboutUs = () => {
   return (
@@ -36,12 +37,15 @@ const HomeAboutUs = () => {
         />
       </div>
       <div>
-        <button
+<Link href='/about-us'>
+  <button
           className="bg-buttonCustomColor text-white text-[12px] leading-[24px] font-helvetica font-bold
       px-[17px] py-[4px] rounded-full"
         >
           Read More
         </button>
+</Link>
+      
       </div>
     </div>
   );

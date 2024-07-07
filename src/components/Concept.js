@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Concept = () => {
+  
   return (
 
 <div className="pt-[60px] px-[32px]">
@@ -89,10 +91,13 @@ const Concept = () => {
           <p className="text-[8px] pr-[25%] leading-[14px] text-white font-normal font-helvetica">
             our preview show 2024 to be staged at a prominent kolkata venue is intended to show you how durga puja in bengal has evolved into a display of contemporary Art while remaining deeply rooted in tradition.
           </p>
+      
           <div className="pt-[10px]">
-            <button className="bg-buttonCustomColor text-white text-[12px] leading-[24px] font-helvetica font-bold px-[17px] py-[4px] rounded-full">
+              <Link href='/concept'>
+  <button className="bg-buttonCustomColor text-white text-[12px] leading-[24px] font-helvetica font-bold px-[17px] py-[4px] rounded-full">
               Read More
             </button>
+</Link>
           </div>
         </div>
       </div>

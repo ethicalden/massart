@@ -5,6 +5,10 @@ import { IoMdFastforward } from "react-icons/io";
 
 const Visual = () => {
   const [activeButton, setActiveButton] = useState("Donor Pass");
+    const [isSelectTab, setIsSelectTab] = useState(0);
+  const handleTabChange = (indexNum) => {
+    setIsSelectTab(indexNum);
+  }
 
   const buttons = [
     { label: "Donor Pass", id: "Donor Pass", imageIndex: 1 },
@@ -28,19 +32,27 @@ const Visual = () => {
       {/* button */}
 
       <div className="grid grid-cols-3 justify-between items-center w-full xs:gap-x-[10px] xs:py-[25px]">
-        <button
-          className="xs:text-[11px] xs:leading-[24px] xs:py-[4px] xs:px-[15px]
-        font-bold font-helvetica text-white border border-transparent bg-buttonCustomColor rounded-full"
-        >
-          Donor Pass
-        </button>
-        <button
-          className="xs:text-[11px] xs:leading-[24px] xs:py-[4px] xs:px-[15px] rounded-full
-        font-bold font-helvetica  border border-buttonCustomColor
-         hover:bg-buttonCustomColor hover:border-transparent hover:text-white text-black"
-        >
-          Preview Pass
-        </button>
+ <button
+      onClick={() => handleTabChange(0)}
+      className={
+        isSelectTab === 0
+          ? "xs:text-[11px] xs:leading-[24px] xs:py-[4px] xs:px-[15px] font-bold font-helvetica text-white border border-transparent bg-buttonCustomColor rounded-full"
+          : "xs:text-[11px] xs:leading-[24px] xs:py-[4px] xs:px-[15px] rounded-full font-bold font-helvetica border border-buttonCustomColor hover:bg-buttonCustomColor hover:border-transparent hover:text-white text-black"
+      }
+    >
+      Donor Pass
+    </button>
+    
+         <button
+      onClick={() => handleTabChange(1)}
+      className={
+        isSelectTab === 1
+          ? "xs:text-[11px] xs:leading-[24px] xs:py-[4px] xs:px-[15px] font-bold font-helvetica text-white border border-transparent bg-buttonCustomColor rounded-full"
+          : "xs:text-[11px] xs:leading-[24px] xs:py-[4px] xs:px-[15px] rounded-full font-bold font-helvetica border border-buttonCustomColor hover:bg-buttonCustomColor hover:border-transparent hover:text-white text-black"
+      }
+    >
+     Preview Pass
+    </button>
         <button
           className="xs:text-[11px] xs:leading-[24px] xs:py-[4px] xs:px-[15px]
         font-bold font-helvetica  border border-transparent text-black flex items-center gap-x-[5px]"

@@ -13,9 +13,14 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+   const toggleModal = () => {
+    setIsOpen(!isOpen);
   };
 
   const [activeButton, setActiveButton] = useState("Get ticket");
@@ -163,12 +168,23 @@ const Header = () => {
               Witness Bengal
             </h1>
             <div className="flex gap-x-[14px] justify-center ">
-              <button className="text-white xs:px-[17px] xs:py-[4px] font-helvetica font-bold xs:text-[12px] xs:leading-[24px] bg-buttonCustomColor xs:rounded-full hover:bg-transparent transition-colors duration-300 ease-in-out border-transparent border hover:border-buttonCustomColor">
+              
+                   <div>
+ <button onClick={toggleModal} className="text-white xs:px-[17px] xs:py-[4px] font-helvetica font-bold xs:text-[12px] xs:leading-[24px] bg-buttonCustomColor xs:rounded-full hover:bg-transparent transition-colors duration-300 ease-in-out border-transparent border hover:border-buttonCustomColor">
                 Get Ticket
               </button>
+
+                   </div>
+             
+
+
+
+                   <Link href="/gallery">
               <button className="text-white xs:px-[17px] xs:py-[4px] font-helvetica font-bold xs:text-[12px] xs:leading-[24px] border border-buttonCustomColor xs:rounded-full hover:bg-buttonCustomColor hover:border-transparent transition-colors duration-300 ease-in-out">
                 View More
               </button>
+              </Link>
+         
             </div>
           </div>
           <div className="flex space-x-[10px] text-white pt-[39px] text-[18px] justify-center ">
@@ -190,6 +206,35 @@ const Header = () => {
        md:h-[130px]  lg:h-[130px]  xl:h-[130px] object-cover
        mr-[87px]"
         /> */}
+           {isOpen && (
+        <div
+          id="default-modal"
+          tabIndex="-1"
+          aria-hidden="true"
+          className="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-[#D9D9D9] bg-opacity-50"
+        >
+          <div className="relative p-4 w-full max-w-2xl max-h-full">
+            <div className="relative shadow">
+
+              <div className="md:p-5 p-[20px] bg-[#D9D9D9] rounded-[10px]">
+
+                <div className="font-[Helvetica] md:text-[50px] md:leading-[59px] text-[24px] leading-[33px] font-bold mb-[20px]">
+                  <span className="text-red-600">ticket </span> options will be available soon.
+                </div>
+                <p className='md:text-[18px] md:leading-[30px] text-[13px] leading-[20px] mb-[27px]'>more ticket options including student concession are available. please call +91 8420460550</p>
+                <div className='leading-[0px]'>   <button
+                  type="button"
+                  className="md:w-[97px] md:h-[48px] w-[39px] h-[22px] border rounded-full md:text-[18px] md:leading-[24px] text-[12px] leading-[16px] border-black hover:bg-red-600 hover:border-buttonCustomColor hover:text-white delay-150"
+                  onClick={toggleModal}
+                >
+                  ok
+                </button></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      )}
       </div>
     </div>
   );
