@@ -148,11 +148,14 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end hidden  md:flex lg:flex xl:flex 2xl:flex ">
-          <a className=" bg-buttonCustomColor rounded-[1000px]  px-[36px] py-[12px] leading-[24px] text-white font-poppins text-[18px]">
-            Button
-          </a>
+       
+         <div className="navbar-end hidden  md:flex lg:flex xl:flex 2xl:flex ">
+          <Link href='/login' className=" bg-buttonCustomColor rounded-[1000px]  px-[36px] py-[12px] leading-[24px] text-white font-poppins text-[18px]">
+            Login
+          </Link>
         </div>
+      
+       
       </div>
 
       <div
