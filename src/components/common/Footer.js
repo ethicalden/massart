@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-import SocialContributor from "../SocialContributor/SocialContributer";
+import Link from "next/link";
 import { LuSend } from "react-icons/lu";
+import SocialContributor from "../SocialContributor/SocialContributer";
 
 const Footer = () => {
   return (
@@ -37,9 +38,12 @@ const Footer = () => {
                 <p className="link link-hover opacity-60 xs:pb-[8px] xs:text-[12px] xs:leading-[12px] font-normal font-helvetica">
                   Privacy policy
                 </p>
-                <p className="link link-hover opacity-60  xs:text-[12px] xs:leading-[12px] font-normal font-helvetica">
+                <Link  href='/faq'>
+                 <p className="link link-hover opacity-60  xs:text-[12px] xs:leading-[12px] font-normal font-helvetica">
                   FAQ
                 </p>
+                </Link>
+               
               </nav>
               <nav>
                 <p className="xs:pt-[25px] xs:text-[8px] xs:leading-[12px] font-normal xs:text-left">
@@ -56,15 +60,25 @@ const Footer = () => {
                 <h6 className="xs:pb-[10px] pt-[25px] xs:text-[16px]  xs:leading-[24px]  font-helvetica font-bold text-white">
                   Navigation
                 </h6>
-                <p className="xs:pb-[8px] opacity-60 link link-hover xs:text-[12px] xs:leading-[12px] font-normal font-helvetica">
+                 <Link  href='/'>
+                  <p className="xs:pb-[8px] opacity-60 link link-hover xs:text-[12px] xs:leading-[12px] font-normal font-helvetica">
                   Home
                 </p>
-                <p className="xs:pb-[8px] opacity-60 link link-hover xs:text-[12px] xs:leading-[12px] font-normal font-helvetica">
+                 </Link>
+               
+                <Link  href='/about-us'>
+                  <p className="xs:pb-[8px] opacity-60 link link-hover xs:text-[12px] xs:leading-[12px] font-normal font-helvetica">
                   About Us
                 </p>
+                </Link>
+              
+
+               <Link  href='/concept'>
                 <p className="xs:pb-[35px] opacity-60 link link-hover xs:text-[12px] xs:leading-[12px] font-normal font-helvetica">
                   Concept
                 </p>
+               </Link>
+               
               </nav>
 
               <form>
