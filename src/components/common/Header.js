@@ -141,7 +141,8 @@ const Header = () => {
               <Link href="/gallery">Gallery</Link>
             </li>
             <li className="text-white font-helvetica">
-              <a>Press</a>
+              <Link href="/individual">Individual</Link>
+         
             </li>
             <li className="text-white font-helvetica">
                <Link href="/contact-us">Contact Us</Link>
