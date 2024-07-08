@@ -44,12 +44,12 @@ const Header = () => {
 
       <div
         className="navbar relative
-         xs:pl-[34px] xs:pr-[32px] pt-[50px]
+         xs:pl-[0px] xs:pr-[32px] pt-[50px]
      
       "
       >
         {/* mobile */}
-        <div className=" flex justify-between items-center w-full  ">
+        <div className=" flex justify-between items-center w-full flex-row-reverse  ">
         
 
           <div className="dropdown ">
@@ -76,30 +76,30 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content right-0 mt-3 z-10 p-2 shadow bg-white rounded-[5px] w-56"
+              className="menu menu-sm dropdown-content right-0 mt-3 z-10 p-2 shadow bg-[white] rounded-[5px] w-56"
             >
             
-              <li className="text-black font-helvetica">
+              <li className="text-[#ed2127] font-helvetica">
                 <Link href="/">Home</Link>
               </li>
-                <li className="text-black font-helvetica">
+                <li className="text-[#ed2127] font-helvetica">
                 <Link href="/about-us">About</Link>
               </li>
-              <li className="text-black font-helvetica">
+              <li className="text-[#ed2127] font-helvetica">
                  <Link href="/concept">Concept</Link>
               </li>
-              <li className="text-black font-helvetica">
+              <li className="text-[#ed2127] font-helvetica">
                  <Link href="/preview-show-2024">Preview show</Link>
               </li>
 
-              <li className="text-black font-helvetica">
+              <li className="text-[#ed2127] font-helvetica">
                 <a>Gallery</a>
                 <Link href="/gallery">Gallery</Link>
               </li>
-              <li className="text-black font-helvetica">
+              <li className="text-[#ed2127] font-helvetica">
                 <a>Press</a>
               </li>
-              <li className="text-black font-helvetica">
+              <li className="text-[#ed2127] font-helvetica">
                 <Link href="/contact-us">Contact</Link>
               </li>
             </ul>
