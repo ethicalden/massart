@@ -7,8 +7,7 @@ import { usePathname } from "next/navigation";
 const Concept = () => {
   const currentPath = usePathname();
   return (
-
-<div className="pt-[60px] px-[32px]">
+   <div className="pt-[60px] px-[32px]">
   {/* card1 */}
   <div className="relative group mb-[15px]">
     <div className="h-[285px] w-full relative">
