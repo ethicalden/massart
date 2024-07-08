@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 
 const Concept = () => {
-  
+  const currentPath = usePathname();
   return (
 
 <div className="pt-[60px] px-[32px]">
@@ -35,7 +38,9 @@ const Concept = () => {
     </div>
   </div>
 
-  <div className="xl:ms-[125px] ms-[33px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[33px] md:mt-[150px] mt-[60px]">
+{/* should not show in home page */}
+{
+  currentPath !== '/' && <div className="xl:ms-[125px] ms-[33px] xl:me-[125px] lg:ms-[100px] lg:me-[100px] me-[33px] md:mt-[150px] mt-[60px]">
     <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-[106px] gap-[17px] md:mb-[61px] mb-7">
       <div>
         <Image
@@ -71,6 +76,8 @@ const Concept = () => {
       </div>
     </div>
   </div>
+}
+
 
   {/* card 2 */}
   <div className="relative group mb-[15px]">
@@ -124,6 +131,8 @@ const Concept = () => {
   </div>
 
   {/* Show on mobile */}
+  {
+  currentPath !== '/' && 
   <div className="md:hidden grid grid-flow-col auto-cols-max gap-5 mb-[17px] px-[33px] overflow-x-auto no-scrollbar">
     <div className="relative group rounded-lg overflow-hidden justify-center flex duration-150">
       <Image
@@ -168,7 +177,7 @@ const Concept = () => {
       </div>
     </div>
   </div>
-
+}
   {/* card4 */}
   <div className="relative group">
     <div className="h-[285px] w-full ">
