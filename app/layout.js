@@ -8,7 +8,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: "Massart",
-  description: "lorem ipsum dolor",
+  description: "A platform showcasing beautiful Puja art collections",
 };
 
 // eslint-disable-next-line react/prop-types

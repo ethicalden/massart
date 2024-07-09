@@ -140,9 +140,9 @@ const PreviewShow_one = () => {
         <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
         <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
           <div className="col-span-2 lg:mx-[150px] text-white">
-            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
+            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">ticket <span className="text-white">options will be available</span></span>
             <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              ticket options will be available soon. more ticket options including student concession are available. please call +91 8420460550
             </div>
           </div>
           <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
@@ -165,10 +165,10 @@ const PreviewShow_one = () => {
       >
         <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
         <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
-          <div className="col-span-2 lg:mx-[150px] text-white">
-            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
+      <div className="col-span-2 lg:mx-[150px] text-white">
+            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">ticket <span className="text-white">options will be available</span></span>
             <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              ticket options will be available soon. more ticket options including student concession are available. please call +91 8420460550
             </div>
           </div>
           <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
@@ -191,10 +191,10 @@ const PreviewShow_one = () => {
       >
         <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
         <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
-          <div className="col-span-2 lg:mx-[150px] text-white">
-            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
+        <div className="col-span-2 lg:mx-[150px] text-white">
+            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">ticket <span className="text-white">options will be available</span></span>
             <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              ticket options will be available soon. more ticket options including student concession are available. please call +91 8420460550
             </div>
           </div>
           <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">
@@ -216,10 +216,10 @@ const PreviewShow_one = () => {
       >
         <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
         <div className="relative grid md:grid-cols-3 grid-cols-1 p-[33px] md:py-[75px] py-[18px] items-center">
-          <div className="col-span-2 lg:mx-[150px] text-white">
-            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">Lorem Ipsum <span className="text-white">is simply</span></span>
+         <div className="col-span-2 lg:mx-[150px] text-white">
+            <span className="text-buttonCustomColor md:text-[50px] md:leading-[56px] text-[24px] leading-[36px] font-bold">ticket <span className="text-white">options will be available</span></span>
             <div className="md:mt-[15px] mt-[5px] md:text-[18px] md:leading-[30px] text-[13px] leading-[22px] text-white">
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              ticket options will be available soon. more ticket options including student concession are available. please call +91 8420460550
             </div>
           </div>
           <div className="col-span-1 md:text-center text-left leading-[0px] mt-[23px] mb-[18px]">

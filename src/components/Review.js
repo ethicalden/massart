@@ -3,26 +3,26 @@
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
-import "/public/styles/MasterClass.css";
 import "slick-carousel/slick/slick.css";
+import "/public/styles/MasterClass.css";
 
 const testimonials = [
   {
     id: 1,
     name: "Sagnik Roy",
     title: "Founder & CEO",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    text: "Puja Art has transformed our understanding and appreciation of art in a profound way. The collection is extraordinary.",
     rating: 5,
     image: "/images/Ellipse 115.png",
     video: "/images/Group .png",
   },
   {
     id: 2,
-    name: "Sagnik Roy",
-    title: "Founder & CEO",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    name: "Amit Das",
+    title: "Art Collector",
+    text: "The quality and variety of artwork available on Puja Art are impressive. It's my go-to platform for discovering new artists.",
     rating: 5,
-    image: "/images/Ellipse 115.png",
+    image: "/images/Ellipse 116.png",
     video: "/images/Group .png",
   },
   // Add more items as needed
