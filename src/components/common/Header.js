@@ -89,11 +89,17 @@ const Header = () => {
                  <Link href="/concept">Concept</Link>
               </li>
               <li className="text-[#ed2127] font-helvetica">
-                 <Link href="/preview-show-2024">Preview show</Link>
+                 <Link href="/2023">Preview show 2023</Link>
+              </li>
+              <li className="text-[#ed2127] font-helvetica">
+                 <Link href="/preview-show-2024">Preview show 2024</Link>
+              </li>
+                   <li className="text-[#ed2127] font-helvetica">
+                 <Link href="/preview-show-2025">Preview show 2025</Link>
               </li>
 
               <li className="text-[#ed2127] font-helvetica">
-                <a>Gallery</a>
+            
                 <Link href="/gallery">Gallery</Link>
               </li>
               <li className="text-[#ed2127] font-helvetica">
@@ -133,9 +139,22 @@ const Header = () => {
             <li className="text-white font-helvetica">
               <Link href="/concept">Concept</Link>
             </li>
-            <li className="text-white font-helvetica">
-              <Link href="/preview-show-2024">Preview Show</Link>
-            </li>
+           <li className="text-white font-helvetica">
+          <div className="dropdown">
+            <Link href="/preview-show-2024">Preview Show</Link>
+            <ul className="dropdown-content">
+              <li>
+                <Link href="/2023">2023</Link>
+              </li>
+              <li>
+                <Link href="/preview-show-2024">2024</Link>
+              </li>
+              <li>
+                <Link href="/preview-show-2025">2025</Link>
+              </li>
+            </ul>
+          </div>
+        </li>
 
             <li className="text-white font-helvetica">
               <Link href="/gallery">Gallery</Link>

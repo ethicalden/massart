@@ -20,6 +20,36 @@ body {
   color: black;
 }
 
+.nav-item {
+  font-family: 'Helvetica', sans-serif;
+  color: #ed2127;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ed2127;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+
 @font-face {
   font-family: "Helvetica";
   font-style: normal;
