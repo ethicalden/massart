@@ -187,26 +187,26 @@ const Header = () => {
       >
         <div className="">
           <div className="">
-            <h1 className="xs:text-[36px] xs:leading-[40px] text-white font-helvetica font-bold xs:pb-[27px]">
+            {/* <h1 className="xs:text-[36px] xs:leading-[40px] text-white font-helvetica font-bold xs:pb-[27px]">
               Witness Bengal
-            </h1>
+            </h1> */}
             <div className="flex gap-x-[14px] justify-center ">
               
-                   <div>
+                   {/* <div>
  <button onClick={toggleModal} className="text-white xs:px-[17px] xs:py-[4px] font-helvetica font-bold xs:text-[12px] xs:leading-[24px] bg-buttonCustomColor xs:rounded-full hover:bg-transparent transition-colors duration-300 ease-in-out border-transparent border hover:border-buttonCustomColor">
                 Get Ticket
               </button>
 
                    </div>
-             
+              */}
 
 
 
-                   <Link href="/gallery">
+                   {/* <Link href="/gallery">
               <button className="text-white xs:px-[17px] xs:py-[4px] font-helvetica font-bold xs:text-[12px] xs:leading-[24px] border border-buttonCustomColor xs:rounded-full hover:bg-buttonCustomColor hover:border-transparent transition-colors duration-300 ease-in-out">
                 View More
               </button>
-              </Link>
+              </Link> */}
          
             </div>
           </div>
